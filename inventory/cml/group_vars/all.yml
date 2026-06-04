@@ -1,0 +1,31 @@
+---
+ansible_connection: ansible.netcommon.network_cli
+
+domain_name: ciscolive.cml.lab
+
+# NTP abstraction - overridden per environment
+ntp_servers: []
+# Logging
+logging_buffered_size: 16384
+logging_level: informational
+
+# SSH
+ssh_timeout: 60
+ssh_rsa_modulus: 4096
+
+# Archive
+archive_maximum: 5
+
+# Diagnostic
+diagnostic_bootup_level: minimal
+
+# Universal VLAN definitions
+vlans:
+  - id: 10
+    name: DATA
+  - id: 20
+    name: VOICE
+  - id: 99
+    name: NATIVE
+  - id: 100
+    name: MANAGEMENT

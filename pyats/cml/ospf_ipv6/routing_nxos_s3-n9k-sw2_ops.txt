@@ -1,0 +1,488 @@
+{
+  "_exclude": [
+    "updated"
+  ],
+  "attributes": null,
+  "commands": null,
+  "connections": null,
+  "context_manager": {},
+  "info": {
+    "vrf": {
+      "default": {
+        "address_family": {
+          "ipv4": {
+            "routes": {
+              "172.16.12.0/30": {
+                "active": true,
+                "metric": 300,
+                "next_hop": {
+                  "next_hop_list": {
+                    "1": {
+                      "index": 1,
+                      "next_hop": "172.28.31.5",
+                      "outgoing_interface": "Ethernet1/1",
+                      "updated": "11:47:52"
+                    }
+                  }
+                },
+                "route": "172.16.12.0/30",
+                "route_preference": 110,
+                "source_protocol": "ospf"
+              },
+              "172.17.0.1/32": {
+                "active": true,
+                "metric": 201,
+                "next_hop": {
+                  "next_hop_list": {
+                    "1": {
+                      "index": 1,
+                      "next_hop": "172.28.31.5",
+                      "outgoing_interface": "Ethernet1/1",
+                      "updated": "11:47:52"
+                    }
+                  }
+                },
+                "route": "172.17.0.1/32",
+                "route_preference": 110,
+                "source_protocol": "ospf"
+              },
+              "172.20.13.0/30": {
+                "active": true,
+                "metric": 200,
+                "next_hop": {
+                  "next_hop_list": {
+                    "1": {
+                      "index": 1,
+                      "next_hop": "172.28.31.5",
+                      "outgoing_interface": "Ethernet1/1",
+                      "updated": "11:47:52"
+                    }
+                  }
+                },
+                "route": "172.20.13.0/30",
+                "route_preference": 110,
+                "source_protocol": "ospf"
+              },
+              "172.22.0.2/32": {
+                "active": true,
+                "metric": 301,
+                "next_hop": {
+                  "next_hop_list": {
+                    "1": {
+                      "index": 1,
+                      "next_hop": "172.28.31.5",
+                      "outgoing_interface": "Ethernet1/1",
+                      "updated": "11:47:52"
+                    }
+                  }
+                },
+                "route": "172.22.0.2/32",
+                "route_preference": 110,
+                "source_protocol": "ospf"
+              },
+              "172.24.22.0/30": {
+                "active": true,
+                "metric": 400,
+                "next_hop": {
+                  "next_hop_list": {
+                    "1": {
+                      "index": 1,
+                      "next_hop": "172.28.31.5",
+                      "outgoing_interface": "Ethernet1/1",
+                      "updated": "11:47:52"
+                    }
+                  }
+                },
+                "route": "172.24.22.0/30",
+                "route_preference": 110,
+                "source_protocol": "ospf"
+              },
+              "172.28.31.0/30": {
+                "active": true,
+                "metric": 200,
+                "next_hop": {
+                  "next_hop_list": {
+                    "1": {
+                      "index": 1,
+                      "next_hop": "172.28.31.5",
+                      "outgoing_interface": "Ethernet1/1",
+                      "updated": "11:47:52"
+                    }
+                  }
+                },
+                "route": "172.28.31.0/30",
+                "route_preference": 110,
+                "source_protocol": "ospf"
+              },
+              "172.28.31.4/30": {
+                "active": true,
+                "metric": 0,
+                "next_hop": {
+                  "next_hop_list": {
+                    "1": {
+                      "index": 1,
+                      "next_hop": "172.28.31.6",
+                      "outgoing_interface": "Ethernet1/1",
+                      "updated": "11:50:39"
+                    }
+                  }
+                },
+                "route": "172.28.31.4/30",
+                "route_preference": 0,
+                "source_protocol": "direct"
+              },
+              "172.28.31.6/32": {
+                "active": true,
+                "metric": 0,
+                "next_hop": {
+                  "next_hop_list": {
+                    "1": {
+                      "index": 1,
+                      "next_hop": "172.28.31.6",
+                      "outgoing_interface": "Ethernet1/1",
+                      "updated": "11:50:39"
+                    }
+                  }
+                },
+                "route": "172.28.31.6/32",
+                "route_preference": 0,
+                "source_protocol": "local"
+              },
+              "172.29.0.3/32": {
+                "active": true,
+                "metric": 101,
+                "next_hop": {
+                  "next_hop_list": {
+                    "1": {
+                      "index": 1,
+                      "next_hop": "172.28.31.5",
+                      "outgoing_interface": "Ethernet1/1",
+                      "updated": "11:47:52"
+                    }
+                  }
+                },
+                "route": "172.29.0.3/32",
+                "route_preference": 110,
+                "source_protocol": "ospf"
+              },
+              "192.168.10.0/24": {
+                "active": true,
+                "metric": 250,
+                "next_hop": {
+                  "next_hop_list": {
+                    "1": {
+                      "index": 1,
+                      "next_hop": "172.28.31.5",
+                      "outgoing_interface": "Ethernet1/1",
+                      "updated": "11:38:53"
+                    }
+                  }
+                },
+                "route": "192.168.10.0/24",
+                "route_preference": 110,
+                "source_protocol": "ospf"
+              },
+              "192.168.100.0/24": {
+                "active": true,
+                "metric": 250,
+                "next_hop": {
+                  "next_hop_list": {
+                    "1": {
+                      "index": 1,
+                      "next_hop": "172.28.31.5",
+                      "outgoing_interface": "Ethernet1/1",
+                      "updated": "11:38:53"
+                    }
+                  }
+                },
+                "route": "192.168.100.0/24",
+                "route_preference": 110,
+                "source_protocol": "ospf"
+              },
+              "192.168.20.0/24": {
+                "active": true,
+                "metric": 250,
+                "next_hop": {
+                  "next_hop_list": {
+                    "1": {
+                      "index": 1,
+                      "next_hop": "172.28.31.5",
+                      "outgoing_interface": "Ethernet1/1",
+                      "updated": "11:38:53"
+                    }
+                  }
+                },
+                "route": "192.168.20.0/24",
+                "route_preference": 110,
+                "source_protocol": "ospf"
+              },
+              "192.168.30.0/24": {
+                "active": true,
+                "metric": 500,
+                "next_hop": {
+                  "next_hop_list": {
+                    "1": {
+                      "index": 1,
+                      "next_hop": "172.28.31.5",
+                      "outgoing_interface": "Ethernet1/1",
+                      "updated": "11:47:52"
+                    }
+                  }
+                },
+                "route": "192.168.30.0/24",
+                "route_preference": 110,
+                "source_protocol": "ospf"
+              },
+              "192.168.31.0/24": {
+                "active": true,
+                "metric": 500,
+                "next_hop": {
+                  "next_hop_list": {
+                    "1": {
+                      "index": 1,
+                      "next_hop": "172.28.31.5",
+                      "outgoing_interface": "Ethernet1/1",
+                      "updated": "11:47:52"
+                    }
+                  }
+                },
+                "route": "192.168.31.0/24",
+                "route_preference": 110,
+                "source_protocol": "ospf"
+              },
+              "192.168.32.0/24": {
+                "active": true,
+                "metric": 500,
+                "next_hop": {
+                  "next_hop_list": {
+                    "1": {
+                      "index": 1,
+                      "next_hop": "172.28.31.5",
+                      "outgoing_interface": "Ethernet1/1",
+                      "updated": "11:47:52"
+                    }
+                  }
+                },
+                "route": "192.168.32.0/24",
+                "route_preference": 110,
+                "source_protocol": "ospf"
+              },
+              "192.168.40.0/24": {
+                "active": true,
+                "metric": 0,
+                "next_hop": {
+                  "next_hop_list": {
+                    "1": {
+                      "index": 1,
+                      "next_hop": "192.168.40.3",
+                      "outgoing_interface": "Vlan10",
+                      "updated": "11:49:19"
+                    }
+                  }
+                },
+                "route": "192.168.40.0/24",
+                "route_preference": 0,
+                "source_protocol": "direct"
+              },
+              "192.168.40.1/32": {
+                "active": true,
+                "metric": 0,
+                "next_hop": {
+                  "next_hop_list": {
+                    "1": {
+                      "index": 1,
+                      "next_hop": "192.168.40.1",
+                      "outgoing_interface": "Vlan10",
+                      "updated": "11:48:37"
+                    }
+                  }
+                },
+                "route": "192.168.40.1/32",
+                "route_preference": 0,
+                "source_protocol": "hsrp"
+              },
+              "192.168.40.3/32": {
+                "active": true,
+                "metric": 0,
+                "next_hop": {
+                  "next_hop_list": {
+                    "1": {
+                      "index": 1,
+                      "next_hop": "192.168.40.3",
+                      "outgoing_interface": "Vlan10",
+                      "updated": "11:49:19"
+                    }
+                  }
+                },
+                "route": "192.168.40.3/32",
+                "route_preference": 0,
+                "source_protocol": "local"
+              },
+              "192.168.41.0/24": {
+                "active": true,
+                "metric": 0,
+                "next_hop": {
+                  "next_hop_list": {
+                    "1": {
+                      "index": 1,
+                      "next_hop": "192.168.41.3",
+                      "outgoing_interface": "Vlan20",
+                      "updated": "11:49:19"
+                    }
+                  }
+                },
+                "route": "192.168.41.0/24",
+                "route_preference": 0,
+                "source_protocol": "direct"
+              },
+              "192.168.41.1/32": {
+                "active": true,
+                "metric": 0,
+                "next_hop": {
+                  "next_hop_list": {
+                    "1": {
+                      "index": 1,
+                      "next_hop": "192.168.41.1",
+                      "outgoing_interface": "Vlan20",
+                      "updated": "11:48:37"
+                    }
+                  }
+                },
+                "route": "192.168.41.1/32",
+                "route_preference": 0,
+                "source_protocol": "hsrp"
+              },
+              "192.168.41.3/32": {
+                "active": true,
+                "metric": 0,
+                "next_hop": {
+                  "next_hop_list": {
+                    "1": {
+                      "index": 1,
+                      "next_hop": "192.168.41.3",
+                      "outgoing_interface": "Vlan20",
+                      "updated": "11:49:19"
+                    }
+                  }
+                },
+                "route": "192.168.41.3/32",
+                "route_preference": 0,
+                "source_protocol": "local"
+              },
+              "192.168.42.0/24": {
+                "active": true,
+                "metric": 0,
+                "next_hop": {
+                  "next_hop_list": {
+                    "1": {
+                      "index": 1,
+                      "next_hop": "192.168.42.3",
+                      "outgoing_interface": "Vlan100",
+                      "updated": "11:49:19"
+                    }
+                  }
+                },
+                "route": "192.168.42.0/24",
+                "route_preference": 0,
+                "source_protocol": "direct"
+              },
+              "192.168.42.1/32": {
+                "active": true,
+                "metric": 0,
+                "next_hop": {
+                  "next_hop_list": {
+                    "1": {
+                      "index": 1,
+                      "next_hop": "192.168.42.1",
+                      "outgoing_interface": "Vlan100",
+                      "updated": "11:48:37"
+                    }
+                  }
+                },
+                "route": "192.168.42.1/32",
+                "route_preference": 0,
+                "source_protocol": "hsrp"
+              },
+              "192.168.42.3/32": {
+                "active": true,
+                "metric": 0,
+                "next_hop": {
+                  "next_hop_list": {
+                    "1": {
+                      "index": 1,
+                      "next_hop": "192.168.42.3",
+                      "outgoing_interface": "Vlan100",
+                      "updated": "11:49:19"
+                    }
+                  }
+                },
+                "route": "192.168.42.3/32",
+                "route_preference": 0,
+                "source_protocol": "local"
+              }
+            }
+          }
+        }
+      },
+      "management": {
+        "address_family": {
+          "ipv4": {
+            "routes": {
+              "0.0.0.0/0": {
+                "active": true,
+                "metric": 0,
+                "next_hop": {
+                  "next_hop_list": {
+                    "1": {
+                      "index": 1,
+                      "next_hop": "10.83.32.126",
+                      "updated": "13:11:52"
+                    }
+                  }
+                },
+                "route": "0.0.0.0/0",
+                "route_preference": 1,
+                "source_protocol": "static"
+              },
+              "10.83.32.0/25": {
+                "active": true,
+                "metric": 0,
+                "next_hop": {
+                  "next_hop_list": {
+                    "1": {
+                      "index": 1,
+                      "next_hop": "10.83.32.115",
+                      "outgoing_interface": "mgmt0",
+                      "updated": "13:11:52"
+                    }
+                  }
+                },
+                "route": "10.83.32.0/25",
+                "route_preference": 0,
+                "source_protocol": "direct"
+              },
+              "10.83.32.115/32": {
+                "active": true,
+                "metric": 0,
+                "next_hop": {
+                  "next_hop_list": {
+                    "1": {
+                      "index": 1,
+                      "next_hop": "10.83.32.115",
+                      "outgoing_interface": "mgmt0",
+                      "updated": "13:11:52"
+                    }
+                  }
+                },
+                "route": "10.83.32.115/32",
+                "route_preference": 0,
+                "source_protocol": "local"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "raw_data": false
+}

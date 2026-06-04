@@ -1,0 +1,32 @@
+hostname {{ inventory_hostname }}
+!
+vrf definition {{ mgmt_vrf }}
+ !
+ address-family ipv4
+ exit-address-family
+!
+ip domain name {{ domain_name }}
+!
+license boot level network-advantage addon dna-advantage
+!
+username {{ user }} privilege 15 secret {{ password }}
+!
+crypto key generate rsa modulus 4096
+!
+interface {{ mgmt_interface }}
+  vrf forwarding {{ mgmt_vrf }}
+  description {{ mgmt_description }}
+  ip address {{ mgmt_ip | ipaddr('address') }} {{ mgmt_ip | ipaddr('netmask') }}
+  no shutdown
+!
+ip route vrf {{ mgmt_vrf }} 0.0.0.0 0.0.0.0 {{ mgmt_gw }}
+!
+line con 0
+ logging synchronous
+ login local
+!
+line vty 0 4
+ login local
+ transport input ssh
+!
+end

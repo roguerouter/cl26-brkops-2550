@@ -1,0 +1,54 @@
+
+2026-06-01 06:13:31,020: %UNICON-INFO: +++ s1-ncs540-rtr1 logfile cml/ospf_ipv6/connection_s1-ncs540-rtr1.txt +++
+
+2026-06-01 06:13:31,021: %UNICON-INFO: +++ Unicon plugin iosxr (unicon.plugins.iosxr) +++
+(netadmin@10.83.32.110) Password: 
+
+2026-06-01 06:13:31,331: %UNICON-INFO: +++ connection to spawn: ssh -l netadmin 10.83.32.110, id: 124024105188432 +++
+
+2026-06-01 06:13:31,331: %UNICON-INFO: connection to s1-ncs540-rtr1
+
+
+
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-06-01 06:13:31,663: %UNICON-INFO: Storing credentials from default as current_credentials
+
+2026-06-01 06:13:31,664: %UNICON-INFO: +++ initializing handle +++
+
+2026-06-01 06:13:31,789: %UNICON-INFO: +++ s1-ncs540-rtr1 with via 'cli': executing command 'terminal length 0' +++
+terminal length 0
+Mon Jun  1 06:13:30.519 UTC
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-06-01 06:13:32,137: %UNICON-INFO: +++ s1-ncs540-rtr1 with via 'cli': executing command 'terminal width 0' +++
+terminal width 0
+Mon Jun  1 06:13:30.831 UTC
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-06-01 06:20:21,262: %UNICON-INFO: +++ s1-ncs540-rtr1 logfile cml/ospf_ipv6/connection_s1-ncs540-rtr1.txt +++
+
+2026-06-01 06:20:21,263: %UNICON-INFO: +++ Unicon plugin iosxr (unicon.plugins.iosxr) +++
+(netadmin@10.83.32.110) Password: 
+
+2026-06-01 06:20:21,574: %UNICON-INFO: +++ connection to spawn: ssh -l netadmin 10.83.32.110, id: 132688574823504 +++
+
+2026-06-01 06:20:21,575: %UNICON-INFO: connection to s1-ncs540-rtr1
+
+
+
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-06-01 06:20:21,889: %UNICON-INFO: Storing credentials from default as current_credentials
+
+2026-06-01 06:20:21,890: %UNICON-INFO: +++ initializing handle +++
+
+2026-06-01 06:20:22,013: %UNICON-INFO: +++ s1-ncs540-rtr1 with via 'cli': executing command 'terminal length 0' +++
+terminal length 0
+Mon Jun  1 06:20:20.724 UTC
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-06-01 06:20:22,340: %UNICON-INFO: +++ s1-ncs540-rtr1 with via 'cli': executing command 'terminal width 0' +++
+terminal width 0
+Mon Jun  1 06:20:21.083 UTC
+RP/0/RP0/CPU0:s1-ncs540-rtr1#

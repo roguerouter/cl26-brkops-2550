@@ -1,0 +1,159 @@
+---
+# -----------------------------------------------
+# VPC Domain
+# -----------------------------------------------
+- name: Configure VPC domain
+  cisco.nxos.nxos_vpc:
+    domain: "{{ vpc.domain }}"
+    role_priority: "{{ vpc.role_priority }}"
+    peer_sw: "{{ vpc.peer_switch | default(false) }}"
+    peer_gw: "{{ vpc.peer_gateway | default(false) }}"
+    auto_recovery: "{{ vpc.auto_recovery | default(false) }}"
+    state: present
+  notify: save config
+  tags: vpc
+
+# -----------------------------------------------
+# VPC Keepalive
+# -----------------------------------------------
+- name: Configure VPC keepalive
+  cisco.nxos.nxos_vpc:
+    domain: "{{ vpc.domain }}"
+    pkl_dest: "{{ vpc.keepalive.destination }}"
+    pkl_src: "{{ vpc.keepalive.source }}"
+    state: present
+  notify: save config
+  tags: vpc
+
+# -----------------------------------------------
+# Peer-Link Port-Channel
+# Must exist before members are assigned
+# -----------------------------------------------
+- name: Create peer-link port-channel interface
+  cisco.nxos.nxos_interfaces:
+    config:
+      - name: "port-channel{{ vpc.peer_link.port_channel }}"
+        enabled: true
+    state: merged
+  notify: save config
+  register: vpc_result
+  changed_when: >-
+    (vpc_result.commands | default([])
+     | reject('match', '^interface ')
+     | reject('equalto', 'no shutdown')
+     | list | length > 0)
+    or
+    (vpc_result.before | default([])
+     | selectattr('name', 'equalto', 'port-channel' ~ vpc.peer_link.port_channel)
+     | selectattr('enabled', 'defined')
+     | selectattr('enabled', 'equalto', false)
+     | list | length > 0)
+  tags: vpc
+
+- name: Configure peer-link member interfaces
+  cisco.nxos.nxos_lag_interfaces:
+    config:
+      - name: "port-channel{{ vpc.peer_link.port_channel }}"
+        members:
+          - member: "{{ item }}"
+            mode: active
+    state: merged
+  loop: "{{ vpc.peer_link.members }}"
+  notify: save config
+  tags: vpc
+
+- name: Set peer-link as VPC peer-link
+  cisco.nxos.nxos_vpc_interface:
+    portchannel: "{{ vpc.peer_link.port_channel }}"
+    peer_link: true
+    state: present
+  notify: save config
+  tags: vpc
+
+- name: Configure peer-link as port-channel L2 trunk
+  cisco.nxos.nxos_l2_interfaces:
+    config:
+      - name: "port-channel{{ vpc.peer_link.port_channel }}"
+        mode: trunk
+    state: merged
+  when:
+    - vpc is defined
+  notify: save config
+  tags: vpc
+
+# -----------------------------------------------
+# VPC Port-Channels
+# Only runs when vpc_port_channels is defined
+# -----------------------------------------------
+
+- name: Set VPC port-channel member interfaces to switchport
+  cisco.nxos.nxos_interfaces:
+    config:
+      - name: "{{ item.1 }}"
+        mode: layer2
+    state: merged
+  loop: "{{ vpc_port_channels | default([]) | subelements('members') }}"
+  when: vpc_port_channels is defined
+  notify: save config
+  tags: vpc
+
+- name: Configure VPC port-channel member interfaces
+  cisco.nxos.nxos_config:
+    lines:
+      - channel-group {{ item.0.id }} mode active
+    parents:
+      - interface {{ item.1 }}
+  loop: "{{ vpc_port_channels | default([]) | subelements('members') }}"
+  when: vpc_port_channels is defined
+  notify: save config
+  tags: vpc
+
+- name: Create VPC port-channel interfaces
+  cisco.nxos.nxos_interfaces:
+    config:
+      - name: "port-channel{{ item.id }}"
+        description: "{{ item.description | default(omit) }}"
+        mode: layer2
+        enabled: true
+    state: merged
+  loop: "{{ vpc_port_channels | default([]) }}"
+  when: vpc_port_channels is defined
+  notify: save config
+  register: vpc_result
+  changed_when: >-
+    (vpc_result.commands | default([])
+     | reject('match', '^interface ')
+     | reject('equalto', 'no shutdown')
+     | list | length > 0)
+    or
+    (vpc_result.before | default([])
+     | selectattr('name', 'equalto', 'port-channel' ~ item.id)
+     | selectattr('enabled', 'defined')
+     | selectattr('enabled', 'equalto', false)
+     | list | length > 0)
+  tags: vpc
+
+- name: Configure VPC port-channel L2 trunk
+  cisco.nxos.nxos_l2_interfaces:
+    config:
+      - name: "port-channel{{ item.id }}"
+        mode: trunk
+        trunk:
+          allowed_vlans: "{{ item.allowed_vlans | join(',') }}"
+    state: merged
+  loop: "{{ vpc_port_channels | default([]) }}"
+  when:
+    - vpc_port_channels is defined
+    - item.mode == 'trunk'
+  notify: save config
+  tags: vpc
+
+- name: Bind VPC IDs to port-channels
+  cisco.nxos.nxos_vpc_interface:
+    portchannel: "{{ item.id }}"
+    vpc: "{{ item.vpc_id }}"
+    state: present
+  loop: "{{ vpc_port_channels | default([]) }}"
+  when: vpc_port_channels is defined
+  notify: save config
+  tags: vpc

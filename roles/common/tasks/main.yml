@@ -1,0 +1,4 @@
+---
+- name: Include platform tasks
+  ansible.builtin.include_tasks: "{{ platform_type }}.yml"
+  tags: [common]

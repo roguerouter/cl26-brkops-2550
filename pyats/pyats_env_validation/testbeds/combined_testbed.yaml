@@ -1,0 +1,94 @@
+---
+# testbeds/combined_testbed.yaml
+#
+# Combined HW + CML testbed.
+#
+# PAIRING CONVENTION:
+#   Device NAME  = real hostname (never change this — PyATS matches it on connect)
+#   Device ALIAS = hw_<basename> or cml_<basename> (used for pairing only)
+#
+# Devices are paired by matching the part after the prefix in the alias:
+#
+#   router1        alias: hw_router1    pairs with
+#   router1-cml    alias: cml_router1
+#
+#   core-sw1       alias: hw_core-sw1   pairs with
+#   core-sw1-cml   alias: cml_core-sw1
+#
+# The alias is a standard PyATS field — no schema errors.
+# --------------------------------------------------------------------
+
+testbed:
+  name: CML_vs_HW_Validation
+
+devices:
+
+  # ------------------------------------------------------------------
+  # Production (HW) devices
+  # name  = real device hostname
+  # alias = hw_<basename>  (basename is used to find the CML pair)
+  # ------------------------------------------------------------------
+
+  router1: # real hostname — do not change
+    alias: hw_router1 # basename = router1
+    os: iosxe # iosxe | iosxr | nxos
+    platform: asr1001x
+    type: router
+    connections:
+      cli:
+        protocol: ssh
+        ip: 192.0.2.1
+        port: 22
+    credentials:
+      default:
+        username: admin
+        password: "%ENC{your_encrypted_password}"
+
+  # core-sw1:
+  #   alias: hw_core-sw1
+  #   os: nxos
+  #   platform: n9kv
+  #   type: switch
+  #   connections:
+  #     cli:
+  #       protocol: ssh
+  #       ip: 192.0.2.2
+  #   credentials:
+  #     default:
+  #       username: admin
+  #       password: "%ENC{your_encrypted_password}"
+
+  # ------------------------------------------------------------------
+  # CML devices
+  # name  = whatever CML assigns (can be anything)
+  # alias = cml_<basename>  (basename must match the HW alias above)
+  # ------------------------------------------------------------------
+
+  router1-cml: # CML node name — can be anything
+    alias: cml_router1 # basename = router1 — matches hw_router1
+    os: iosxe
+    platform: csr1000v
+    type: router
+    connections:
+      cli:
+        protocol: ssh
+        ip: 172.16.0.1
+        port: 22
+    credentials:
+      default:
+        username: admin
+        password: "%ENC{your_encrypted_password}"
+
+  # core-sw1-cml:
+  #   alias: cml_core-sw1               # basename matches hw_core-sw1
+  #   os: nxos
+  #   platform: n9kv
+  #   type: switch
+  #   connections:
+  #     cli:
+  #       protocol: ssh
+  #       ip: 172.16.0.2
+  #   credentials:
+  #     default:
+  #       username: admin
+  #       password: "%ENC{your_encrypted_password}"

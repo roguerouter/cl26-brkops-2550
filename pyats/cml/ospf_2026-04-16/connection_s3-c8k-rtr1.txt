@@ -1,0 +1,1080 @@
+
+2026-04-16 21:42:45,416: %UNICON-INFO: +++ s3-c8k-rtr1 logfile ospf_2026-04-16/connection_s3-c8k-rtr1.txt +++
+
+2026-04-16 21:42:45,416: %UNICON-INFO: +++ Unicon plugin iosxe (unicon.plugins.iosxe) +++
+(netadmin@10.83.32.113) Password: 
+
+2026-04-16 21:42:45,847: %UNICON-INFO: +++ connection to spawn: ssh -l netadmin 10.83.32.113, id: 127598018560512 +++
+
+2026-04-16 21:42:45,848: %UNICON-INFO: connection to s3-c8k-rtr1
+
+
+
+
+s3-c8k-rtr1#
+
+2026-04-16 21:42:45,956: %UNICON-INFO: Storing credentials from default as current_credentials
+
+s3-c8k-rtr1#
+
+2026-04-16 21:42:46,104: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'show version | include operating mode' +++
+show version | include operating mode
+Router operating mode: Autonomous
+s3-c8k-rtr1#
+
+2026-04-16 21:42:46,311: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 21:42:46,435: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'term length 0' +++
+term length 0
+s3-c8k-rtr1#
+
+2026-04-16 21:42:46,709: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'term width 0' +++
+term width 0
+s3-c8k-rtr1#
+
+2026-04-16 21:42:46,968: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'show version' +++
+show version
+Cisco IOS XE Software, Version 17.16.01a
+Cisco IOS Software [IOSXE], Virtual XE Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 17.16.1a, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2024 by Cisco Systems, Inc.
+Compiled Thu 19-Dec-24 18:08 by mcpre
+
+
+Cisco IOS-XE software, Copyright (c) 2005-2024 by cisco Systems, Inc.
+All rights reserved.  Certain components of Cisco IOS-XE software are
+licensed under the GNU General Public License ("GPL") Version 2.0.  The
+software code licensed under GPL Version 2.0 is free software that comes
+with ABSOLUTELY NO WARRANTY.  You can redistribute and/or modify such
+GPL code under the terms of GPL Version 2.0.  For more details, see the
+documentation or "License Notice" file accompanying the IOS-XE software,
+or the applicable URL provided on the flyer accompanying the IOS-XE
+software.
+
+
+ROM: IOS-XE ROMMON
+
+s3-c8k-rtr1 uptime is 1 day, 2 hours, 20 minutes
+Uptime for this control processor is 1 day, 2 hours, 23 minutes
+System returned to ROM by reload
+System image file is "bootflash:packages.conf"
+Last reload reason: factory-reset
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+License Level: network-advantage
+License Type: Perpetual
+Next reload license Level: network-advantage
+
+Addon License Level: dna-advantage
+Addon License Type: Subscription
+Next reload addon license Level: dna-advantage
+
+The current throughput level is 250M (250000 kbps) 
+
+
+Smart Licensing Status: Smart Licensing Using Policy
+
+cisco C8000V (VXE) processor (revision VXE) with 1655426K/3075K bytes of memory.
+Processor board ID 9U1NXEEFXOU
+Router operating mode: Autonomous
+8 Gigabit Ethernet interfaces
+32768K bytes of non-volatile configuration memory.
+3960372K bytes of physical memory.
+5234688K bytes of virtual hard disk at bootflash:.
+
+Configuration register is 0x2102
+
+s3-c8k-rtr1#
+
+2026-04-16 21:42:47,240: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'show install summary' +++
+show install summary
+[ R0 ] Installed Package(s) Information:
+State (St): I - Inactive, U - Activated & Uncommitted,
+            C - Activated & Committed, D - Deactivated & Uncommitted
+--------------------------------------------------------------------------------
+Type  St   Filename/Version
+--------------------------------------------------------------------------------
+IMG   C    17.16.01a.0.1625
+
+--------------------------------------------------------------------------------
+Auto abort timer: inactive
+--------------------------------------------------------------------------------
+
+
+s3-c8k-rtr1#
+
+2026-04-16 21:49:24,328: %UNICON-INFO: +++ s3-c8k-rtr1 logfile ospf_2026-04-16/connection_s3-c8k-rtr1.txt +++
+
+2026-04-16 21:49:24,328: %UNICON-INFO: +++ Unicon plugin iosxe (unicon.plugins.iosxe) +++
+(netadmin@10.83.32.113) Password: 
+
+2026-04-16 21:49:24,678: %UNICON-INFO: +++ connection to spawn: ssh -l netadmin 10.83.32.113, id: 140310777823696 +++
+
+2026-04-16 21:49:24,678: %UNICON-INFO: connection to s3-c8k-rtr1
+
+
+
+
+s3-c8k-rtr1#
+
+2026-04-16 21:49:24,767: %UNICON-INFO: Storing credentials from default as current_credentials
+
+s3-c8k-rtr1#
+
+2026-04-16 21:49:24,895: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'show version | include operating mode' +++
+show version | include operating mode
+Router operating mode: Autonomous
+s3-c8k-rtr1#
+
+2026-04-16 21:49:25,099: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 21:49:25,224: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'term length 0' +++
+term length 0
+s3-c8k-rtr1#
+
+2026-04-16 21:49:25,487: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'term width 0' +++
+term width 0
+s3-c8k-rtr1#
+
+2026-04-16 21:49:25,754: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'show version' +++
+show version
+Cisco IOS XE Software, Version 17.16.01a
+Cisco IOS Software [IOSXE], Virtual XE Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 17.16.1a, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2024 by Cisco Systems, Inc.
+Compiled Thu 19-Dec-24 18:08 by mcpre
+
+
+Cisco IOS-XE software, Copyright (c) 2005-2024 by cisco Systems, Inc.
+All rights reserved.  Certain components of Cisco IOS-XE software are
+licensed under the GNU General Public License ("GPL") Version 2.0.  The
+software code licensed under GPL Version 2.0 is free software that comes
+with ABSOLUTELY NO WARRANTY.  You can redistribute and/or modify such
+GPL code under the terms of GPL Version 2.0.  For more details, see the
+documentation or "License Notice" file accompanying the IOS-XE software,
+or the applicable URL provided on the flyer accompanying the IOS-XE
+software.
+
+
+ROM: IOS-XE ROMMON
+
+s3-c8k-rtr1 uptime is 1 day, 2 hours, 27 minutes
+Uptime for this control processor is 1 day, 2 hours, 29 minutes
+System returned to ROM by reload
+System image file is "bootflash:packages.conf"
+Last reload reason: factory-reset
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+License Level: network-advantage
+License Type: Perpetual
+Next reload license Level: network-advantage
+
+Addon License Level: dna-advantage
+Addon License Type: Subscription
+Next reload addon license Level: dna-advantage
+
+The current throughput level is 250M (250000 kbps) 
+
+
+Smart Licensing Status: Smart Licensing Using Policy
+
+cisco C8000V (VXE) processor (revision VXE) with 1655426K/3075K bytes of memory.
+Processor board ID 9U1NXEEFXOU
+Router operating mode: Autonomous
+8 Gigabit Ethernet interfaces
+32768K bytes of non-volatile configuration memory.
+3960372K bytes of physical memory.
+5234688K bytes of virtual hard disk at bootflash:.
+
+Configuration register is 0x2102
+
+s3-c8k-rtr1#
+
+2026-04-16 21:49:26,029: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'show install summary' +++
+show install summary
+[ R0 ] Installed Package(s) Information:
+State (St): I - Inactive, U - Activated & Uncommitted,
+            C - Activated & Committed, D - Deactivated & Uncommitted
+--------------------------------------------------------------------------------
+Type  St   Filename/Version
+--------------------------------------------------------------------------------
+IMG   C    17.16.01a.0.1625
+
+--------------------------------------------------------------------------------
+Auto abort timer: inactive
+--------------------------------------------------------------------------------
+
+
+s3-c8k-rtr1#
+
+2026-04-16 22:17:19,326: %UNICON-INFO: +++ s3-c8k-rtr1 logfile ospf_2026-04-16/connection_s3-c8k-rtr1.txt +++
+
+2026-04-16 22:17:19,326: %UNICON-INFO: +++ Unicon plugin iosxe (unicon.plugins.iosxe) +++
+(netadmin@10.83.32.113) Password: 
+
+2026-04-16 22:17:19,662: %UNICON-INFO: +++ connection to spawn: ssh -l netadmin 10.83.32.113, id: 128784135021648 +++
+
+2026-04-16 22:17:19,663: %UNICON-INFO: connection to s3-c8k-rtr1
+
+
+
+
+s3-c8k-rtr1#
+
+2026-04-16 22:17:19,757: %UNICON-INFO: Storing credentials from default as current_credentials
+
+s3-c8k-rtr1#
+
+2026-04-16 22:17:19,893: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'show version | include operating mode' +++
+show version | include operating mode
+Router operating mode: Autonomous
+s3-c8k-rtr1#
+
+2026-04-16 22:17:20,080: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 22:17:20,204: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'term length 0' +++
+term length 0
+s3-c8k-rtr1#
+
+2026-04-16 22:17:20,471: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'term width 0' +++
+term width 0
+s3-c8k-rtr1#
+
+2026-04-16 22:17:20,732: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'show version' +++
+show version
+Cisco IOS XE Software, Version 17.16.01a
+Cisco IOS Software [IOSXE], Virtual XE Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 17.16.1a, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2024 by Cisco Systems, Inc.
+Compiled Thu 19-Dec-24 18:08 by mcpre
+
+
+Cisco IOS-XE software, Copyright (c) 2005-2024 by cisco Systems, Inc.
+All rights reserved.  Certain components of Cisco IOS-XE software are
+licensed under the GNU General Public License ("GPL") Version 2.0.  The
+software code licensed under GPL Version 2.0 is free software that comes
+with ABSOLUTELY NO WARRANTY.  You can redistribute and/or modify such
+GPL code under the terms of GPL Version 2.0.  For more details, see the
+documentation or "License Notice" file accompanying the IOS-XE software,
+or the applicable URL provided on the flyer accompanying the IOS-XE
+software.
+
+
+ROM: IOS-XE ROMMON
+
+s3-c8k-rtr1 uptime is 1 day, 2 hours, 55 minutes
+Uptime for this control processor is 1 day, 2 hours, 57 minutes
+System returned to ROM by reload
+System image file is "bootflash:packages.conf"
+Last reload reason: factory-reset
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+License Level: network-advantage
+License Type: Perpetual
+Next reload license Level: network-advantage
+
+Addon License Level: dna-advantage
+Addon License Type: Subscription
+Next reload addon license Level: dna-advantage
+
+The current throughput level is 250M (250000 kbps) 
+
+
+Smart Licensing Status: Smart Licensing Using Policy
+
+cisco C8000V (VXE) processor (revision VXE) with 1655426K/3075K bytes of memory.
+Processor board ID 9U1NXEEFXOU
+Router operating mode: Autonomous
+8 Gigabit Ethernet interfaces
+32768K bytes of non-volatile configuration memory.
+3960372K bytes of physical memory.
+5234688K bytes of virtual hard disk at bootflash:.
+
+Configuration register is 0x2102
+
+s3-c8k-rtr1#
+
+2026-04-16 22:17:20,997: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'show install summary' +++
+show install summary
+[ R0 ] Installed Package(s) Information:
+State (St): I - Inactive, U - Activated & Uncommitted,
+            C - Activated & Committed, D - Deactivated & Uncommitted
+--------------------------------------------------------------------------------
+Type  St   Filename/Version
+--------------------------------------------------------------------------------
+IMG   C    17.16.01a.0.1625
+
+--------------------------------------------------------------------------------
+Auto abort timer: inactive
+--------------------------------------------------------------------------------
+
+
+s3-c8k-rtr1#
+
+2026-04-16 22:27:39,075: %UNICON-INFO: +++ s3-c8k-rtr1 logfile ospf_2026-04-16/connection_s3-c8k-rtr1.txt +++
+
+2026-04-16 22:27:39,076: %UNICON-INFO: +++ Unicon plugin iosxe (unicon.plugins.iosxe) +++
+(netadmin@10.83.32.113) Password: 
+
+2026-04-16 22:27:39,487: %UNICON-INFO: +++ connection to spawn: ssh -l netadmin 10.83.32.113, id: 129680415871568 +++
+
+2026-04-16 22:27:39,488: %UNICON-INFO: connection to s3-c8k-rtr1
+
+
+
+
+s3-c8k-rtr1#
+
+2026-04-16 22:27:39,596: %UNICON-INFO: Storing credentials from default as current_credentials
+
+s3-c8k-rtr1#
+
+2026-04-16 22:27:39,727: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'show version | include operating mode' +++
+show version | include operating mode
+Router operating mode: Autonomous
+s3-c8k-rtr1#
+
+2026-04-16 22:27:39,922: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 22:27:40,046: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'term length 0' +++
+term length 0
+s3-c8k-rtr1#
+
+2026-04-16 22:27:40,318: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'term width 0' +++
+term width 0
+s3-c8k-rtr1#
+
+2026-04-16 22:27:40,579: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'show version' +++
+show version
+Cisco IOS XE Software, Version 17.16.01a
+Cisco IOS Software [IOSXE], Virtual XE Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 17.16.1a, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2024 by Cisco Systems, Inc.
+Compiled Thu 19-Dec-24 18:08 by mcpre
+
+
+Cisco IOS-XE software, Copyright (c) 2005-2024 by cisco Systems, Inc.
+All rights reserved.  Certain components of Cisco IOS-XE software are
+licensed under the GNU General Public License ("GPL") Version 2.0.  The
+software code licensed under GPL Version 2.0 is free software that comes
+with ABSOLUTELY NO WARRANTY.  You can redistribute and/or modify such
+GPL code under the terms of GPL Version 2.0.  For more details, see the
+documentation or "License Notice" file accompanying the IOS-XE software,
+or the applicable URL provided on the flyer accompanying the IOS-XE
+software.
+
+
+ROM: IOS-XE ROMMON
+
+s3-c8k-rtr1 uptime is 1 day, 3 hours, 5 minutes
+Uptime for this control processor is 1 day, 3 hours, 7 minutes
+System returned to ROM by reload
+System image file is "bootflash:packages.conf"
+Last reload reason: factory-reset
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+License Level: network-advantage
+License Type: Perpetual
+Next reload license Level: network-advantage
+
+Addon License Level: dna-advantage
+Addon License Type: Subscription
+Next reload addon license Level: dna-advantage
+
+The current throughput level is 250M (250000 kbps) 
+
+
+Smart Licensing Status: Smart Licensing Using Policy
+
+cisco C8000V (VXE) processor (revision VXE) with 1655426K/3075K bytes of memory.
+Processor board ID 9U1NXEEFXOU
+Router operating mode: Autonomous
+8 Gigabit Ethernet interfaces
+32768K bytes of non-volatile configuration memory.
+3960372K bytes of physical memory.
+5234688K bytes of virtual hard disk at bootflash:.
+
+Configuration register is 0x2102
+
+s3-c8k-rtr1#
+
+2026-04-16 22:27:40,849: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'show install summary' +++
+show install summary
+[ R0 ] Installed Package(s) Information:
+State (St): I - Inactive, U - Activated & Uncommitted,
+            C - Activated & Committed, D - Deactivated & Uncommitted
+--------------------------------------------------------------------------------
+Type  St   Filename/Version
+--------------------------------------------------------------------------------
+IMG   C    17.16.01a.0.1625
+
+--------------------------------------------------------------------------------
+Auto abort timer: inactive
+--------------------------------------------------------------------------------
+
+
+s3-c8k-rtr1#
+
+2026-04-16 22:32:59,544: %UNICON-INFO: +++ s3-c8k-rtr1 logfile ospf_2026-04-16/connection_s3-c8k-rtr1.txt +++
+
+2026-04-16 22:32:59,544: %UNICON-INFO: +++ Unicon plugin iosxe (unicon.plugins.iosxe) +++
+(netadmin@10.83.32.113) Password: 
+
+2026-04-16 22:32:59,879: %UNICON-INFO: +++ connection to spawn: ssh -l netadmin 10.83.32.113, id: 124835645845344 +++
+
+2026-04-16 22:32:59,880: %UNICON-INFO: connection to s3-c8k-rtr1
+
+
+
+
+s3-c8k-rtr1#
+
+2026-04-16 22:32:59,967: %UNICON-INFO: Storing credentials from default as current_credentials
+
+s3-c8k-rtr1#
+
+2026-04-16 22:33:00,096: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'show version | include operating mode' +++
+show version | include operating mode
+Router operating mode: Autonomous
+s3-c8k-rtr1#
+
+2026-04-16 22:33:00,288: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 22:33:00,412: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'term length 0' +++
+term length 0
+s3-c8k-rtr1#
+
+2026-04-16 22:33:00,673: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'term width 0' +++
+term width 0
+s3-c8k-rtr1#
+
+2026-04-16 22:33:00,935: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'show version' +++
+show version
+Cisco IOS XE Software, Version 17.16.01a
+Cisco IOS Software [IOSXE], Virtual XE Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 17.16.1a, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2024 by Cisco Systems, Inc.
+Compiled Thu 19-Dec-24 18:08 by mcpre
+
+
+Cisco IOS-XE software, Copyright (c) 2005-2024 by cisco Systems, Inc.
+All rights reserved.  Certain components of Cisco IOS-XE software are
+licensed under the GNU General Public License ("GPL") Version 2.0.  The
+software code licensed under GPL Version 2.0 is free software that comes
+with ABSOLUTELY NO WARRANTY.  You can redistribute and/or modify such
+GPL code under the terms of GPL Version 2.0.  For more details, see the
+documentation or "License Notice" file accompanying the IOS-XE software,
+or the applicable URL provided on the flyer accompanying the IOS-XE
+software.
+
+
+ROM: IOS-XE ROMMON
+
+s3-c8k-rtr1 uptime is 1 day, 3 hours, 11 minutes
+Uptime for this control processor is 1 day, 3 hours, 13 minutes
+System returned to ROM by reload
+System image file is "bootflash:packages.conf"
+Last reload reason: factory-reset
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+License Level: network-advantage
+License Type: Perpetual
+Next reload license Level: network-advantage
+
+Addon License Level: dna-advantage
+Addon License Type: Subscription
+Next reload addon license Level: dna-advantage
+
+The current throughput level is 250M (250000 kbps) 
+
+
+Smart Licensing Status: Smart Licensing Using Policy
+
+cisco C8000V (VXE) processor (revision VXE) with 1655426K/3075K bytes of memory.
+Processor board ID 9U1NXEEFXOU
+Router operating mode: Autonomous
+8 Gigabit Ethernet interfaces
+32768K bytes of non-volatile configuration memory.
+3960372K bytes of physical memory.
+5234688K bytes of virtual hard disk at bootflash:.
+
+Configuration register is 0x2102
+
+s3-c8k-rtr1#
+
+2026-04-16 22:33:01,204: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'show install summary' +++
+show install summary
+[ R0 ] Installed Package(s) Information:
+State (St): I - Inactive, U - Activated & Uncommitted,
+            C - Activated & Committed, D - Deactivated & Uncommitted
+--------------------------------------------------------------------------------
+Type  St   Filename/Version
+--------------------------------------------------------------------------------
+IMG   C    17.16.01a.0.1625
+
+--------------------------------------------------------------------------------
+Auto abort timer: inactive
+--------------------------------------------------------------------------------
+
+
+s3-c8k-rtr1#
+
+2026-04-16 23:02:25,230: %UNICON-INFO: +++ s3-c8k-rtr1 logfile ospf_2026-04-16/connection_s3-c8k-rtr1.txt +++
+
+2026-04-16 23:02:25,230: %UNICON-INFO: +++ Unicon plugin iosxe (unicon.plugins.iosxe) +++
+(netadmin@10.83.32.113) Password: 
+
+2026-04-16 23:02:25,585: %UNICON-INFO: +++ connection to spawn: ssh -l netadmin 10.83.32.113, id: 134472395616480 +++
+
+2026-04-16 23:02:25,585: %UNICON-INFO: connection to s3-c8k-rtr1
+
+
+
+
+s3-c8k-rtr1#
+
+2026-04-16 23:02:25,674: %UNICON-INFO: Storing credentials from default as current_credentials
+
+s3-c8k-rtr1#
+
+2026-04-16 23:02:25,802: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'show version | include operating mode' +++
+show version | include operating mode
+Router operating mode: Autonomous
+s3-c8k-rtr1#
+
+2026-04-16 23:02:25,991: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 23:02:26,116: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'term length 0' +++
+term length 0
+s3-c8k-rtr1#
+
+2026-04-16 23:02:26,380: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'term width 0' +++
+term width 0
+s3-c8k-rtr1#
+
+2026-04-16 23:02:26,653: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'show version' +++
+show version
+Cisco IOS XE Software, Version 17.16.01a
+Cisco IOS Software [IOSXE], Virtual XE Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 17.16.1a, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2024 by Cisco Systems, Inc.
+Compiled Thu 19-Dec-24 18:08 by mcpre
+
+
+Cisco IOS-XE software, Copyright (c) 2005-2024 by cisco Systems, Inc.
+All rights reserved.  Certain components of Cisco IOS-XE software are
+licensed under the GNU General Public License ("GPL") Version 2.0.  The
+software code licensed under GPL Version 2.0 is free software that comes
+with ABSOLUTELY NO WARRANTY.  You can redistribute and/or modify such
+GPL code under the terms of GPL Version 2.0.  For more details, see the
+documentation or "License Notice" file accompanying the IOS-XE software,
+or the applicable URL provided on the flyer accompanying the IOS-XE
+software.
+
+
+ROM: IOS-XE ROMMON
+
+s3-c8k-rtr1 uptime is 1 day, 3 hours, 40 minutes
+Uptime for this control processor is 1 day, 3 hours, 42 minutes
+System returned to ROM by reload
+System image file is "bootflash:packages.conf"
+Last reload reason: factory-reset
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+License Level: network-advantage
+License Type: Perpetual
+Next reload license Level: network-advantage
+
+Addon License Level: dna-advantage
+Addon License Type: Subscription
+Next reload addon license Level: dna-advantage
+
+The current throughput level is 250M (250000 kbps) 
+
+
+Smart Licensing Status: Smart Licensing Using Policy
+
+cisco C8000V (VXE) processor (revision VXE) with 1655426K/3075K bytes of memory.
+Processor board ID 9U1NXEEFXOU
+Router operating mode: Autonomous
+8 Gigabit Ethernet interfaces
+32768K bytes of non-volatile configuration memory.
+3960372K bytes of physical memory.
+5234688K bytes of virtual hard disk at bootflash:.
+
+Configuration register is 0x2102
+
+s3-c8k-rtr1#
+
+2026-04-16 23:02:26,918: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'show install summary' +++
+show install summary
+[ R0 ] Installed Package(s) Information:
+State (St): I - Inactive, U - Activated & Uncommitted,
+            C - Activated & Committed, D - Deactivated & Uncommitted
+--------------------------------------------------------------------------------
+Type  St   Filename/Version
+--------------------------------------------------------------------------------
+IMG   C    17.16.01a.0.1625
+
+--------------------------------------------------------------------------------
+Auto abort timer: inactive
+--------------------------------------------------------------------------------
+
+
+s3-c8k-rtr1#
+
+2026-04-16 23:08:09,340: %UNICON-INFO: +++ s3-c8k-rtr1 logfile ospf_2026-04-16/connection_s3-c8k-rtr1.txt +++
+
+2026-04-16 23:08:09,341: %UNICON-INFO: +++ Unicon plugin iosxe (unicon.plugins.iosxe) +++
+(netadmin@10.83.32.113) Password: 
+
+2026-04-16 23:08:09,692: %UNICON-INFO: +++ connection to spawn: ssh -l netadmin 10.83.32.113, id: 133832990470512 +++
+
+2026-04-16 23:08:09,692: %UNICON-INFO: connection to s3-c8k-rtr1
+
+
+
+
+s3-c8k-rtr1#
+
+2026-04-16 23:08:09,801: %UNICON-INFO: Storing credentials from default as current_credentials
+
+s3-c8k-rtr1#
+
+2026-04-16 23:08:09,931: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'show version | include operating mode' +++
+show version | include operating mode
+Router operating mode: Autonomous
+s3-c8k-rtr1#
+
+2026-04-16 23:08:10,112: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 23:08:10,237: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'term length 0' +++
+term length 0
+s3-c8k-rtr1#
+
+2026-04-16 23:08:10,515: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'term width 0' +++
+term width 0
+s3-c8k-rtr1#
+
+2026-04-16 23:08:10,778: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'show version' +++
+show version
+Cisco IOS XE Software, Version 17.16.01a
+Cisco IOS Software [IOSXE], Virtual XE Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 17.16.1a, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2024 by Cisco Systems, Inc.
+Compiled Thu 19-Dec-24 18:08 by mcpre
+
+
+Cisco IOS-XE software, Copyright (c) 2005-2024 by cisco Systems, Inc.
+All rights reserved.  Certain components of Cisco IOS-XE software are
+licensed under the GNU General Public License ("GPL") Version 2.0.  The
+software code licensed under GPL Version 2.0 is free software that comes
+with ABSOLUTELY NO WARRANTY.  You can redistribute and/or modify such
+GPL code under the terms of GPL Version 2.0.  For more details, see the
+documentation or "License Notice" file accompanying the IOS-XE software,
+or the applicable URL provided on the flyer accompanying the IOS-XE
+software.
+
+
+ROM: IOS-XE ROMMON
+
+s3-c8k-rtr1 uptime is 1 day, 3 hours, 46 minutes
+Uptime for this control processor is 1 day, 3 hours, 48 minutes
+System returned to ROM by reload
+System image file is "bootflash:packages.conf"
+Last reload reason: factory-reset
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+License Level: network-advantage
+License Type: Perpetual
+Next reload license Level: network-advantage
+
+Addon License Level: dna-advantage
+Addon License Type: Subscription
+Next reload addon license Level: dna-advantage
+
+The current throughput level is 250M (250000 kbps) 
+
+
+Smart Licensing Status: Smart Licensing Using Policy
+
+cisco C8000V (VXE) processor (revision VXE) with 1655426K/3075K bytes of memory.
+Processor board ID 9U1NXEEFXOU
+Router operating mode: Autonomous
+8 Gigabit Ethernet interfaces
+32768K bytes of non-volatile configuration memory.
+3960372K bytes of physical memory.
+5234688K bytes of virtual hard disk at bootflash:.
+
+Configuration register is 0x2102
+
+s3-c8k-rtr1#
+
+2026-04-16 23:08:11,055: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'show install summary' +++
+show install summary
+[ R0 ] Installed Package(s) Information:
+State (St): I - Inactive, U - Activated & Uncommitted,
+            C - Activated & Committed, D - Deactivated & Uncommitted
+--------------------------------------------------------------------------------
+Type  St   Filename/Version
+--------------------------------------------------------------------------------
+IMG   C    17.16.01a.0.1625
+
+--------------------------------------------------------------------------------
+Auto abort timer: inactive
+--------------------------------------------------------------------------------
+
+
+s3-c8k-rtr1#
+
+2026-04-16 23:14:50,631: %UNICON-INFO: +++ s3-c8k-rtr1 logfile ospf_2026-04-16/connection_s3-c8k-rtr1.txt +++
+
+2026-04-16 23:14:50,631: %UNICON-INFO: +++ Unicon plugin iosxe (unicon.plugins.iosxe) +++
+(netadmin@10.83.32.113) Password: 
+
+2026-04-16 23:14:50,982: %UNICON-INFO: +++ connection to spawn: ssh -l netadmin 10.83.32.113, id: 123212404546864 +++
+
+2026-04-16 23:14:50,982: %UNICON-INFO: connection to s3-c8k-rtr1
+
+
+
+
+s3-c8k-rtr1#
+
+2026-04-16 23:14:51,076: %UNICON-INFO: Storing credentials from default as current_credentials
+
+s3-c8k-rtr1#
+
+2026-04-16 23:14:51,207: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'show version | include operating mode' +++
+show version | include operating mode
+Router operating mode: Autonomous
+s3-c8k-rtr1#
+
+2026-04-16 23:14:51,407: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 23:14:51,531: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'term length 0' +++
+term length 0
+s3-c8k-rtr1#
+
+2026-04-16 23:14:51,797: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'term width 0' +++
+term width 0
+s3-c8k-rtr1#
+
+2026-04-16 23:14:52,072: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'show version' +++
+show version
+Cisco IOS XE Software, Version 17.16.01a
+Cisco IOS Software [IOSXE], Virtual XE Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 17.16.1a, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2024 by Cisco Systems, Inc.
+Compiled Thu 19-Dec-24 18:08 by mcpre
+
+
+Cisco IOS-XE software, Copyright (c) 2005-2024 by cisco Systems, Inc.
+All rights reserved.  Certain components of Cisco IOS-XE software are
+licensed under the GNU General Public License ("GPL") Version 2.0.  The
+software code licensed under GPL Version 2.0 is free software that comes
+with ABSOLUTELY NO WARRANTY.  You can redistribute and/or modify such
+GPL code under the terms of GPL Version 2.0.  For more details, see the
+documentation or "License Notice" file accompanying the IOS-XE software,
+or the applicable URL provided on the flyer accompanying the IOS-XE
+software.
+
+
+ROM: IOS-XE ROMMON
+
+s3-c8k-rtr1 uptime is 1 day, 3 hours, 53 minutes
+Uptime for this control processor is 1 day, 3 hours, 55 minutes
+System returned to ROM by reload
+System image file is "bootflash:packages.conf"
+Last reload reason: factory-reset
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+License Level: network-advantage
+License Type: Perpetual
+Next reload license Level: network-advantage
+
+Addon License Level: dna-advantage
+Addon License Type: Subscription
+Next reload addon license Level: dna-advantage
+
+The current throughput level is 250M (250000 kbps) 
+
+
+Smart Licensing Status: Smart Licensing Using Policy
+
+cisco C8000V (VXE) processor (revision VXE) with 1655426K/3075K bytes of memory.
+Processor board ID 9U1NXEEFXOU
+Router operating mode: Autonomous
+8 Gigabit Ethernet interfaces
+32768K bytes of non-volatile configuration memory.
+3960372K bytes of physical memory.
+5234688K bytes of virtual hard disk at bootflash:.
+
+Configuration register is 0x2102
+
+s3-c8k-rtr1#
+
+2026-04-16 23:14:52,348: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'show install summary' +++
+show install summary
+[ R0 ] Installed Package(s) Information:
+State (St): I - Inactive, U - Activated & Uncommitted,
+            C - Activated & Committed, D - Deactivated & Uncommitted
+--------------------------------------------------------------------------------
+Type  St   Filename/Version
+--------------------------------------------------------------------------------
+IMG   C    17.16.01a.0.1625
+
+--------------------------------------------------------------------------------
+Auto abort timer: inactive
+--------------------------------------------------------------------------------
+
+
+s3-c8k-rtr1#
+
+2026-04-16 23:19:17,848: %UNICON-INFO: +++ s3-c8k-rtr1 logfile ospf_2026-04-16/connection_s3-c8k-rtr1.txt +++
+
+2026-04-16 23:19:17,848: %UNICON-INFO: +++ Unicon plugin iosxe (unicon.plugins.iosxe) +++
+(netadmin@10.83.32.113) Password: 
+
+2026-04-16 23:19:18,221: %UNICON-INFO: +++ connection to spawn: ssh -l netadmin 10.83.32.113, id: 138120556226912 +++
+
+2026-04-16 23:19:18,221: %UNICON-INFO: connection to s3-c8k-rtr1
+
+
+
+
+s3-c8k-rtr1#
+
+2026-04-16 23:19:18,310: %UNICON-INFO: Storing credentials from default as current_credentials
+
+s3-c8k-rtr1#
+
+2026-04-16 23:19:18,438: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'show version | include operating mode' +++
+show version | include operating mode
+Router operating mode: Autonomous
+s3-c8k-rtr1#
+
+2026-04-16 23:19:18,631: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 23:19:18,755: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'term length 0' +++
+term length 0
+s3-c8k-rtr1#
+
+2026-04-16 23:19:19,013: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'term width 0' +++
+term width 0
+s3-c8k-rtr1#
+
+2026-04-16 23:19:19,283: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'show version' +++
+show version
+Cisco IOS XE Software, Version 17.16.01a
+Cisco IOS Software [IOSXE], Virtual XE Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 17.16.1a, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2024 by Cisco Systems, Inc.
+Compiled Thu 19-Dec-24 18:08 by mcpre
+
+
+Cisco IOS-XE software, Copyright (c) 2005-2024 by cisco Systems, Inc.
+All rights reserved.  Certain components of Cisco IOS-XE software are
+licensed under the GNU General Public License ("GPL") Version 2.0.  The
+software code licensed under GPL Version 2.0 is free software that comes
+with ABSOLUTELY NO WARRANTY.  You can redistribute and/or modify such
+GPL code under the terms of GPL Version 2.0.  For more details, see the
+documentation or "License Notice" file accompanying the IOS-XE software,
+or the applicable URL provided on the flyer accompanying the IOS-XE
+software.
+
+
+ROM: IOS-XE ROMMON
+
+s3-c8k-rtr1 uptime is 1 day, 3 hours, 57 minutes
+Uptime for this control processor is 1 day, 3 hours, 59 minutes
+System returned to ROM by reload
+System image file is "bootflash:packages.conf"
+Last reload reason: factory-reset
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+License Level: network-advantage
+License Type: Perpetual
+Next reload license Level: network-advantage
+
+Addon License Level: dna-advantage
+Addon License Type: Subscription
+Next reload addon license Level: dna-advantage
+
+The current throughput level is 250M (250000 kbps) 
+
+
+Smart Licensing Status: Smart Licensing Using Policy
+
+cisco C8000V (VXE) processor (revision VXE) with 1655426K/3075K bytes of memory.
+Processor board ID 9U1NXEEFXOU
+Router operating mode: Autonomous
+8 Gigabit Ethernet interfaces
+32768K bytes of non-volatile configuration memory.
+3960372K bytes of physical memory.
+5234688K bytes of virtual hard disk at bootflash:.
+
+Configuration register is 0x2102
+
+s3-c8k-rtr1#
+
+2026-04-16 23:19:19,562: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'show install summary' +++
+show install summary
+[ R0 ] Installed Package(s) Information:
+State (St): I - Inactive, U - Activated & Uncommitted,
+            C - Activated & Committed, D - Deactivated & Uncommitted
+--------------------------------------------------------------------------------
+Type  St   Filename/Version
+--------------------------------------------------------------------------------
+IMG   C    17.16.01a.0.1625
+
+--------------------------------------------------------------------------------
+Auto abort timer: inactive
+--------------------------------------------------------------------------------
+
+
+s3-c8k-rtr1#

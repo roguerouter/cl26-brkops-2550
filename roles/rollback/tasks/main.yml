@@ -1,0 +1,9 @@
+---
+- name: Load revert point
+  ansible.builtin.include_vars:
+    file: "{{ playbook_dir }}/../revert_points/{{ inventory_hostname }}.yml"
+  tags: rollback
+
+- name: Include platform rollback tasks
+  ansible.builtin.include_tasks: "{{ platform_type }}.yml"
+  tags: rollback

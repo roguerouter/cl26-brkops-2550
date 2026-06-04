@@ -1,0 +1,11 @@
+---
+- name: Rollback to pre-change checkpoint
+  cisco.nxos.nxos_command:
+    commands:
+      - "rollback running-config checkpoint {{ revert_point }}"
+  tags: rollback
+
+- name: Display rollback status
+  ansible.builtin.debug:
+    msg: "{{ inventory_hostname }} rolled back to checkpoint {{ revert_point }}"
+  tags: rollback

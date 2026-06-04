@@ -1,0 +1,35 @@
+---
+- name: Apply common configuration to all devices
+  hosts: all
+  gather_facts: false
+  roles:
+    - role: common
+      tags: common
+
+- name: Apply VLAN configuration
+  hosts: all
+  gather_facts: false
+  roles:
+    - role: vlans
+      tags: vlans
+
+- name: Apply interface configuration
+  hosts: all
+  gather_facts: false
+  roles:
+    - role: interfaces
+      tags: [interfaces, ip, ipv6]
+
+- name: Apply VPC configuration
+  hosts: all
+  gather_facts: false
+  roles:
+    - role: vpc
+      tags: vpc
+
+- name: Apply OSPF configuration
+  hosts: all
+  gather_facts: false
+  roles:
+    - role: ospf
+      tags: ospf

@@ -1,0 +1,480 @@
+
+2026-04-16 21:42:21,840: %UNICON-INFO: +++ s3-n9k-sw1 logfile ospf_2026-04-16/connection_s3-n9k-sw1.txt +++
+
+2026-04-16 21:42:21,840: %UNICON-INFO: +++ Unicon plugin nxos (unicon.plugins.nxos) +++
+User Access Verification
+
+
+2026-04-16 21:42:22,698: %UNICON-INFO: +++ connection to spawn: ssh -l mleuschn 10.82.9.134, id: 134456707996160 +++
+
+2026-04-16 21:42:22,698: %UNICON-INFO: connection to s3-n9k-sw1
+(mleuschn@10.82.9.134) Password: 
+
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (C) 2002-2024, Cisco and/or its affiliates.
+All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under their own
+licenses, such as open source.  This software is provided "as is," and unless
+otherwise stated, there is no warranty, express or implied, including but not
+limited to warranties of merchantability and fitness for a particular purpose.
+Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or 
+GNU General Public License (GPL) version 3.0  or the GNU
+Lesser General Public License (LGPL) Version 2.1 or 
+Lesser General Public License (LGPL) Version 2.0. 
+A copy of each such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://opensource.org/licenses/gpl-3.0.html and
+http://www.opensource.org/licenses/lgpl-2.1.php and
+http://www.gnu.org/licenses/old-licenses/library.txt.
+s3-n9k-sw1# 
+
+2026-04-16 21:42:23,435: %UNICON-INFO: Storing credentials from default as current_credentials
+
+2026-04-16 21:42:23,436: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 21:42:23,559: %UNICON-INFO: +++ s3-n9k-sw1 with via 'cli': executing command 'term length 0' +++
+term length 0
+s3-n9k-sw1# 
+
+2026-04-16 21:42:23,797: %UNICON-INFO: +++ s3-n9k-sw1 with via 'cli': executing command 'term width 511' +++
+term width 511
+s3-n9k-sw1# 
+
+2026-04-16 21:42:24,034: %UNICON-INFO: +++ s3-n9k-sw1 with via 'cli': executing command 'terminal session-timeout 0' +++
+terminal session-timeout 0
+s3-n9k-sw1# 
+
+2026-04-16 21:48:56,874: %UNICON-INFO: +++ s3-n9k-sw1 logfile ospf_2026-04-16/connection_s3-n9k-sw1.txt +++
+
+2026-04-16 21:48:56,874: %UNICON-INFO: +++ Unicon plugin nxos (unicon.plugins.nxos) +++
+User Access Verification
+
+
+2026-04-16 21:48:57,748: %UNICON-INFO: +++ connection to spawn: ssh -l mleuschn 10.82.9.134, id: 134234676297120 +++
+
+2026-04-16 21:48:57,749: %UNICON-INFO: connection to s3-n9k-sw1
+(mleuschn@10.82.9.134) Password: 
+
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (C) 2002-2024, Cisco and/or its affiliates.
+All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under their own
+licenses, such as open source.  This software is provided "as is," and unless
+otherwise stated, there is no warranty, express or implied, including but not
+limited to warranties of merchantability and fitness for a particular purpose.
+Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or 
+GNU General Public License (GPL) version 3.0  or the GNU
+Lesser General Public License (LGPL) Version 2.1 or 
+Lesser General Public License (LGPL) Version 2.0. 
+A copy of each such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://opensource.org/licenses/gpl-3.0.html and
+http://www.opensource.org/licenses/lgpl-2.1.php and
+http://www.gnu.org/licenses/old-licenses/library.txt.
+s3-n9k-sw1# 
+
+2026-04-16 21:48:58,510: %UNICON-INFO: Storing credentials from default as current_credentials
+
+2026-04-16 21:48:58,511: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 21:48:58,633: %UNICON-INFO: +++ s3-n9k-sw1 with via 'cli': executing command 'term length 0' +++
+term length 0
+s3-n9k-sw1# 
+
+2026-04-16 21:48:58,875: %UNICON-INFO: +++ s3-n9k-sw1 with via 'cli': executing command 'term width 511' +++
+term width 511
+s3-n9k-sw1# 
+
+2026-04-16 21:48:59,112: %UNICON-INFO: +++ s3-n9k-sw1 with via 'cli': executing command 'terminal session-timeout 0' +++
+terminal session-timeout 0
+s3-n9k-sw1# 
+
+2026-04-16 22:17:09,521: %UNICON-INFO: +++ s3-n9k-sw1 logfile ospf_2026-04-16/connection_s3-n9k-sw1.txt +++
+
+2026-04-16 22:17:09,521: %UNICON-INFO: +++ Unicon plugin nxos (unicon.plugins.nxos) +++
+User Access Verification
+
+
+2026-04-16 22:17:10,395: %UNICON-INFO: +++ connection to spawn: ssh -l mleuschn 10.82.9.134, id: 131130058908032 +++
+
+2026-04-16 22:17:10,395: %UNICON-INFO: connection to s3-n9k-sw1
+(mleuschn@10.82.9.134) Password: 
+
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (C) 2002-2024, Cisco and/or its affiliates.
+All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under their own
+licenses, such as open source.  This software is provided "as is," and unless
+otherwise stated, there is no warranty, express or implied, including but not
+limited to warranties of merchantability and fitness for a particular purpose.
+Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or 
+GNU General Public License (GPL) version 3.0  or the GNU
+Lesser General Public License (LGPL) Version 2.1 or 
+Lesser General Public License (LGPL) Version 2.0. 
+A copy of each such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://opensource.org/licenses/gpl-3.0.html and
+http://www.opensource.org/licenses/lgpl-2.1.php and
+http://www.gnu.org/licenses/old-licenses/library.txt.
+s3-n9k-sw1# 
+
+2026-04-16 22:17:11,155: %UNICON-INFO: Storing credentials from default as current_credentials
+
+2026-04-16 22:17:11,155: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 22:17:11,279: %UNICON-INFO: +++ s3-n9k-sw1 with via 'cli': executing command 'term length 0' +++
+term length 0
+s3-n9k-sw1# 
+
+2026-04-16 22:17:11,516: %UNICON-INFO: +++ s3-n9k-sw1 with via 'cli': executing command 'term width 511' +++
+term width 511
+s3-n9k-sw1# 
+
+2026-04-16 22:17:11,762: %UNICON-INFO: +++ s3-n9k-sw1 with via 'cli': executing command 'terminal session-timeout 0' +++
+terminal session-timeout 0
+s3-n9k-sw1# 
+
+2026-04-16 22:27:30,807: %UNICON-INFO: +++ s3-n9k-sw1 logfile ospf_2026-04-16/connection_s3-n9k-sw1.txt +++
+
+2026-04-16 22:27:30,807: %UNICON-INFO: +++ Unicon plugin nxos (unicon.plugins.nxos) +++
+User Access Verification
+
+
+2026-04-16 22:27:31,654: %UNICON-INFO: +++ connection to spawn: ssh -l mleuschn 10.82.9.134, id: 139808734305632 +++
+
+2026-04-16 22:27:31,655: %UNICON-INFO: connection to s3-n9k-sw1
+(mleuschn@10.82.9.134) Password: 
+
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (C) 2002-2024, Cisco and/or its affiliates.
+All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under their own
+licenses, such as open source.  This software is provided "as is," and unless
+otherwise stated, there is no warranty, express or implied, including but not
+limited to warranties of merchantability and fitness for a particular purpose.
+Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or 
+GNU General Public License (GPL) version 3.0  or the GNU
+Lesser General Public License (LGPL) Version 2.1 or 
+Lesser General Public License (LGPL) Version 2.0. 
+A copy of each such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://opensource.org/licenses/gpl-3.0.html and
+http://www.opensource.org/licenses/lgpl-2.1.php and
+http://www.gnu.org/licenses/old-licenses/library.txt.
+s3-n9k-sw1# 
+
+2026-04-16 22:27:32,411: %UNICON-INFO: Storing credentials from default as current_credentials
+
+2026-04-16 22:27:32,411: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 22:27:32,535: %UNICON-INFO: +++ s3-n9k-sw1 with via 'cli': executing command 'term length 0' +++
+term length 0
+s3-n9k-sw1# 
+
+2026-04-16 22:27:32,773: %UNICON-INFO: +++ s3-n9k-sw1 with via 'cli': executing command 'term width 511' +++
+term width 511
+s3-n9k-sw1# 
+
+2026-04-16 22:27:33,009: %UNICON-INFO: +++ s3-n9k-sw1 with via 'cli': executing command 'terminal session-timeout 0' +++
+terminal session-timeout 0
+s3-n9k-sw1# 
+
+2026-04-16 22:32:52,034: %UNICON-INFO: +++ s3-n9k-sw1 logfile ospf_2026-04-16/connection_s3-n9k-sw1.txt +++
+
+2026-04-16 22:32:52,034: %UNICON-INFO: +++ Unicon plugin nxos (unicon.plugins.nxos) +++
+User Access Verification
+
+
+2026-04-16 22:32:52,891: %UNICON-INFO: +++ connection to spawn: ssh -l mleuschn 10.82.9.134, id: 137602856070144 +++
+
+2026-04-16 22:32:52,891: %UNICON-INFO: connection to s3-n9k-sw1
+(mleuschn@10.82.9.134) Password: 
+
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (C) 2002-2024, Cisco and/or its affiliates.
+All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under their own
+licenses, such as open source.  This software is provided "as is," and unless
+otherwise stated, there is no warranty, express or implied, including but not
+limited to warranties of merchantability and fitness for a particular purpose.
+Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or 
+GNU General Public License (GPL) version 3.0  or the GNU
+Lesser General Public License (LGPL) Version 2.1 or 
+Lesser General Public License (LGPL) Version 2.0. 
+A copy of each such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://opensource.org/licenses/gpl-3.0.html and
+http://www.opensource.org/licenses/lgpl-2.1.php and
+http://www.gnu.org/licenses/old-licenses/library.txt.
+s3-n9k-sw1# 
+
+2026-04-16 22:32:53,657: %UNICON-INFO: Storing credentials from default as current_credentials
+
+2026-04-16 22:32:53,657: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 22:32:53,782: %UNICON-INFO: +++ s3-n9k-sw1 with via 'cli': executing command 'term length 0' +++
+term length 0
+s3-n9k-sw1# 
+
+2026-04-16 22:32:54,019: %UNICON-INFO: +++ s3-n9k-sw1 with via 'cli': executing command 'term width 511' +++
+term width 511
+s3-n9k-sw1# 
+
+2026-04-16 22:32:54,265: %UNICON-INFO: +++ s3-n9k-sw1 with via 'cli': executing command 'terminal session-timeout 0' +++
+terminal session-timeout 0
+s3-n9k-sw1# 
+
+2026-04-16 23:02:17,194: %UNICON-INFO: +++ s3-n9k-sw1 logfile ospf_2026-04-16/connection_s3-n9k-sw1.txt +++
+
+2026-04-16 23:02:17,194: %UNICON-INFO: +++ Unicon plugin nxos (unicon.plugins.nxos) +++
+User Access Verification
+
+
+2026-04-16 23:02:18,029: %UNICON-INFO: +++ connection to spawn: ssh -l mleuschn 10.82.9.134, id: 139125264121056 +++
+
+2026-04-16 23:02:18,029: %UNICON-INFO: connection to s3-n9k-sw1
+(mleuschn@10.82.9.134) Password: 
+
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (C) 2002-2024, Cisco and/or its affiliates.
+All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under their own
+licenses, such as open source.  This software is provided "as is," and unless
+otherwise stated, there is no warranty, express or implied, including but not
+limited to warranties of merchantability and fitness for a particular purpose.
+Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or 
+GNU General Public License (GPL) version 3.0  or the GNU
+Lesser General Public License (LGPL) Version 2.1 or 
+Lesser General Public License (LGPL) Version 2.0. 
+A copy of each such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://opensource.org/licenses/gpl-3.0.html and
+http://www.opensource.org/licenses/lgpl-2.1.php and
+http://www.gnu.org/licenses/old-licenses/library.txt.
+s3-n9k-sw1# 
+
+2026-04-16 23:02:18,767: %UNICON-INFO: Storing credentials from default as current_credentials
+
+2026-04-16 23:02:18,768: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 23:02:18,892: %UNICON-INFO: +++ s3-n9k-sw1 with via 'cli': executing command 'term length 0' +++
+term length 0
+s3-n9k-sw1# 
+
+2026-04-16 23:02:19,130: %UNICON-INFO: +++ s3-n9k-sw1 with via 'cli': executing command 'term width 511' +++
+term width 511
+s3-n9k-sw1# 
+
+2026-04-16 23:02:19,366: %UNICON-INFO: +++ s3-n9k-sw1 with via 'cli': executing command 'terminal session-timeout 0' +++
+terminal session-timeout 0
+s3-n9k-sw1# 
+
+2026-04-16 23:08:01,577: %UNICON-INFO: +++ s3-n9k-sw1 logfile ospf_2026-04-16/connection_s3-n9k-sw1.txt +++
+
+2026-04-16 23:08:01,578: %UNICON-INFO: +++ Unicon plugin nxos (unicon.plugins.nxos) +++
+User Access Verification
+
+
+2026-04-16 23:08:02,437: %UNICON-INFO: +++ connection to spawn: ssh -l mleuschn 10.82.9.134, id: 137783833408048 +++
+
+2026-04-16 23:08:02,437: %UNICON-INFO: connection to s3-n9k-sw1
+(mleuschn@10.82.9.134) Password: 
+
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (C) 2002-2024, Cisco and/or its affiliates.
+All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under their own
+licenses, such as open source.  This software is provided "as is," and unless
+otherwise stated, there is no warranty, express or implied, including but not
+limited to warranties of merchantability and fitness for a particular purpose.
+Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or 
+GNU General Public License (GPL) version 3.0  or the GNU
+Lesser General Public License (LGPL) Version 2.1 or 
+Lesser General Public License (LGPL) Version 2.0. 
+A copy of each such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://opensource.org/licenses/gpl-3.0.html and
+http://www.opensource.org/licenses/lgpl-2.1.php and
+http://www.gnu.org/licenses/old-licenses/library.txt.
+s3-n9k-sw1# 
+
+2026-04-16 23:08:03,200: %UNICON-INFO: Storing credentials from default as current_credentials
+
+2026-04-16 23:08:03,200: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 23:08:03,324: %UNICON-INFO: +++ s3-n9k-sw1 with via 'cli': executing command 'term length 0' +++
+term length 0
+s3-n9k-sw1# 
+
+2026-04-16 23:08:03,565: %UNICON-INFO: +++ s3-n9k-sw1 with via 'cli': executing command 'term width 511' +++
+term width 511
+s3-n9k-sw1# 
+
+2026-04-16 23:08:03,822: %UNICON-INFO: +++ s3-n9k-sw1 with via 'cli': executing command 'terminal session-timeout 0' +++
+terminal session-timeout 0
+s3-n9k-sw1# 
+
+2026-04-16 23:11:22,306: %UNICON-INFO: +++ s3-n9k-sw1 logfile ospf_2026-04-16/connection_s3-n9k-sw1.txt +++
+
+2026-04-16 23:11:22,306: %UNICON-INFO: +++ Unicon plugin nxos (unicon.plugins.nxos) +++
+User Access Verification
+
+
+2026-04-16 23:11:23,082: %UNICON-INFO: +++ connection to spawn: ssh -l mleuschn 10.82.9.134, id: 127535859006256 +++
+
+2026-04-16 23:11:23,082: %UNICON-INFO: connection to s3-n9k-sw1
+(mleuschn@10.82.9.134) Password: 
+
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (C) 2002-2024, Cisco and/or its affiliates.
+All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under their own
+licenses, such as open source.  This software is provided "as is," and unless
+otherwise stated, there is no warranty, express or implied, including but not
+limited to warranties of merchantability and fitness for a particular purpose.
+Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or 
+GNU General Public License (GPL) version 3.0  or the GNU
+Lesser General Public License (LGPL) Version 2.1 or 
+Lesser General Public License (LGPL) Version 2.0. 
+A copy of each such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://opensource.org/licenses/gpl-3.0.html and
+http://www.opensource.org/licenses/lgpl-2.1.php and
+http://www.gnu.org/licenses/old-licenses/library.txt.
+s3-n9k-sw1# 
+
+2026-04-16 23:11:23,826: %UNICON-INFO: Storing credentials from default as current_credentials
+
+2026-04-16 23:11:23,826: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 23:11:23,951: %UNICON-INFO: +++ s3-n9k-sw1 with via 'cli': executing command 'term length 0' +++
+term length 0
+s3-n9k-sw1# 
+
+2026-04-16 23:11:24,192: %UNICON-INFO: +++ s3-n9k-sw1 with via 'cli': executing command 'term width 511' +++
+term width 511
+s3-n9k-sw1# 
+
+2026-04-16 23:11:24,432: %UNICON-INFO: +++ s3-n9k-sw1 with via 'cli': executing command 'terminal session-timeout 0' +++
+terminal session-timeout 0
+s3-n9k-sw1# 
+
+2026-04-16 23:12:04,037: %UNICON-INFO: +++ s3-n9k-sw1 logfile ospf_2026-04-16/connection_s3-n9k-sw1.txt +++
+
+2026-04-16 23:12:04,037: %UNICON-INFO: +++ Unicon plugin nxos (unicon.plugins.nxos) +++
+User Access Verification
+
+
+2026-04-16 23:12:04,882: %UNICON-INFO: +++ connection to spawn: ssh -l mleuschn 10.82.9.134, id: 130316504296352 +++
+
+2026-04-16 23:12:04,882: %UNICON-INFO: connection to s3-n9k-sw1
+(mleuschn@10.82.9.134) Password: 
+
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (C) 2002-2024, Cisco and/or its affiliates.
+All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under their own
+licenses, such as open source.  This software is provided "as is," and unless
+otherwise stated, there is no warranty, express or implied, including but not
+limited to warranties of merchantability and fitness for a particular purpose.
+Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or 
+GNU General Public License (GPL) version 3.0  or the GNU
+Lesser General Public License (LGPL) Version 2.1 or 
+Lesser General Public License (LGPL) Version 2.0. 
+A copy of each such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://opensource.org/licenses/gpl-3.0.html and
+http://www.opensource.org/licenses/lgpl-2.1.php and
+http://www.gnu.org/licenses/old-licenses/library.txt.
+s3-n9k-sw1# 
+
+2026-04-16 23:12:05,645: %UNICON-INFO: Storing credentials from default as current_credentials
+
+2026-04-16 23:12:05,646: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 23:12:05,769: %UNICON-INFO: +++ s3-n9k-sw1 with via 'cli': executing command 'term length 0' +++
+term length 0
+s3-n9k-sw1# 
+
+2026-04-16 23:12:06,006: %UNICON-INFO: +++ s3-n9k-sw1 with via 'cli': executing command 'term width 511' +++
+term width 511
+s3-n9k-sw1# 
+
+2026-04-16 23:12:06,248: %UNICON-INFO: +++ s3-n9k-sw1 with via 'cli': executing command 'terminal session-timeout 0' +++
+terminal session-timeout 0
+s3-n9k-sw1# 
+
+2026-04-16 23:19:16,897: %UNICON-INFO: +++ s3-n9k-sw1 logfile ospf_2026-04-16/connection_s3-n9k-sw1.txt +++
+
+2026-04-16 23:19:16,897: %UNICON-INFO: +++ Unicon plugin nxos (unicon.plugins.nxos) +++
+User Access Verification
+
+
+2026-04-16 23:19:17,792: %UNICON-INFO: +++ connection to spawn: ssh -l mleuschn 10.82.9.134, id: 137750511938368 +++
+
+2026-04-16 23:19:17,792: %UNICON-INFO: connection to s3-n9k-sw1
+(mleuschn@10.82.9.134) Password: 
+
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (C) 2002-2024, Cisco and/or its affiliates.
+All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under their own
+licenses, such as open source.  This software is provided "as is," and unless
+otherwise stated, there is no warranty, express or implied, including but not
+limited to warranties of merchantability and fitness for a particular purpose.
+Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or 
+GNU General Public License (GPL) version 3.0  or the GNU
+Lesser General Public License (LGPL) Version 2.1 or 
+Lesser General Public License (LGPL) Version 2.0. 
+A copy of each such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://opensource.org/licenses/gpl-3.0.html and
+http://www.opensource.org/licenses/lgpl-2.1.php and
+http://www.gnu.org/licenses/old-licenses/library.txt.
+s3-n9k-sw1# 
+
+2026-04-16 23:19:18,558: %UNICON-INFO: Storing credentials from default as current_credentials
+
+2026-04-16 23:19:18,558: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 23:19:18,683: %UNICON-INFO: +++ s3-n9k-sw1 with via 'cli': executing command 'term length 0' +++
+term length 0
+s3-n9k-sw1# 
+
+2026-04-16 23:19:18,925: %UNICON-INFO: +++ s3-n9k-sw1 with via 'cli': executing command 'term width 511' +++
+term width 511
+s3-n9k-sw1# 
+
+2026-04-16 23:19:19,172: %UNICON-INFO: +++ s3-n9k-sw1 with via 'cli': executing command 'terminal session-timeout 0' +++
+terminal session-timeout 0
+s3-n9k-sw1# 

@@ -1,0 +1,112 @@
+
+2026-06-01 06:13:47,856: %UNICON-INFO: +++ s3-n9k-sw1 logfile cml/ospf_ipv6/connection_s3-n9k-sw1.txt +++
+
+2026-06-01 06:13:47,856: %UNICON-INFO: +++ Unicon plugin nxos (unicon.plugins.nxos) +++
+User Access Verification
+
+
+2026-06-01 06:13:48,174: %UNICON-INFO: +++ connection to spawn: ssh -l netadmin 10.83.32.114, id: 124024101022768 +++
+
+2026-06-01 06:13:48,174: %UNICON-INFO: connection to s3-n9k-sw1
+(netadmin@10.83.32.114) Password: 
+
+Cisco NX-OS Software
+Copyright (c) 2002-2025, Cisco Systems, Inc. All rights reserved.
+Nexus 9000v software ("Nexus 9000v Software") and related documentation,
+files or other reference materials ("Documentation") are
+the proprietary property and confidential information of Cisco
+Systems, Inc. ("Cisco") and are protected, without limitation,
+pursuant to United States and International copyright and trademark
+laws in the applicable jurisdiction which provide civil and criminal
+penalties for copying or distribution without Cisco's authorization.
+
+Any use or disclosure, in whole or in part, of the Nexus 9000v Software
+or Documentation to any third party for any purposes is expressly
+prohibited except as otherwise authorized by Cisco in writing.
+The copyrights to certain works contained herein are owned by other
+third parties and are used and distributed under license. Some parts
+of this software may be covered under the GNU Public License or the
+GNU Lesser General Public License. A copy of each such license is
+available at
+http://www.gnu.org/licenses/gpl.html and
+http://www.gnu.org/licenses/lgpl.html
+***************************************************************************
+*  Nexus 9000v is strictly limited to use for evaluation, demonstration   *
+*  and NX-OS education. Any use or disclosure, in whole or in part of     *
+*  the Nexus 9000v Software or Documentation to any third party for any   *
+*  purposes is expressly prohibited except as otherwise authorized by     *
+*  Cisco in writing.                                                      *
+***************************************************************************
+s3-n9k-sw1# 
+
+2026-06-01 06:13:48,584: %UNICON-INFO: Storing credentials from default as current_credentials
+
+2026-06-01 06:13:48,585: %UNICON-INFO: +++ initializing handle +++
+
+2026-06-01 06:13:48,709: %UNICON-INFO: +++ s3-n9k-sw1 with via 'cli': executing command 'term length 0' +++
+term length 0
+s3-n9k-sw1# 
+
+2026-06-01 06:13:48,912: %UNICON-INFO: +++ s3-n9k-sw1 with via 'cli': executing command 'term width 511' +++
+term width 511
+s3-n9k-sw1# 
+
+2026-06-01 06:13:49,136: %UNICON-INFO: +++ s3-n9k-sw1 with via 'cli': executing command 'terminal session-timeout 0' +++
+terminal session-timeout 0
+s3-n9k-sw1# 
+
+2026-06-01 06:20:37,923: %UNICON-INFO: +++ s3-n9k-sw1 logfile cml/ospf_ipv6/connection_s3-n9k-sw1.txt +++
+
+2026-06-01 06:20:37,924: %UNICON-INFO: +++ Unicon plugin nxos (unicon.plugins.nxos) +++
+User Access Verification
+
+
+2026-06-01 06:20:38,240: %UNICON-INFO: +++ connection to spawn: ssh -l netadmin 10.83.32.114, id: 132688536712736 +++
+
+2026-06-01 06:20:38,240: %UNICON-INFO: connection to s3-n9k-sw1
+(netadmin@10.83.32.114) Password: 
+
+Cisco NX-OS Software
+Copyright (c) 2002-2025, Cisco Systems, Inc. All rights reserved.
+Nexus 9000v software ("Nexus 9000v Software") and related documentation,
+files or other reference materials ("Documentation") are
+the proprietary property and confidential information of Cisco
+Systems, Inc. ("Cisco") and are protected, without limitation,
+pursuant to United States and International copyright and trademark
+laws in the applicable jurisdiction which provide civil and criminal
+penalties for copying or distribution without Cisco's authorization.
+
+Any use or disclosure, in whole or in part, of the Nexus 9000v Software
+or Documentation to any third party for any purposes is expressly
+prohibited except as otherwise authorized by Cisco in writing.
+The copyrights to certain works contained herein are owned by other
+third parties and are used and distributed under license. Some parts
+of this software may be covered under the GNU Public License or the
+GNU Lesser General Public License. A copy of each such license is
+available at
+http://www.gnu.org/licenses/gpl.html and
+http://www.gnu.org/licenses/lgpl.html
+***************************************************************************
+*  Nexus 9000v is strictly limited to use for evaluation, demonstration   *
+*  and NX-OS education. Any use or disclosure, in whole or in part of     *
+*  the Nexus 9000v Software or Documentation to any third party for any   *
+*  purposes is expressly prohibited except as otherwise authorized by     *
+*  Cisco in writing.                                                      *
+***************************************************************************
+s3-n9k-sw1# 
+
+2026-06-01 06:20:38,624: %UNICON-INFO: Storing credentials from default as current_credentials
+
+2026-06-01 06:20:38,624: %UNICON-INFO: +++ initializing handle +++
+
+2026-06-01 06:20:38,751: %UNICON-INFO: +++ s3-n9k-sw1 with via 'cli': executing command 'term length 0' +++
+term length 0
+s3-n9k-sw1# 
+
+2026-06-01 06:20:38,954: %UNICON-INFO: +++ s3-n9k-sw1 with via 'cli': executing command 'term width 511' +++
+term width 511
+s3-n9k-sw1# 
+
+2026-06-01 06:20:39,173: %UNICON-INFO: +++ s3-n9k-sw1 with via 'cli': executing command 'terminal session-timeout 0' +++
+terminal session-timeout 0
+s3-n9k-sw1# 

@@ -1,0 +1,11 @@
+---
+- name: Configure VLANs
+  cisco.nxos.nxos_vlans:
+    config:
+      - vlan_id: "{{ item.id }}"
+        name: "{{ item.name }}"
+        enabled: true
+    state: merged
+  loop: "{{ vlans }}"
+  notify: save config
+  tags: vlans

@@ -1,0 +1,7 @@
+---
+- name: Create pre-check revert points
+  hosts: all
+  gather_facts: false
+  roles:
+    - role: precheck
+      tags: precheck

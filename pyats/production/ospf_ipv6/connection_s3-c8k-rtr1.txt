@@ -1,0 +1,250 @@
+
+2026-06-01 06:12:45,406: %UNICON-INFO: +++ s3-c8k-rtr1 logfile production/ospf_ipv6/connection_s3-c8k-rtr1.txt +++
+
+2026-06-01 06:12:45,406: %UNICON-INFO: +++ Unicon plugin iosxe (unicon.plugins.iosxe) +++
+(mleuschn@10.82.9.133) Password: 
+
+2026-06-01 06:12:47,966: %UNICON-INFO: +++ connection to spawn: ssh -l mleuschn 10.82.9.133, id: 129767203589440 +++
+
+2026-06-01 06:12:47,966: %UNICON-INFO: connection to s3-c8k-rtr1
+
+
+
+
+s3-c8k-rtr1#
+
+2026-06-01 06:12:48,136: %UNICON-INFO: Storing credentials from default as current_credentials
+
+s3-c8k-rtr1#
+
+2026-06-01 06:12:48,325: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'show version | include operating mode' +++
+show version | include operating mode
+Router operating mode: Autonomous
+s3-c8k-rtr1#
+
+2026-06-01 06:12:48,736: %UNICON-INFO: +++ initializing handle +++
+
+2026-06-01 06:12:48,860: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'term length 0' +++
+term length 0
+s3-c8k-rtr1#
+
+2026-06-01 06:12:49,158: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'term width 0' +++
+term width 0
+s3-c8k-rtr1#
+
+2026-06-01 06:12:49,460: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'show version' +++
+show version
+Cisco IOS XE Software, Version 17.09.05a
+Cisco IOS Software [Cupertino], c8000be Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 17.9.5a, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2024 by Cisco Systems, Inc.
+Compiled Mon 12-Feb-24 12:19 by mcpre
+
+
+Cisco IOS-XE software, Copyright (c) 2005-2024 by cisco Systems, Inc.
+All rights reserved.  Certain components of Cisco IOS-XE software are
+licensed under the GNU General Public License ("GPL") Version 2.0.  The
+software code licensed under GPL Version 2.0 is free software that comes
+with ABSOLUTELY NO WARRANTY.  You can redistribute and/or modify such
+GPL code under the terms of GPL Version 2.0.  For more details, see the
+documentation or "License Notice" file accompanying the IOS-XE software,
+or the applicable URL provided on the flyer accompanying the IOS-XE
+software.
+
+
+ROM: 17.6(6.1r)
+
+s3-c8k-rtr1 uptime is 7 weeks, 2 days, 9 hours, 58 minutes
+Uptime for this control processor is 7 weeks, 2 days, 10 hours, 0 minutes
+System returned to ROM by Reload Command at 20:10:07 UTC Fri Apr 10 2026
+System image file is "bootflash:packages.conf"
+Last reload reason: Reload Command
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+
+Technology Package License Information: 
+
+-----------------------------------------------------------------
+Technology     Type         Technology-package Technology-package
+                            Current            Next Reboot       
+-----------------------------------------------------------------
+Smart License  Perpetual    network-advantage  network-advantage 
+Smart License  Subscription None               None              
+
+The current crypto throughput level is 250000 kbps 
+
+
+Smart Licensing Status: Smart Licensing Using Policy
+
+cisco C8300-2N2S-4T2X (2RU) processor with 3701606K/6147K bytes of memory.
+Processor board ID FLM252710AU
+Router operating mode: Autonomous
+4 Gigabit Ethernet interfaces
+3 Ten Gigabit Ethernet interfaces
+24 terminal lines
+32768K bytes of non-volatile configuration memory.
+7340032K bytes of physical memory.
+7573503K bytes of flash memory at bootflash:.
+15253504K bytes of M.2 USB at harddisk:.
+
+Configuration register is 0x2102
+
+s3-c8k-rtr1#
+
+2026-06-01 06:12:49,944: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'show install summary' +++
+show install summary
+[ R0 ] Installed Package(s) Information:
+State (St): I - Inactive, U - Activated & Uncommitted,
+            C - Activated & Committed, D - Deactivated & Uncommitted
+--------------------------------------------------------------------------------
+Type  St   Filename/Version
+--------------------------------------------------------------------------------
+IMG   C    17.09.05a.0.6476
+
+--------------------------------------------------------------------------------
+Auto abort timer: inactive
+--------------------------------------------------------------------------------
+
+
+s3-c8k-rtr1#
+
+2026-06-01 06:18:44,895: %UNICON-INFO: +++ s3-c8k-rtr1 logfile production/ospf_ipv6/connection_s3-c8k-rtr1.txt +++
+
+2026-06-01 06:18:44,895: %UNICON-INFO: +++ Unicon plugin iosxe (unicon.plugins.iosxe) +++
+(mleuschn@10.82.9.133) Password: 
+
+2026-06-01 06:18:47,477: %UNICON-INFO: +++ connection to spawn: ssh -l mleuschn 10.82.9.133, id: 133217243037232 +++
+
+2026-06-01 06:18:47,477: %UNICON-INFO: connection to s3-c8k-rtr1
+
+
+
+
+s3-c8k-rtr1#
+
+2026-06-01 06:18:47,656: %UNICON-INFO: Storing credentials from default as current_credentials
+
+s3-c8k-rtr1#
+
+2026-06-01 06:18:47,844: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'show version | include operating mode' +++
+show version | include operating mode
+Router operating mode: Autonomous
+s3-c8k-rtr1#
+
+2026-06-01 06:18:48,248: %UNICON-INFO: +++ initializing handle +++
+
+2026-06-01 06:18:48,373: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'term length 0' +++
+term length 0
+s3-c8k-rtr1#
+
+2026-06-01 06:18:48,680: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'term width 0' +++
+term width 0
+s3-c8k-rtr1#
+
+2026-06-01 06:18:48,998: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'show version' +++
+show version
+Cisco IOS XE Software, Version 17.09.05a
+Cisco IOS Software [Cupertino], c8000be Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 17.9.5a, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2024 by Cisco Systems, Inc.
+Compiled Mon 12-Feb-24 12:19 by mcpre
+
+
+Cisco IOS-XE software, Copyright (c) 2005-2024 by cisco Systems, Inc.
+All rights reserved.  Certain components of Cisco IOS-XE software are
+licensed under the GNU General Public License ("GPL") Version 2.0.  The
+software code licensed under GPL Version 2.0 is free software that comes
+with ABSOLUTELY NO WARRANTY.  You can redistribute and/or modify such
+GPL code under the terms of GPL Version 2.0.  For more details, see the
+documentation or "License Notice" file accompanying the IOS-XE software,
+or the applicable URL provided on the flyer accompanying the IOS-XE
+software.
+
+
+ROM: 17.6(6.1r)
+
+s3-c8k-rtr1 uptime is 7 weeks, 2 days, 10 hours, 4 minutes
+Uptime for this control processor is 7 weeks, 2 days, 10 hours, 6 minutes
+System returned to ROM by Reload Command at 20:10:07 UTC Fri Apr 10 2026
+System image file is "bootflash:packages.conf"
+Last reload reason: Reload Command
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+
+Technology Package License Information: 
+
+-----------------------------------------------------------------
+Technology     Type         Technology-package Technology-package
+                            Current            Next Reboot       
+-----------------------------------------------------------------
+Smart License  Perpetual    network-advantage  network-advantage 
+Smart License  Subscription None               None              
+
+The current crypto throughput level is 250000 kbps 
+
+
+Smart Licensing Status: Smart Licensing Using Policy
+
+cisco C8300-2N2S-4T2X (2RU) processor with 3701606K/6147K bytes of memory.
+Processor board ID FLM252710AU
+Router operating mode: Autonomous
+4 Gigabit Ethernet interfaces
+3 Ten Gigabit Ethernet interfaces
+24 terminal lines
+32768K bytes of non-volatile configuration memory.
+7340032K bytes of physical memory.
+7573503K bytes of flash memory at bootflash:.
+15253504K bytes of M.2 USB at harddisk:.
+
+Configuration register is 0x2102
+
+s3-c8k-rtr1#
+
+2026-06-01 06:18:49,489: %UNICON-INFO: +++ s3-c8k-rtr1 with via 'cli': executing command 'show install summary' +++
+show install summary
+[ R0 ] Installed Package(s) Information:
+State (St): I - Inactive, U - Activated & Uncommitted,
+            C - Activated & Committed, D - Deactivated & Uncommitted
+--------------------------------------------------------------------------------
+Type  St   Filename/Version
+--------------------------------------------------------------------------------
+IMG   C    17.09.05a.0.6476
+
+--------------------------------------------------------------------------------
+Auto abort timer: inactive
+--------------------------------------------------------------------------------
+
+
+s3-c8k-rtr1#

@@ -1,0 +1,130 @@
++++ s1-ncs540-rtr1 with via 'cli': executing command 'show route ipv4' +++
+show route ipv4
+Mon Jun  1 06:20:40.009 UTC
+
+Codes: C - connected, S - static, R - RIP, B - BGP, (>) - Diversion path
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2, E - EGP
+       i - ISIS, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, su - IS-IS summary null, * - candidate default
+       U - per-user static route, o - ODR, L - local, G  - DAGR, l - LISP
+       A - access/subscriber, a - Application route
+       M - mobile route, r - RPL, t - Traffic Engineering, (!) - FRR Backup path
+
+Gateway of last resort is not set
+
+C    172.16.12.0/30 is directly connected, 11:51:48, GigabitEthernet0/0/0/14
+L    172.16.12.1/32 is directly connected, 11:51:48, GigabitEthernet0/0/0/14
+L    172.17.0.1/32 is directly connected, 11:51:28, Loopback0
+C    172.20.13.0/30 is directly connected, 11:51:44, GigabitEthernet0/0/0/15
+L    172.20.13.1/32 is directly connected, 11:51:44, GigabitEthernet0/0/0/15
+O    172.22.0.2/32 [110/101] via 172.16.12.2, 11:48:32, GigabitEthernet0/0/0/14
+O    172.24.22.0/30 [110/200] via 172.16.12.2, 11:48:32, GigabitEthernet0/0/0/14
+O    172.28.31.0/30 [110/200] via 172.20.13.2, 11:48:28, GigabitEthernet0/0/0/15
+O    172.28.31.4/30 [110/200] via 172.20.13.2, 11:48:28, GigabitEthernet0/0/0/15
+O    172.29.0.3/32 [110/101] via 172.20.13.2, 11:48:28, GigabitEthernet0/0/0/15
+C    192.168.10.0/24 is directly connected, 11:38:53, Bundle-Ether1.10
+L    192.168.10.254/32 is directly connected, 11:38:53, Bundle-Ether1.10
+C    192.168.20.0/24 is directly connected, 11:38:53, Bundle-Ether1.20
+L    192.168.20.254/32 is directly connected, 11:38:53, Bundle-Ether1.20
+O    192.168.30.0/24 [110/300] via 172.16.12.2, 11:48:32, GigabitEthernet0/0/0/14
+O    192.168.31.0/24 [110/300] via 172.16.12.2, 11:48:32, GigabitEthernet0/0/0/14
+O    192.168.32.0/24 [110/300] via 172.16.12.2, 11:48:32, GigabitEthernet0/0/0/14
+O    192.168.40.0/24 [110/300] via 172.20.13.2, 11:47:52, GigabitEthernet0/0/0/15
+O    192.168.41.0/24 [110/300] via 172.20.13.2, 11:47:52, GigabitEthernet0/0/0/15
+O    192.168.42.0/24 [110/300] via 172.20.13.2, 11:47:52, GigabitEthernet0/0/0/15
+C    192.168.100.0/24 is directly connected, 11:38:53, Bundle-Ether1.100
+L    192.168.100.254/32 is directly connected, 11:38:53, Bundle-Ether1.100
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
++++ s1-ncs540-rtr1 with via 'cli': executing command 'show route vrf all ipv4' +++
+show route vrf all ipv4
+Mon Jun  1 06:20:40.377 UTC
+
+VRF: management
+
+
+Codes: C - connected, S - static, R - RIP, B - BGP, (>) - Diversion path
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2, E - EGP
+       i - ISIS, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, su - IS-IS summary null, * - candidate default
+       U - per-user static route, o - ODR, L - local, G  - DAGR, l - LISP
+       A - access/subscriber, a - Application route
+       M - mobile route, r - RPL, t - Traffic Engineering, (!) - FRR Backup path
+
+Gateway of last resort is 10.83.32.126 to network 0.0.0.0
+
+S*   0.0.0.0/0 [1/0] via 10.83.32.126, 13:00:36
+C    10.83.32.0/25 is directly connected, 13:00:36, MgmtEth0/RP0/CPU0/0
+L    10.83.32.110/32 is directly connected, 13:00:36, MgmtEth0/RP0/CPU0/0
+
+VRF: **iid
+
+
+% No matching routes found
+
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
++++ s1-ncs540-rtr1 with via 'cli': executing command 'show route ipv6' +++
+show route ipv6
+Mon Jun  1 06:20:40.744 UTC
+
+Codes: C - connected, S - static, R - RIP, B - BGP, (>) - Diversion path
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2, E - EGP
+       i - ISIS, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, su - IS-IS summary null, * - candidate default
+       U - per-user static route, o - ODR, L - local, G  - DAGR, l - LISP
+       A - access/subscriber, a - Application route
+       M - mobile route, r - RPL, t - Traffic Engineering, (!) - FRR Backup path
+
+Gateway of last resort is not set
+
+C    2001:db8:16:12::/126 is directly connected,
+      11:51:41, GigabitEthernet0/0/0/14
+L    2001:db8:16:12::1/128 is directly connected,
+      11:51:41, GigabitEthernet0/0/0/14
+C    2001:db8:20:13::/126 is directly connected,
+      11:51:38, GigabitEthernet0/0/0/15
+L    2001:db8:20:13::1/128 is directly connected,
+      11:51:38, GigabitEthernet0/0/0/15
+L    2001:db8:cafe:100::1/128 is directly connected,
+      11:51:25, Loopback10
+O    2001:db8:cafe:200::1/128 
+      [110/100] via fe80::5054:ff:fe9b:a472, 11:48:10, GigabitEthernet0/0/0/14
+O    2001:db8:cafe:300::1/128 
+      [110/100] via fe80::5054:ff:fe9d:8cbd, 11:48:05, GigabitEthernet0/0/0/15
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
++++ s1-ncs540-rtr1 with via 'cli': executing command 'show route vrf all ipv6' +++
+show route vrf all ipv6
+Mon Jun  1 06:20:41.143 UTC
+
+VRF: management
+
+
+% No matching routes found
+
+
+VRF: **iid
+
+
+% No matching routes found
+
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+Could not learn <class 'genie.libs.parser.iosxr.show_routing.ShowRouteIpv6'> on <unicon.plugins.iosxr.IOSXRSingleRpConnection object at 0x78adf55ff5f0>
+Parser Output is empty
++====================================================================================================================================================+
+| Commands for learning feature 'Routing'                                                                                                            |
++====================================================================================================================================================+
+| - Parsed commands                                                                                                                                  |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.iosxr.show_routing.ShowRouteIpv4'>, arguments: {'vrf':'None'}                                                     |
+|   cmd: <class 'genie.libs.parser.iosxr.show_routing.ShowRouteIpv4'>, arguments: {'vrf':'all'}                                                      |
+|   cmd: <class 'genie.libs.parser.iosxr.show_routing.ShowRouteIpv6'>, arguments: {'vrf':'None'}                                                     |
+|====================================================================================================================================================|
+| - Commands with empty output                                                                                                                       |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.iosxr.show_routing.ShowRouteIpv6'>, arguments: {'vrf':'all'}                                                      |
+|====================================================================================================================================================|

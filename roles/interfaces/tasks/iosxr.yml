@@ -1,0 +1,174 @@
+---
+# -----------------------------------------------
+# STEP 1 - Management Interface
+# No ordering dependency
+# -----------------------------------------------
+- name: Configure management interface
+  cisco.iosxr.iosxr_interfaces:
+    config:
+      - name: "{{ mgmt_interface }}"
+        description: "{{ mgmt_description | default('MANAGEMENT') }}"
+        enabled: true
+    state: merged
+  tags: interfaces
+
+- name: Configure management IP
+  cisco.iosxr.iosxr_l3_interfaces:
+    config:
+      - name: "{{ mgmt_interface }}"
+        ipv4:
+          - address: "{{ mgmt_ip }}"
+    state: merged
+  tags: interfaces
+
+# -----------------------------------------------
+# STEP 2 - P2P Interfaces
+# No ordering dependency
+# -----------------------------------------------
+- name: Configure P2P interfaces
+  cisco.iosxr.iosxr_interfaces:
+    config:
+      - name: "{{ item.name }}"
+        description: "{{ item.description | default(omit) }}"
+        enabled: true
+    state: merged
+  loop: "{{ p2p_interfaces | default([]) }}"
+  tags: interfaces
+
+- name: Configure IPv4 P2P interfaces
+  cisco.iosxr.iosxr_l3_interfaces:
+    config:
+      - name: "{{ item.name }}"
+        ipv4:
+          - address: "{{ item.ip }}"
+    state: merged
+  loop: "{{ p2p_interfaces | default([]) }}"
+  when: item.ip is defined
+  tags: [interfaces, ip]
+
+- name: Configure IPv6 P2P interfaces
+  cisco.iosxr.iosxr_l3_interfaces:
+    config:
+      - name: "{{ item.name }}"
+        ipv6:
+          - address: "{{ item.ipv6 }}"
+    state: merged
+  loop: "{{ p2p_interfaces | default([]) }}"
+  when: item.ipv6 is defined
+  tags: [interfaces, ipv6]
+
+# -----------------------------------------------
+# STEP 3 - Loopback Interfaces
+# No ordering dependency
+# -----------------------------------------------
+- name: Configure loopback interfaces
+  cisco.iosxr.iosxr_interfaces:
+    config:
+      - name: "{{ item.name }}"
+        description: "{{ item.description | default(omit) }}"
+        enabled: true
+    state: merged
+  loop: "{{ loopbacks | default([]) }}"
+  when: loopbacks is defined
+  tags: interfaces
+
+- name: Configure loopback IPv4 addresses
+  cisco.iosxr.iosxr_l3_interfaces:
+    config:
+      - name: "{{ item.name }}"
+        ipv4:
+          - address: "{{ item.ip }}"
+    state: merged
+  loop: "{{ loopbacks | default([]) }}"
+  when:
+    - loopbacks is defined
+    - item.ip is defined
+  tags: [interfaces, ip]
+
+- name: Configure loopback IPv6 addresses
+  cisco.iosxr.iosxr_l3_interfaces:
+    config:
+      - name: "{{ item.name }}"
+        ipv6:
+          - address: "{{ item.ipv6 }}"
+    state: merged
+  loop: "{{ loopbacks | default([]) }}"
+  when:
+    - loopbacks is defined
+    - item.ipv6 is defined
+  tags: [interfaces, ipv6]
+
+# -----------------------------------------------
+# STEP 4 - Bundle-Ether Parent
+# Must exist and be committed before members
+# or subinterfaces can be configured
+# -----------------------------------------------
+- name: Create Bundle-Ether parent interfaces
+  cisco.iosxr.iosxr_interfaces:
+    config:
+      - name: "{{ item.name }}"
+        description: "{{ item.description | default(omit) }}"
+        enabled: true
+    state: merged
+  loop: "{{ bundle_interfaces | default([]) }}"
+  tags: interfaces
+
+# -----------------------------------------------
+# STEP 5 - Bundle-Ether Members
+# Parent must be committed first
+# -----------------------------------------------
+- name: Enable Bundle-Ether member interfaces
+  cisco.iosxr.iosxr_interfaces:
+    config:
+      - name: "{{ item.1.interface }}"
+        enabled: true
+    state: merged
+  loop: "{{ bundle_interfaces | default([]) | subelements('members') }}"
+  tags: interfaces
+
+- name: Configure Bundle-Ether member interfaces
+  cisco.iosxr.iosxr_lag_interfaces:
+    config:
+      - name: "{{ item.0.name }}"
+        members:
+          - member: "{{ item.1.interface }}"
+            mode: active
+    state: merged
+  loop: "{{ bundle_interfaces | default([]) | subelements('members') }}"
+  tags: interfaces
+
+# -----------------------------------------------
+# STEP 6 - Bundle-Ether Subinterface Shells
+# Parent and members must exist first
+# -----------------------------------------------
+- name: Create Bundle-Ether subinterface shells
+  cisco.iosxr.iosxr_interfaces:
+    config:
+      - name: "{{ item.1.name }}"
+        description: "{{ item.1.description | default(omit) }}"
+        enabled: true
+    state: merged
+  loop: "{{ bundle_interfaces | default([]) | subelements('subinterfaces') }}"
+  tags: interfaces
+
+# -----------------------------------------------
+# STEP 7 - Subinterface dot1q and IP
+# Shells must be committed first
+# -----------------------------------------------
+- name: Configure Bundle-Ether subinterface dot1q encapsulation
+  cisco.iosxr.iosxr_config:
+    lines:
+      - encapsulation dot1q {{ item.1.vlan }}
+    parents: interface {{ item.1.name }}
+  loop: "{{ bundle_interfaces | default([]) | subelements('subinterfaces') }}"
+  tags: interfaces
+
+- name: Configure Bundle-Ether subinterfaces
+  cisco.iosxr.iosxr_l3_interfaces:
+    config:
+      - name: "{{ item.1.name }}"
+        ipv4:
+          - address: "{{ item.1.ip }}"
+    state: merged
+  loop: "{{ bundle_interfaces | default([]) | subelements('subinterfaces') }}"
+  tags: interfaces

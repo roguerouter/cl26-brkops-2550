@@ -1,0 +1,66 @@
+---
+hostname: s2-c8k-rtr1
+platform_role: distribution_router
+site: site2
+platform_type: iosxe
+
+archive_path: bootflash:archive
+
+# Management
+mgmt_interface: GigabitEthernet3
+mgmt_description: OoB_Mgmt
+mgmt_vrf: management
+mgmt_ip: 10.83.32.111/25
+mgmt_gw: 10.83.32.126
+
+# License / Hardware
+hardware_pid: C8300-2N2S-4T2X
+hardware_sn: FLM252710AT
+
+# Loopback / Router-ID
+loopbacks:
+  - name: Loopback0
+    description: ROUTER-ID
+    ip: 172.22.0.2/32
+    prefix: 255.255.255.255
+    ospf_area: 0
+    ospf_passive: true
+  - name: Loopback20
+    description: Site2 IPv6
+    ipv6: 2001:db8:cafe:200::1/128
+    ospfv3_passive: true
+
+# NTP - syncs from NCS540
+ntp_servers:
+  - 172.17.0.1
+
+# P2P interfaces
+p2p_interfaces:
+  - name: GigabitEthernet8
+    description: TO_S1-NCS540_Te0/0/0/14
+    ip: 172.16.12.2/30
+    ipv6: 2001:db8:16:12::2/126
+    prefix: 255.255.255.252
+    ospf_area: 0
+    ospfv3_area: 0
+    ospf_network: point-to-point
+  - name: GigabitEthernet1
+    description: TO_S2-C9K-SW1_Gi0/1
+    ip: 172.24.22.1/30
+    prefix: 255.255.255.252
+    ospf_area: 0
+    ospf_network: point-to-point
+
+# OSPFv2 (IPv4)
+ospf:
+  process_id: 1
+  reference_bandwidth: 100000
+  router_id: 172.22.0.2
+  area: 0
+
+# OSPFv3 (IPv6)
+ospfv3:
+  process_id: 1
+  reference_bandwidth: 100000
+  router_id: 172.22.0.2
+  area: 0

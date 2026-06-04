@@ -1,0 +1,58 @@
+
+2026-06-01 06:12:33,536: %UNICON-INFO: +++ s1-ncs540-rtr1 logfile production/ospf_ipv6/connection_s1-ncs540-rtr1.txt +++
+
+2026-06-01 06:12:33,536: %UNICON-INFO: +++ Unicon plugin iosxr (unicon.plugins.iosxr) +++
+(mleuschn@10.82.9.130) Password: 
+
+2026-06-01 06:12:33,967: %UNICON-INFO: +++ connection to spawn: ssh -l mleuschn 10.82.9.130, id: 129767238008224 +++
+
+2026-06-01 06:12:33,968: %UNICON-INFO: connection to s1-ncs540-rtr1
+
+Last login: Mon Jun  1 06:10:34 2026 from 10.83.32.14
+
+
+
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-06-01 06:12:34,495: %UNICON-INFO: Storing credentials from default as current_credentials
+
+2026-06-01 06:12:34,496: %UNICON-INFO: +++ initializing handle +++
+
+2026-06-01 06:12:34,621: %UNICON-INFO: +++ s1-ncs540-rtr1 with via 'cli': executing command 'terminal length 0' +++
+terminal length 0
+Mon Jun  1 06:27:34.521 UTC
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-06-01 06:12:34,979: %UNICON-INFO: +++ s1-ncs540-rtr1 with via 'cli': executing command 'terminal width 0' +++
+terminal width 0
+Mon Jun  1 06:27:34.877 UTC
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-06-01 06:18:33,057: %UNICON-INFO: +++ s1-ncs540-rtr1 logfile production/ospf_ipv6/connection_s1-ncs540-rtr1.txt +++
+
+2026-06-01 06:18:33,058: %UNICON-INFO: +++ Unicon plugin iosxr (unicon.plugins.iosxr) +++
+(mleuschn@10.82.9.130) Password: 
+
+2026-06-01 06:18:33,469: %UNICON-INFO: +++ connection to spawn: ssh -l mleuschn 10.82.9.130, id: 133217243888912 +++
+
+2026-06-01 06:18:33,469: %UNICON-INFO: connection to s1-ncs540-rtr1
+
+Last login: Mon Jun  1 06:32:42 2026 from 10.83.32.14
+
+
+
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-06-01 06:18:33,991: %UNICON-INFO: Storing credentials from default as current_credentials
+
+2026-06-01 06:18:33,991: %UNICON-INFO: +++ initializing handle +++
+
+2026-06-01 06:18:34,115: %UNICON-INFO: +++ s1-ncs540-rtr1 with via 'cli': executing command 'terminal length 0' +++
+terminal length 0
+Mon Jun  1 06:33:34.013 UTC
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-06-01 06:18:34,470: %UNICON-INFO: +++ s1-ncs540-rtr1 with via 'cli': executing command 'terminal width 0' +++
+terminal width 0
+Mon Jun  1 06:33:34.381 UTC
+RP/0/RP0/CPU0:s1-ncs540-rtr1#

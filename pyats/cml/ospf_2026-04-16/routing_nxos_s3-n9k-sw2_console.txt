@@ -1,0 +1,81 @@
++++ s3-n9k-sw2 with via 'cli': executing command 'show ip route vrf all' +++
+show ip route vrf all
+IP Route Table for VRF "default"
+'*' denotes best ucast next-hop
+'**' denotes best mcast next-hop
+'[x/y]' denotes [preference/metric]
+'%<string>' in via output denotes VRF <string>
+
+172.20.13.0/30, ubest/mbest: 1/0
+    *via 172.28.31.5, Eth1/1, [110/200], 02:12:52, ospf-1, intra
+172.28.31.0/30, ubest/mbest: 1/0
+    *via 172.28.31.5, Eth1/1, [110/200], 02:12:52, ospf-1, intra
+172.28.31.4/30, ubest/mbest: 1/0, attached
+    *via 172.28.31.6, Eth1/1, [0/0], 21:52:19, direct
+172.28.31.6/32, ubest/mbest: 1/0, attached
+    *via 172.28.31.6, Eth1/1, [0/0], 21:52:19, local
+172.29.0.3/32, ubest/mbest: 1/0
+    *via 172.28.31.5, Eth1/1, [110/101], 00:12:42, ospf-1, intra
+192.168.40.0/24, ubest/mbest: 1/0, attached
+    *via 192.168.40.3, Vlan10, [0/0], 02:11:27, direct
+192.168.40.1/32, ubest/mbest: 1/0, attached
+    *via 192.168.40.1, Vlan10, [0/0], 02:10:45, hsrp
+192.168.40.3/32, ubest/mbest: 1/0, attached
+    *via 192.168.40.3, Vlan10, [0/0], 02:11:27, local
+192.168.41.0/24, ubest/mbest: 1/0, attached
+    *via 192.168.41.3, Vlan20, [0/0], 02:11:27, direct
+192.168.41.1/32, ubest/mbest: 1/0, attached
+    *via 192.168.41.1, Vlan20, [0/0], 02:10:45, hsrp
+192.168.41.3/32, ubest/mbest: 1/0, attached
+    *via 192.168.41.3, Vlan20, [0/0], 02:11:27, local
+192.168.42.0/24, ubest/mbest: 1/0, attached
+    *via 192.168.42.3, Vlan100, [0/0], 02:11:27, direct
+192.168.42.1/32, ubest/mbest: 1/0, attached
+    *via 192.168.42.1, Vlan100, [0/0], 02:10:45, hsrp
+192.168.42.3/32, ubest/mbest: 1/0, attached
+    *via 192.168.42.3, Vlan100, [0/0], 02:11:27, local
+
+IP Route Table for VRF "management"
+'*' denotes best ucast next-hop
+'**' denotes best mcast next-hop
+'[x/y]' denotes [preference/metric]
+'%<string>' in via output denotes VRF <string>
+
+0.0.0.0/0, ubest/mbest: 1/0
+    *via 10.83.32.126, [1/0], 1d03h, static
+10.83.32.0/25, ubest/mbest: 1/0, attached
+    *via 10.83.32.115, mgmt0, [0/0], 1d03h, direct
+10.83.32.115/32, ubest/mbest: 1/0, attached
+    *via 10.83.32.115, mgmt0, [0/0], 1d03h, local
+
+IP Route Table for VRF "egress-loadbalance-resolution-"
+'*' denotes best ucast next-hop
+'**' denotes best mcast next-hop
+'[x/y]' denotes [preference/metric]
+'%<string>' in via output denotes VRF <string>
+
+
+s3-n9k-sw2# 
++++ s3-n9k-sw2 with via 'cli': executing command 'show ipv6 route vrf all' +++
+show ipv6 route vrf all
+IPv6 Routing Table for VRF "default"
+'*' denotes best ucast next-hop
+'**' denotes best mcast next-hop
+'[x/y]' denotes [preference/metric]
+
+
+IPv6 Routing Table for VRF "egress-loadbalance-resolution-"
+'*' denotes best ucast next-hop
+'**' denotes best mcast next-hop
+'[x/y]' denotes [preference/metric]
+
+
+s3-n9k-sw2# 
++====================================================================================================================================================+
+| Commands for learning feature 'Routing'                                                                                                            |
++====================================================================================================================================================+
+| - Parsed commands                                                                                                                                  |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.nxos.show_routing.ShowIpRoute'>, arguments: {'vrf':'all'}                                                         |
+|   cmd: <class 'genie.libs.parser.nxos.show_routing.ShowIpv6Route'>, arguments: {'vrf':'all'}                                                       |
+|====================================================================================================================================================|

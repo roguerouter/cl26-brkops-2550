@@ -1,0 +1,1710 @@
+annotations:
+  - border_color: '#80808000'
+    border_radius: 28
+    border_style: ''
+    color: '#FF9000FF'
+    rotation: 0
+    thickness: 1
+    type: rectangle
+    x1: -379.4387570634052
+    y1: -24.961525695297862
+    x2: 240.0
+    y2: 52.297909899997
+    z_index: 0
+  - border_color: '#80808000'
+    border_radius: 28
+    border_style: ''
+    color: '#FF9000FF'
+    rotation: 321
+    thickness: 1
+    type: rectangle
+    x1: -113.03320136817064
+    y1: -100.33560611804913
+    x2: 184.75069172513793
+    y2: 40.0
+    z_index: 0
+  - border_color: '#80808000'
+    border_radius: 28
+    border_style: ''
+    color: '#FF9000FF'
+    rotation: 32
+    thickness: 1
+    type: rectangle
+    x1: -116.13577943438278
+    y1: 42.35940294514357
+    x2: 189.29392730749606
+    y2: 40.0
+    z_index: 0
+  - border_color: '#80808000'
+    border_radius: 28
+    border_style: ''
+    color: '#FF9000FF'
+    rotation: 0
+    thickness: 1
+    type: rectangle
+    x1: 104.3977917247114
+    y1: -178.09011251191848
+    x2: 195.16717178296017
+    y2: 40.0
+    z_index: 0
+  - border_color: '#80808000'
+    border_radius: 28
+    border_style: ''
+    color: '#FF9000FF'
+    rotation: 27
+    thickness: 1
+    type: rectangle
+    x1: 101.96037931541554
+    y1: 160.43513340174854
+    x2: 195.16717178296017
+    y2: 40.0
+    z_index: 0
+  - border_color: '#80808000'
+    border_radius: 28
+    border_style: ''
+    color: '#FF9000FF'
+    rotation: 333
+    thickness: 1
+    type: rectangle
+    x1: 99.5229669061197
+    y1: 38.002279007547344
+    x2: 195.16717178296017
+    y2: 40.0
+    z_index: 0
+  - border_color: '#80808000'
+    border_radius: 28
+    border_style: ''
+    color: '#FF9000FF'
+    rotation: 270
+    thickness: 1
+    type: rectangle
+    x1: 221.47107362751848
+    y1: 99.95266473649346
+    x2: 195.16717178296017
+    y2: 40.0
+    z_index: 0
+  - border_color: '#0A60FF'
+    border_style: ''
+    color: '#00000000'
+    rotation: 0
+    thickness: 5
+    type: ellipse
+    x1: -256.24991153023655
+    y1: 0.4536708239716596
+    x2: 17.51785082358841
+    y2: 56.49820941317922
+    z_index: 1
+  - border_color: '#0A60FF'
+    border_style: ''
+    color: '#00000000'
+    rotation: 90
+    thickness: 5
+    type: ellipse
+    x1: 320.55479182054137
+    y1: 114.45023659986556
+    x2: 12.5
+    y2: 43.93518017728819
+    z_index: 1
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#92D050'
+    rotation: 0
+    text_bold: false
+    text_content: 10.83.32.109/25
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: -474.35276916809426
+    y1: 62.730426006395106
+    z_index: 2
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#92D050'
+    rotation: 0
+    text_bold: false
+    text_content: 10.83.32.110/25
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: -184.59864535081388
+    y1: 51.64435522558776
+    z_index: 2
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#92D050'
+    rotation: 0
+    text_bold: false
+    text_content: 10.83.32.111/25
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: 10.078624513297257
+    y1: -212.0339544158781
+    z_index: 2
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#92D050'
+    rotation: 0
+    text_bold: false
+    text_content: 10.83.32.113/25
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: -1.0074462675100904
+    y1: 181.311368484706
+    z_index: 2
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#92D050'
+    rotation: 0
+    text_bold: false
+    text_content: 10.83.32.112/25
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: 250.1657350714593
+    y1: -213.1866225448618
+    z_index: 2
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#92D050'
+    rotation: 0
+    text_bold: false
+    text_content: 10.83.32.114/25
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: 258.94646959429923
+    y1: -45.47144559284344
+    z_index: 2
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#92D050'
+    rotation: 0
+    text_bold: false
+    text_content: 10.83.32.115/25
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: 253.53662890024827
+    y1: 296.7878065269333
+    z_index: 2
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#FFFFFF'
+    rotation: 0
+    text_bold: false
+    text_content: C9K Po10 / NCS Bundle-Ether1
+    text_font: monospace
+    text_italic: false
+    text_size: 14
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: -407.65706564870675
+    y1: 96.78780652693332
+    z_index: 3
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#FFFFFF'
+    rotation: 0
+    text_bold: false
+    text_content: |-
+      N9K Po10
+      vPC Peer-Link
+      Members E1/53, E1/54
+    text_font: monospace
+    text_italic: false
+    text_size: 14
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: 388.34293435129325
+    y1: 78.0078398495069
+    z_index: 3
+  - border_color: '#80808000'
+    border_radius: 28
+    border_style: ''
+    color: '#FF9000FF'
+    rotation: 0
+    thickness: 1
+    type: rectangle
+    x1: -385.0
+    y1: -205.0
+    x2: 240.0
+    y2: 40.0
+    z_index: 0
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#FFFFFF'
+    rotation: 0
+    text_bold: false
+    text_content: Point-to-Point Links
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: -358.0049174084005
+    y1: -191.04811976284913
+    z_index: 4
+smart_annotations:
+  - tag: mgmt
+    is_on: false
+    padding: 20
+    label: mgmt
+    tag_offset_x: 0
+    tag_offset_y: 0
+    tag_size: 14
+    group_distance: 0
+    thickness: 1
+    border_style: ''
+    fill_color: '#C72A2880'
+    border_color: '#00000080'
+    z_index: 1
+  - tag: p2p_interfaces
+    is_on: false
+    padding: 20
+    label: p2p_interfaces
+    tag_offset_x: 0
+    tag_offset_y: 0
+    tag_size: 14
+    group_distance: 0
+    thickness: 1
+    border_style: ''
+    fill_color: '#009C8C80'
+    border_color: '#00000080'
+    z_index: 2
+nodes:
+  - boot_disk_size: null
+    configuration:
+      - name: iosxe_config.txt
+        content: ''
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n0
+    image_definition: null
+    label: s1-c9k-sw1
+    node_definition: cat9000v-uadp
+    parameters: {}
+    ram: null
+    tags:
+      - p2p_interfaces
+    x: -400
+    y: 0
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: GigabitEthernet0/0
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: GigabitEthernet1/0/1
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: GigabitEthernet1/0/2
+        mac_address: null
+        type: physical
+        slot: 2
+      - id: i4
+        label: GigabitEthernet1/0/3
+        mac_address: null
+        type: physical
+        slot: 3
+      - id: i5
+        label: GigabitEthernet1/0/4
+        mac_address: null
+        type: physical
+        slot: 4
+      - id: i6
+        label: GigabitEthernet1/0/5
+        mac_address: null
+        type: physical
+        slot: 5
+      - id: i7
+        label: GigabitEthernet1/0/6
+        mac_address: null
+        type: physical
+        slot: 6
+      - id: i8
+        label: GigabitEthernet1/0/7
+        mac_address: null
+        type: physical
+        slot: 7
+      - id: i9
+        label: GigabitEthernet1/0/8
+        mac_address: null
+        type: physical
+        slot: 8
+      - id: i10
+        label: GigabitEthernet1/0/9
+        mac_address: null
+        type: physical
+        slot: 9
+      - id: i11
+        label: GigabitEthernet1/0/10
+        mac_address: null
+        type: physical
+        slot: 10
+      - id: i12
+        label: GigabitEthernet1/0/11
+        mac_address: null
+        type: physical
+        slot: 11
+      - id: i13
+        label: GigabitEthernet1/0/12
+        mac_address: null
+        type: physical
+        slot: 12
+      - id: i14
+        label: GigabitEthernet1/0/13
+        mac_address: null
+        type: physical
+        slot: 13
+      - id: i15
+        label: GigabitEthernet1/0/14
+        mac_address: null
+        type: physical
+        slot: 14
+      - id: i16
+        label: GigabitEthernet1/0/15
+        mac_address: null
+        type: physical
+        slot: 15
+      - id: i17
+        label: GigabitEthernet1/0/16
+        mac_address: null
+        type: physical
+        slot: 16
+      - id: i18
+        label: GigabitEthernet1/0/17
+        mac_address: null
+        type: physical
+        slot: 17
+      - id: i19
+        label: GigabitEthernet1/0/18
+        mac_address: null
+        type: physical
+        slot: 18
+      - id: i20
+        label: GigabitEthernet1/0/19
+        mac_address: null
+        type: physical
+        slot: 19
+      - id: i21
+        label: GigabitEthernet1/0/20
+        mac_address: null
+        type: physical
+        slot: 20
+      - id: i22
+        label: GigabitEthernet1/0/21
+        mac_address: null
+        type: physical
+        slot: 21
+      - id: i23
+        label: GigabitEthernet1/0/22
+        mac_address: null
+        type: physical
+        slot: 22
+      - id: i24
+        label: GigabitEthernet1/0/23
+        mac_address: null
+        type: physical
+        slot: 23
+      - id: i25
+        label: GigabitEthernet1/0/24
+        mac_address: null
+        type: physical
+        slot: 24
+  - boot_disk_size: null
+    configuration:
+      - name: iosxr_config.txt
+        content: ''
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n1
+    image_definition: iosxrv9000-07-11-1
+    label: s1-ncs540-rtr1
+    node_definition: iosxrv9000
+    parameters: {}
+    ram: null
+    tags:
+      - p2p_interfaces
+    x: -120
+    y: 0
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: MgmtEth0/RP0/CPU0/0
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: donotuse1
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: donotuse2
+        mac_address: null
+        type: physical
+        slot: 2
+      - id: i4
+        label: GigabitEthernet0/0/0/0
+        mac_address: null
+        type: physical
+        slot: 3
+      - id: i5
+        label: GigabitEthernet0/0/0/1
+        mac_address: null
+        type: physical
+        slot: 4
+      - id: i6
+        label: GigabitEthernet0/0/0/2
+        mac_address: null
+        type: physical
+        slot: 5
+      - id: i7
+        label: GigabitEthernet0/0/0/3
+        mac_address: null
+        type: physical
+        slot: 6
+      - id: i8
+        label: GigabitEthernet0/0/0/4
+        mac_address: null
+        type: physical
+        slot: 7
+      - id: i9
+        label: GigabitEthernet0/0/0/5
+        mac_address: null
+        type: physical
+        slot: 8
+      - id: i10
+        label: GigabitEthernet0/0/0/6
+        mac_address: null
+        type: physical
+        slot: 9
+      - id: i11
+        label: GigabitEthernet0/0/0/7
+        mac_address: null
+        type: physical
+        slot: 10
+      - id: i12
+        label: GigabitEthernet0/0/0/8
+        mac_address: null
+        type: physical
+        slot: 11
+      - id: i13
+        label: GigabitEthernet0/0/0/9
+        mac_address: null
+        type: physical
+        slot: 12
+      - id: i14
+        label: GigabitEthernet0/0/0/10
+        mac_address: null
+        type: physical
+        slot: 13
+      - id: i15
+        label: GigabitEthernet0/0/0/11
+        mac_address: null
+        type: physical
+        slot: 14
+      - id: i16
+        label: GigabitEthernet0/0/0/12
+        mac_address: null
+        type: physical
+        slot: 15
+      - id: i17
+        label: GigabitEthernet0/0/0/13
+        mac_address: null
+        type: physical
+        slot: 16
+      - id: i18
+        label: GigabitEthernet0/0/0/14
+        mac_address: null
+        type: physical
+        slot: 17
+      - id: i19
+        label: GigabitEthernet0/0/0/15
+        mac_address: null
+        type: physical
+        slot: 18
+      - id: i20
+        label: GigabitEthernet0/0/0/16
+        mac_address: null
+        type: physical
+        slot: 19
+      - id: i21
+        label: GigabitEthernet0/0/0/17
+        mac_address: null
+        type: physical
+        slot: 20
+      - id: i22
+        label: GigabitEthernet0/0/0/18
+        mac_address: null
+        type: physical
+        slot: 21
+      - id: i23
+        label: GigabitEthernet0/0/0/19
+        mac_address: null
+        type: physical
+        slot: 22
+      - id: i24
+        label: GigabitEthernet0/0/0/20
+        mac_address: null
+        type: physical
+        slot: 23
+      - id: i25
+        label: GigabitEthernet0/0/0/21
+        mac_address: null
+        type: physical
+        slot: 24
+      - id: i26
+        label: GigabitEthernet0/0/0/22
+        mac_address: null
+        type: physical
+        slot: 25
+      - id: i27
+        label: GigabitEthernet0/0/0/23
+        mac_address: null
+        type: physical
+        slot: 26
+      - id: i28
+        label: GigabitEthernet0/0/0/24
+        mac_address: null
+        type: physical
+        slot: 27
+      - id: i29
+        label: GigabitEthernet0/0/0/25
+        mac_address: null
+        type: physical
+        slot: 28
+      - id: i30
+        label: GigabitEthernet0/0/0/26
+        mac_address: null
+        type: physical
+        slot: 29
+      - id: i31
+        label: GigabitEthernet0/0/0/27
+        mac_address: null
+        type: physical
+        slot: 30
+  - boot_disk_size: null
+    configuration:
+      - name: iosxe_config.txt
+        content: ''
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n2
+    image_definition: null
+    label: s2-c8k-rtr1
+    node_definition: cat8000v
+    parameters: {}
+    ram: null
+    tags:
+      - p2p_interfaces
+    x: 80
+    y: -160
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: GigabitEthernet1
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: GigabitEthernet2
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: GigabitEthernet3
+        mac_address: null
+        type: physical
+        slot: 2
+      - id: i4
+        label: GigabitEthernet4
+        mac_address: null
+        type: physical
+        slot: 3
+      - id: i5
+        label: GigabitEthernet5
+        mac_address: null
+        type: physical
+        slot: 4
+      - id: i6
+        label: GigabitEthernet6
+        mac_address: null
+        type: physical
+        slot: 5
+      - id: i7
+        label: GigabitEthernet7
+        mac_address: null
+        type: physical
+        slot: 6
+      - id: i8
+        label: GigabitEthernet8
+        mac_address: null
+        type: physical
+        slot: 7
+  - boot_disk_size: null
+    configuration:
+      - name: iosxe_config.txt
+        content: ''
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n3
+    image_definition: null
+    label: s3-c8k-rtr1
+    node_definition: cat8000v
+    parameters: {}
+    ram: null
+    tags:
+      - p2p_interfaces
+    x: 80
+    y: 120
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: GigabitEthernet1
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: GigabitEthernet2
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: GigabitEthernet3
+        mac_address: null
+        type: physical
+        slot: 2
+      - id: i4
+        label: GigabitEthernet4
+        mac_address: null
+        type: physical
+        slot: 3
+      - id: i5
+        label: GigabitEthernet5
+        mac_address: null
+        type: physical
+        slot: 4
+      - id: i6
+        label: GigabitEthernet6
+        mac_address: null
+        type: physical
+        slot: 5
+      - id: i7
+        label: GigabitEthernet7
+        mac_address: null
+        type: physical
+        slot: 6
+      - id: i8
+        label: GigabitEthernet8
+        mac_address: null
+        type: physical
+        slot: 7
+  - boot_disk_size: null
+    configuration:
+      - name: iosxe_config.txt
+        content: ''
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n4
+    image_definition: null
+    label: s2-c9k-sw1
+    node_definition: cat9000v-uadp
+    parameters: {}
+    ram: null
+    tags:
+      - mgmt
+    x: 320
+    y: -160
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: GigabitEthernet0/0
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: GigabitEthernet1/0/1
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: GigabitEthernet1/0/2
+        mac_address: null
+        type: physical
+        slot: 2
+      - id: i4
+        label: GigabitEthernet1/0/3
+        mac_address: null
+        type: physical
+        slot: 3
+      - id: i5
+        label: GigabitEthernet1/0/4
+        mac_address: null
+        type: physical
+        slot: 4
+      - id: i6
+        label: GigabitEthernet1/0/5
+        mac_address: null
+        type: physical
+        slot: 5
+      - id: i7
+        label: GigabitEthernet1/0/6
+        mac_address: null
+        type: physical
+        slot: 6
+      - id: i8
+        label: GigabitEthernet1/0/7
+        mac_address: null
+        type: physical
+        slot: 7
+      - id: i9
+        label: GigabitEthernet1/0/8
+        mac_address: null
+        type: physical
+        slot: 8
+      - id: i10
+        label: GigabitEthernet1/0/9
+        mac_address: null
+        type: physical
+        slot: 9
+      - id: i11
+        label: GigabitEthernet1/0/10
+        mac_address: null
+        type: physical
+        slot: 10
+      - id: i12
+        label: GigabitEthernet1/0/11
+        mac_address: null
+        type: physical
+        slot: 11
+      - id: i13
+        label: GigabitEthernet1/0/12
+        mac_address: null
+        type: physical
+        slot: 12
+      - id: i14
+        label: GigabitEthernet1/0/13
+        mac_address: null
+        type: physical
+        slot: 13
+      - id: i15
+        label: GigabitEthernet1/0/14
+        mac_address: null
+        type: physical
+        slot: 14
+      - id: i16
+        label: GigabitEthernet1/0/15
+        mac_address: null
+        type: physical
+        slot: 15
+      - id: i17
+        label: GigabitEthernet1/0/16
+        mac_address: null
+        type: physical
+        slot: 16
+      - id: i18
+        label: GigabitEthernet1/0/17
+        mac_address: null
+        type: physical
+        slot: 17
+      - id: i19
+        label: GigabitEthernet1/0/18
+        mac_address: null
+        type: physical
+        slot: 18
+      - id: i20
+        label: GigabitEthernet1/0/19
+        mac_address: null
+        type: physical
+        slot: 19
+      - id: i21
+        label: GigabitEthernet1/0/20
+        mac_address: null
+        type: physical
+        slot: 20
+      - id: i22
+        label: GigabitEthernet1/0/21
+        mac_address: null
+        type: physical
+        slot: 21
+      - id: i23
+        label: GigabitEthernet1/0/22
+        mac_address: null
+        type: physical
+        slot: 22
+      - id: i24
+        label: GigabitEthernet1/0/23
+        mac_address: null
+        type: physical
+        slot: 23
+      - id: i25
+        label: GigabitEthernet1/0/24
+        mac_address: null
+        type: physical
+        slot: 24
+  - boot_disk_size: null
+    configuration:
+      - name: nxos_config.txt
+        content: ''
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n5
+    image_definition: null
+    label: s3-n9k-sw1
+    node_definition: nxosv9000
+    parameters: {}
+    ram: null
+    tags:
+      - mgmt
+      - p2p_interfaces
+    x: 320
+    y: 0
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: mgmt0
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: Ethernet1/1
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: Ethernet1/2
+        mac_address: null
+        type: physical
+        slot: 2
+      - id: i4
+        label: Ethernet1/3
+        mac_address: null
+        type: physical
+        slot: 3
+      - id: i5
+        label: Ethernet1/4
+        mac_address: null
+        type: physical
+        slot: 4
+      - id: i6
+        label: Ethernet1/5
+        mac_address: null
+        type: physical
+        slot: 5
+      - id: i7
+        label: Ethernet1/6
+        mac_address: null
+        type: physical
+        slot: 6
+      - id: i8
+        label: Ethernet1/7
+        mac_address: null
+        type: physical
+        slot: 7
+      - id: i9
+        label: Ethernet1/8
+        mac_address: null
+        type: physical
+        slot: 8
+      - id: i10
+        label: Ethernet1/9
+        mac_address: null
+        type: physical
+        slot: 9
+      - id: i11
+        label: Ethernet1/10
+        mac_address: null
+        type: physical
+        slot: 10
+      - id: i12
+        label: Ethernet1/11
+        mac_address: null
+        type: physical
+        slot: 11
+      - id: i13
+        label: Ethernet1/12
+        mac_address: null
+        type: physical
+        slot: 12
+      - id: i14
+        label: Ethernet1/13
+        mac_address: null
+        type: physical
+        slot: 13
+      - id: i15
+        label: Ethernet1/14
+        mac_address: null
+        type: physical
+        slot: 14
+      - id: i16
+        label: Ethernet1/15
+        mac_address: null
+        type: physical
+        slot: 15
+      - id: i17
+        label: Ethernet1/16
+        mac_address: null
+        type: physical
+        slot: 16
+      - id: i18
+        label: Ethernet1/17
+        mac_address: null
+        type: physical
+        slot: 17
+      - id: i19
+        label: Ethernet1/18
+        mac_address: null
+        type: physical
+        slot: 18
+      - id: i20
+        label: Ethernet1/19
+        mac_address: null
+        type: physical
+        slot: 19
+      - id: i21
+        label: Ethernet1/20
+        mac_address: null
+        type: physical
+        slot: 20
+      - id: i22
+        label: Ethernet1/21
+        mac_address: null
+        type: physical
+        slot: 21
+      - id: i23
+        label: Ethernet1/22
+        mac_address: null
+        type: physical
+        slot: 22
+      - id: i24
+        label: Ethernet1/23
+        mac_address: null
+        type: physical
+        slot: 23
+      - id: i25
+        label: Ethernet1/24
+        mac_address: null
+        type: physical
+        slot: 24
+      - id: i26
+        label: Ethernet1/25
+        mac_address: null
+        type: physical
+        slot: 25
+      - id: i27
+        label: Ethernet1/26
+        mac_address: null
+        type: physical
+        slot: 26
+      - id: i28
+        label: Ethernet1/27
+        mac_address: null
+        type: physical
+        slot: 27
+      - id: i29
+        label: Ethernet1/28
+        mac_address: null
+        type: physical
+        slot: 28
+      - id: i30
+        label: Ethernet1/29
+        mac_address: null
+        type: physical
+        slot: 29
+      - id: i31
+        label: Ethernet1/30
+        mac_address: null
+        type: physical
+        slot: 30
+      - id: i32
+        label: Ethernet1/31
+        mac_address: null
+        type: physical
+        slot: 31
+      - id: i33
+        label: Ethernet1/32
+        mac_address: null
+        type: physical
+        slot: 32
+      - id: i34
+        label: Ethernet1/33
+        mac_address: null
+        type: physical
+        slot: 33
+      - id: i35
+        label: Ethernet1/34
+        mac_address: null
+        type: physical
+        slot: 34
+      - id: i36
+        label: Ethernet1/35
+        mac_address: null
+        type: physical
+        slot: 35
+      - id: i37
+        label: Ethernet1/36
+        mac_address: null
+        type: physical
+        slot: 36
+      - id: i38
+        label: Ethernet1/37
+        mac_address: null
+        type: physical
+        slot: 37
+      - id: i39
+        label: Ethernet1/38
+        mac_address: null
+        type: physical
+        slot: 38
+      - id: i40
+        label: Ethernet1/39
+        mac_address: null
+        type: physical
+        slot: 39
+      - id: i41
+        label: Ethernet1/40
+        mac_address: null
+        type: physical
+        slot: 40
+      - id: i42
+        label: Ethernet1/41
+        mac_address: null
+        type: physical
+        slot: 41
+      - id: i43
+        label: Ethernet1/42
+        mac_address: null
+        type: physical
+        slot: 42
+      - id: i44
+        label: Ethernet1/43
+        mac_address: null
+        type: physical
+        slot: 43
+      - id: i45
+        label: Ethernet1/44
+        mac_address: null
+        type: physical
+        slot: 44
+      - id: i46
+        label: Ethernet1/45
+        mac_address: null
+        type: physical
+        slot: 45
+      - id: i47
+        label: Ethernet1/46
+        mac_address: null
+        type: physical
+        slot: 46
+      - id: i48
+        label: Ethernet1/47
+        mac_address: null
+        type: physical
+        slot: 47
+      - id: i49
+        label: Ethernet1/48
+        mac_address: null
+        type: physical
+        slot: 48
+      - id: i50
+        label: Ethernet1/49
+        mac_address: null
+        type: physical
+        slot: 49
+      - id: i51
+        label: Ethernet1/50
+        mac_address: null
+        type: physical
+        slot: 50
+      - id: i52
+        label: Ethernet1/51
+        mac_address: null
+        type: physical
+        slot: 51
+      - id: i53
+        label: Ethernet1/52
+        mac_address: null
+        type: physical
+        slot: 52
+      - id: i54
+        label: Ethernet1/53
+        mac_address: null
+        type: physical
+        slot: 53
+      - id: i55
+        label: Ethernet1/54
+        mac_address: null
+        type: physical
+        slot: 54
+  - boot_disk_size: null
+    configuration:
+      - name: nxos_config.txt
+        content: ''
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n6
+    image_definition: null
+    label: s3-n9k-sw2
+    node_definition: nxosv9000
+    parameters: {}
+    ram: null
+    tags:
+      - mgmt
+      - p2p_interfaces
+    x: 320
+    y: 240
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: mgmt0
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: Ethernet1/1
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: Ethernet1/2
+        mac_address: null
+        type: physical
+        slot: 2
+      - id: i4
+        label: Ethernet1/3
+        mac_address: null
+        type: physical
+        slot: 3
+      - id: i5
+        label: Ethernet1/4
+        mac_address: null
+        type: physical
+        slot: 4
+      - id: i6
+        label: Ethernet1/5
+        mac_address: null
+        type: physical
+        slot: 5
+      - id: i7
+        label: Ethernet1/6
+        mac_address: null
+        type: physical
+        slot: 6
+      - id: i8
+        label: Ethernet1/7
+        mac_address: null
+        type: physical
+        slot: 7
+      - id: i9
+        label: Ethernet1/8
+        mac_address: null
+        type: physical
+        slot: 8
+      - id: i10
+        label: Ethernet1/9
+        mac_address: null
+        type: physical
+        slot: 9
+      - id: i11
+        label: Ethernet1/10
+        mac_address: null
+        type: physical
+        slot: 10
+      - id: i12
+        label: Ethernet1/11
+        mac_address: null
+        type: physical
+        slot: 11
+      - id: i13
+        label: Ethernet1/12
+        mac_address: null
+        type: physical
+        slot: 12
+      - id: i14
+        label: Ethernet1/13
+        mac_address: null
+        type: physical
+        slot: 13
+      - id: i15
+        label: Ethernet1/14
+        mac_address: null
+        type: physical
+        slot: 14
+      - id: i16
+        label: Ethernet1/15
+        mac_address: null
+        type: physical
+        slot: 15
+      - id: i17
+        label: Ethernet1/16
+        mac_address: null
+        type: physical
+        slot: 16
+      - id: i18
+        label: Ethernet1/17
+        mac_address: null
+        type: physical
+        slot: 17
+      - id: i19
+        label: Ethernet1/18
+        mac_address: null
+        type: physical
+        slot: 18
+      - id: i20
+        label: Ethernet1/19
+        mac_address: null
+        type: physical
+        slot: 19
+      - id: i21
+        label: Ethernet1/20
+        mac_address: null
+        type: physical
+        slot: 20
+      - id: i22
+        label: Ethernet1/21
+        mac_address: null
+        type: physical
+        slot: 21
+      - id: i23
+        label: Ethernet1/22
+        mac_address: null
+        type: physical
+        slot: 22
+      - id: i24
+        label: Ethernet1/23
+        mac_address: null
+        type: physical
+        slot: 23
+      - id: i25
+        label: Ethernet1/24
+        mac_address: null
+        type: physical
+        slot: 24
+      - id: i26
+        label: Ethernet1/25
+        mac_address: null
+        type: physical
+        slot: 25
+      - id: i27
+        label: Ethernet1/26
+        mac_address: null
+        type: physical
+        slot: 26
+      - id: i28
+        label: Ethernet1/27
+        mac_address: null
+        type: physical
+        slot: 27
+      - id: i29
+        label: Ethernet1/28
+        mac_address: null
+        type: physical
+        slot: 28
+      - id: i30
+        label: Ethernet1/29
+        mac_address: null
+        type: physical
+        slot: 29
+      - id: i31
+        label: Ethernet1/30
+        mac_address: null
+        type: physical
+        slot: 30
+      - id: i32
+        label: Ethernet1/31
+        mac_address: null
+        type: physical
+        slot: 31
+      - id: i33
+        label: Ethernet1/32
+        mac_address: null
+        type: physical
+        slot: 32
+      - id: i34
+        label: Ethernet1/33
+        mac_address: null
+        type: physical
+        slot: 33
+      - id: i35
+        label: Ethernet1/34
+        mac_address: null
+        type: physical
+        slot: 34
+      - id: i36
+        label: Ethernet1/35
+        mac_address: null
+        type: physical
+        slot: 35
+      - id: i37
+        label: Ethernet1/36
+        mac_address: null
+        type: physical
+        slot: 36
+      - id: i38
+        label: Ethernet1/37
+        mac_address: null
+        type: physical
+        slot: 37
+      - id: i39
+        label: Ethernet1/38
+        mac_address: null
+        type: physical
+        slot: 38
+      - id: i40
+        label: Ethernet1/39
+        mac_address: null
+        type: physical
+        slot: 39
+      - id: i41
+        label: Ethernet1/40
+        mac_address: null
+        type: physical
+        slot: 40
+      - id: i42
+        label: Ethernet1/41
+        mac_address: null
+        type: physical
+        slot: 41
+      - id: i43
+        label: Ethernet1/42
+        mac_address: null
+        type: physical
+        slot: 42
+      - id: i44
+        label: Ethernet1/43
+        mac_address: null
+        type: physical
+        slot: 43
+      - id: i45
+        label: Ethernet1/44
+        mac_address: null
+        type: physical
+        slot: 44
+      - id: i46
+        label: Ethernet1/45
+        mac_address: null
+        type: physical
+        slot: 45
+      - id: i47
+        label: Ethernet1/46
+        mac_address: null
+        type: physical
+        slot: 46
+      - id: i48
+        label: Ethernet1/47
+        mac_address: null
+        type: physical
+        slot: 47
+      - id: i49
+        label: Ethernet1/48
+        mac_address: null
+        type: physical
+        slot: 48
+      - id: i50
+        label: Ethernet1/49
+        mac_address: null
+        type: physical
+        slot: 49
+      - id: i51
+        label: Ethernet1/50
+        mac_address: null
+        type: physical
+        slot: 50
+      - id: i52
+        label: Ethernet1/51
+        mac_address: null
+        type: physical
+        slot: 51
+      - id: i53
+        label: Ethernet1/52
+        mac_address: null
+        type: physical
+        slot: 52
+      - id: i54
+        label: Ethernet1/53
+        mac_address: null
+        type: physical
+        slot: 53
+      - id: i55
+        label: Ethernet1/54
+        mac_address: null
+        type: physical
+        slot: 54
+  - boot_disk_size: null
+    configuration: []
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: true
+    id: n7
+    image_definition: null
+    label: oob-mgmt
+    node_definition: unmanaged_switch
+    parameters: {}
+    ram: null
+    tags:
+      - mgmt
+    x: -120
+    y: -320
+    interfaces:
+      - id: i0
+        label: port0
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i1
+        label: port1
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i2
+        label: port2
+        mac_address: null
+        type: physical
+        slot: 2
+      - id: i3
+        label: port3
+        mac_address: null
+        type: physical
+        slot: 3
+      - id: i4
+        label: port4
+        mac_address: null
+        type: physical
+        slot: 4
+      - id: i5
+        label: port5
+        mac_address: null
+        type: physical
+        slot: 5
+      - id: i6
+        label: port6
+        mac_address: null
+        type: physical
+        slot: 6
+      - id: i7
+        label: port7
+        mac_address: null
+        type: physical
+        slot: 7
+  - boot_disk_size: null
+    configuration:
+      - name: default
+        content: System Bridge
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n8
+    image_definition: null
+    label: LAN
+    node_definition: external_connector
+    parameters: {}
+    ram: null
+    tags: []
+    x: -400
+    y: -320
+    interfaces:
+      - id: i0
+        label: port
+        mac_address: null
+        type: physical
+        slot: 0
+links:
+  - id: l0
+    n1: n0
+    n2: n1
+    i1: i24
+    i2: i30
+    conditioning: {}
+    label: s1-c9k-sw1-GigabitEthernet1/0/23<->s1-ncs540-rtr1-GigabitEthernet0/0/0/26
+  - id: l1
+    n1: n0
+    n2: n1
+    i1: i25
+    i2: i31
+    conditioning: {}
+    label: s1-c9k-sw1-GigabitEthernet1/0/24<->s1-ncs540-rtr1-GigabitEthernet0/0/0/27
+  - id: l2
+    n1: n5
+    n2: n6
+    i1: i55
+    i2: i55
+    conditioning: {}
+    label: s3-n9k-sw1-Ethernet1/54<->s3-n9k-sw2-Ethernet1/54
+  - id: l3
+    n1: n5
+    n2: n6
+    i1: i54
+    i2: i54
+    conditioning: {}
+    label: s3-n9k-sw1-Ethernet1/53<->s3-n9k-sw2-Ethernet1/53
+  - id: l4
+    n1: n3
+    n2: n5
+    i1: i4
+    i2: i2
+    conditioning: {}
+    label: s3-c8k-rtr1-GigabitEthernet4<->s3-n9k-sw1-Ethernet1/1
+  - id: l5
+    n1: n3
+    n2: n6
+    i1: i5
+    i2: i2
+    conditioning: {}
+    label: s3-c8k-rtr1-GigabitEthernet5<->s3-n9k-sw2-Ethernet1/1
+  - id: l6
+    n1: n0
+    n2: n7
+    i1: i1
+    i2: i0
+    conditioning: {}
+    label: s1-c9k-sw1-GigabitEthernet0/0<->oob-mgmt-port0
+  - id: l7
+    n1: n1
+    n2: n7
+    i1: i1
+    i2: i1
+    conditioning: {}
+    label: s1-ncs540-rtr1-MgmtEth0/RP0/CPU0/0<->oob-mgmt-port1
+  - id: l8
+    n1: n7
+    n2: n4
+    i1: i3
+    i2: i1
+    conditioning: {}
+    label: oob-mgmt-port3<->s2-c9k-sw1-GigabitEthernet0/0
+  - id: l9
+    n1: n7
+    n2: n3
+    i1: i4
+    i2: i3
+    conditioning: {}
+    label: oob-mgmt-port4<->s3-c8k-rtr1-GigabitEthernet3
+  - id: l10
+    n1: n7
+    n2: n5
+    i1: i5
+    i2: i1
+    conditioning: {}
+    label: oob-mgmt-port5<->s3-n9k-sw1-mgmt0
+  - id: l11
+    n1: n6
+    n2: n7
+    i1: i1
+    i2: i6
+    conditioning: {}
+    label: s3-n9k-sw2-mgmt0<->oob-mgmt-port6
+  - id: l12
+    n1: n8
+    n2: n7
+    i1: i0
+    i2: i7
+    conditioning: {}
+    label: LAN-port<->oob-mgmt-port7
+  - id: l13
+    n1: n7
+    n2: n2
+    i1: i2
+    i2: i3
+    conditioning: {}
+    label: oob-mgmt-port2<->s2-c8k-rtr1-GigabitEthernet3
+  - id: l14
+    n1: n2
+    n2: n4
+    i1: i1
+    i2: i2
+    conditioning: {}
+    label: s2-c8k-rtr1-GigabitEthernet1<->s2-c9k-sw1-GigabitEthernet1/0/1
+  - id: l15
+    n1: n1
+    n2: n2
+    i1: i18
+    i2: i8
+    conditioning: {}
+    label: s1-ncs540-rtr1-GigabitEthernet0/0/0/14<->s2-c8k-rtr1-GigabitEthernet8
+  - id: l16
+    n1: n1
+    n2: n3
+    i1: i19
+    i2: i8
+    conditioning: {}
+    label: s1-ncs540-rtr1-GigabitEthernet0/0/0/15<->s3-c8k-rtr1-GigabitEthernet8
+lab:
+  description: |-
+    This virtual lab represents the physical topology that was mapped from production hardware to CML.  The production network consists of the following devices:
+
+    - C9200L-24P
+    - NCS540
+    - C9200L-24T
+    - 2X C8300-2N2S-4T2X
+    - 2X N93180YC-FX-24
+  notes: ''
+  title: BRKOPS-2550 Topology
+  version: 0.3.0

@@ -1,0 +1,32 @@
+---
+- name: Set platform template for IOS/IOS-XE
+  ansible.builtin.set_fact:
+    cml_bootstrap_config_template: iosxe.j2
+  when: ansible_network_os == 'ios'
+
+- name: Set platform template for IOS-XR
+  ansible.builtin.set_fact:
+    cml_bootstrap_config_template: iosxr.j2
+  when: ansible_network_os == 'iosxr'
+
+- name: Set platform template for NX-OS
+  ansible.builtin.set_fact:
+    cml_bootstrap_config_template: nxos.j2
+  when: ansible_network_os == 'nxos'
+
+- name: Fail on unsupported platform
+  ansible.builtin.fail:
+    msg: "Unsupported ansible_network_os '{{ ansible_network_os }}' on {{ inventory_hostname }}. Supported values: ios, iosxr, nxos"
+  when: cml_bootstrap_config_template is not defined
+
+- name: Render bootstrap configuration from template
+  ansible.builtin.template:
+    src: "{{ cml_bootstrap_config_template }}"
+    dest: "{{ output_dir }}/{{ inventory_hostname }}.cfg"
+    mode: "0644"
+  vars:
+    output_dir: "{{ playbook_dir }}/../bootstrap"
+
+- name: Display generated config path
+  ansible.builtin.debug:
+    msg: "Config written to {{ playbook_dir }}/bootstrap/{{ inventory_hostname }}.cfg"

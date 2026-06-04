@@ -1,0 +1,5 @@
+---
+- name: Include platform VPC tasks
+  ansible.builtin.include_tasks: "{{ platform_type }}.yml"
+  when: vpc is defined
+  tags: vpc

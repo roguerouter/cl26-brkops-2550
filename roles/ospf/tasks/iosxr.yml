@@ -1,0 +1,164 @@
+---
+# ==============================================
+# OSPFv2 (IPv4) Configuration
+# ==============================================
+
+- name: Configure OSPFv2 process - base config
+  cisco.iosxr.iosxr_config:
+    lines:
+      - router-id {{ ospf.router_id }}
+      - auto-cost reference-bandwidth {{ ospf.reference_bandwidth }}
+    parents:
+      - router ospf {{ ospf.process_id }}
+  when: ospf is defined
+  tags:
+    - ospf
+    - ospfv2
+
+- name: Configure OSPFv2 on P2P interfaces
+  cisco.iosxr.iosxr_config:
+    lines:
+      - network point-to-point
+    parents:
+      - router ospf {{ ospf.process_id }}
+      - area {{ item.ospf_area }}
+      - interface {{ item.name }}
+  loop: "{{ p2p_interfaces | default([]) }}"
+  when:
+    - ospf is defined
+    - item.ospf_area is defined
+  tags:
+    - ospf
+    - ospfv2
+
+- name: Configure OSPFv2 on loopbacks
+  cisco.iosxr.iosxr_config:
+    lines:
+      - passive enable
+    parents:
+      - router ospf {{ ospf.process_id }}
+      - area {{ ospf.area }}
+      - interface {{ item.name }}
+  loop: "{{ loopbacks | default([]) }}"
+  when:
+    - ospf is defined
+    - item.ospf_passive | default(false) | bool
+  tags:
+    - ospf
+    - ospfv2
+
+- name: Configure OSPFv2 on Bundle-Ether subinterfaces (passive)
+  cisco.iosxr.iosxr_config:
+    lines:
+      - passive enable
+    parents:
+      - router ospf {{ ospf.process_id }}
+      - area {{ ospf.area }}
+      - interface {{ item.1.name }}
+  loop: "{{ bundle_interfaces | default([]) | subelements('subinterfaces') }}"
+  when:
+    - ospf is defined
+    - item.1.ospf_passive | default(false) | bool
+  tags:
+    - ospf
+    - ospfv2
+
+- name: Configure OSPFv2 on Bundle-Ether subinterfaces (active)
+  cisco.iosxr.iosxr_config:
+    lines:
+      - "!"
+    parents:
+      - router ospf {{ ospf.process_id }}
+      - area {{ ospf.area }}
+      - interface {{ item.1.name }}
+  loop: "{{ bundle_interfaces | default([]) | subelements('subinterfaces') }}"
+  when:
+    - ospf is defined
+    - not (item.1.ospf_passive | default(false) | bool)
+  tags:
+    - ospf
+    - ospfv2
+
+# ==============================================
+# OSPFv3 (IPv6) Configuration
+# ==============================================
+
+- name: Configure OSPFv3 process - base config
+  cisco.iosxr.iosxr_config:
+    lines:
+      - router-id {{ ospfv3.router_id }}
+      - auto-cost reference-bandwidth {{ ospfv3.reference_bandwidth }}
+    parents:
+      - router ospfv3 {{ ospfv3.process_id }}
+  when: ospfv3 is defined
+  tags:
+    - ospf
+    - ospfv3
+
+- name: Configure OSPFv3 on P2P interfaces
+  cisco.iosxr.iosxr_config:
+    lines:
+      - network point-to-point
+    parents:
+      - router ospfv3 {{ ospfv3.process_id }}
+      - area {{ item.ospfv3_area | default(ospfv3.area) }}
+      - interface {{ item.name }}
+  loop: "{{ p2p_interfaces | default([]) }}"
+  when:
+    - ospfv3 is defined
+    - item.ipv6 is defined
+    - item.ospfv3_area is defined or ospfv3.area is defined
+  tags:
+    - ospf
+    - ospfv3
+
+- name: Configure OSPFv3 on loopbacks
+  cisco.iosxr.iosxr_config:
+    lines:
+      - passive
+    parents:
+      - router ospfv3 {{ ospfv3.process_id }}
+      - area {{ ospfv3.area }}
+      - interface {{ item.name }}
+  loop: "{{ loopbacks | default([]) }}"
+  when:
+    - ospfv3 is defined
+    - item.ipv6 is defined
+    - item.ospfv3_passive | default(false) | bool
+  tags:
+    - ospf
+    - ospfv3
+
+- name: Configure OSPFv3 on Bundle-Ether subinterfaces (passive)
+  cisco.iosxr.iosxr_config:
+    lines:
+      - passive
+    parents:
+      - router ospfv3 {{ ospfv3.process_id }}
+      - area {{ ospfv3.area }}
+      - interface {{ item.1.name }}
+  loop: "{{ bundle_interfaces | default([]) | subelements('subinterfaces') }}"
+  when:
+    - ospfv3 is defined
+    - item.1.ipv6 is defined
+    - item.1.ospfv3_passive | default(false) | bool
+  tags:
+    - ospf
+    - ospfv3
+
+- name: Configure OSPFv3 on Bundle-Ether subinterfaces (active)
+  cisco.iosxr.iosxr_config:
+    lines:
+      - "!"
+    parents:
+      - router ospfv3 {{ ospfv3.process_id }}
+      - area {{ ospfv3.area }}
+      - interface {{ item.1.name }}
+  loop: "{{ bundle_interfaces | default([]) | subelements('subinterfaces') }}"
+  when:
+    - ospfv3 is defined
+    - item.1.ipv6 is defined
+    - not (item.1.ospfv3_passive | default(false) | bool)
+  tags:
+    - ospf
+    - ospfv3

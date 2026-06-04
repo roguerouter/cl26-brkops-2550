@@ -1,0 +1,54 @@
+--- cml/ospf_2026-04-16/routing_iosxe_s1-c9k-sw1_ops.txt
++++ production/ospf_2026-04-16/routing_iosxe_s1-c9k-sw1_ops.txt
+ info:
+  vrf:
+   Mgmt-vrf:
+    address_family:
+     ipv4:
+      routes:
+       0.0.0.0/0:
+        next_hop:
+         next_hop_list:
+          1:
+-          next_hop: 10.83.32.126
++          next_hop: 10.82.9.142
++      10.82.9.128/28:
++       active: True
++       next_hop:
++        outgoing_interface:
++         GigabitEthernet0/0:
++          outgoing_interface: GigabitEthernet0/0
++       route: 10.82.9.128/28
++       source_protocol: connected
++       source_protocol_codes: C
++      10.82.9.129/32:
++       active: True
++       next_hop:
++        outgoing_interface:
++         GigabitEthernet0/0:
++          outgoing_interface: GigabitEthernet0/0
++       route: 10.82.9.129/32
++       source_protocol: local
++       source_protocol_codes: L
+-      10.83.32.0/25:
+-       active: True
+-       next_hop:
+-        outgoing_interface:
+-         GigabitEthernet0/0:
+-          outgoing_interface: GigabitEthernet0/0
+-       route: 10.83.32.0/25
+-       source_protocol: connected
+-       source_protocol_codes: C
+-      10.83.32.109/32:
+-       active: True
+-       next_hop:
+-        outgoing_interface:
+-         GigabitEthernet0/0:
+-          outgoing_interface: GigabitEthernet0/0
+-       route: 10.83.32.109/32
+-       source_protocol: local
+-       source_protocol_codes: L
+ list_of_vrfs:
+- index[1]: management
++ index[1]:
+- index[2]:

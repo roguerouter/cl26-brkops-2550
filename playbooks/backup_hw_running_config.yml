@@ -1,0 +1,73 @@
+---
+# Backup running configuration from hardware nodes.
+# Example:
+# ansible-playbook -i inventory/hw_nodes/inventory.yml playbooks/backup_hw_running_config.yml -u netadmin -k
+
+- name: Backup running configuration from hardware nodes
+  hosts: all
+  gather_facts: false
+
+  pre_tasks:
+    - name: Generate backup timestamp on controller
+      ansible.builtin.set_fact:
+        hw_backup_timestamp: "{{ lookup('pipe', 'date +%Y-%m-%d_%H-%M-%S') }}"
+      run_once: true # noqa: run-once[task]
+      delegate_to: localhost
+      delegate_facts: true
+
+    - name: Ensure local backup directory exists
+      ansible.builtin.file:
+        path: "{{ playbook_dir }}/../backups/hw_running_configs/{{ hostvars['localhost'].hw_backup_timestamp }}"
+        state: directory
+        mode: "0755"
+      run_once: true # noqa: run-once[task]
+      delegate_to: localhost
+
+  tasks:
+    - name: Collect running config from IOS-XE devices
+      cisco.ios.ios_command:
+        commands:
+          - show running-config
+      register: iosxe_running_config
+      when: ansible_network_os in ['ios', 'cisco.ios.ios']
+
+    - name: Collect running config from IOS-XR devices
+      cisco.iosxr.iosxr_command:
+        commands:
+          - show running-config
+      register: iosxr_running_config
+      when: ansible_network_os in ['iosxr', 'cisco.iosxr.iosxr']
+
+    - name: Collect running config from NX-OS devices
+      cisco.nxos.nxos_command:
+        commands:
+          - show running-config
+      register: nxos_running_config
+      when: ansible_network_os in ['nxos', 'cisco.nxos.nxos']
+
+    - name: Normalize running config output for IOS-XE
+      ansible.builtin.set_fact:
+        running_config_text: "{{ iosxe_running_config.stdout[0] }}"
+      when: ansible_network_os in ['ios', 'cisco.ios.ios']
+
+    - name: Normalize running config output for IOS-XR
+      ansible.builtin.set_fact:
+        running_config_text: "{{ iosxr_running_config.stdout[0] }}"
+      when: ansible_network_os in ['iosxr', 'cisco.iosxr.iosxr']
+
+    - name: Normalize running config output for NX-OS
+      ansible.builtin.set_fact:
+        running_config_text: "{{ nxos_running_config.stdout[0] }}"
+      when: ansible_network_os in ['nxos', 'cisco.nxos.nxos']
+
+    - name: Fail if platform is unsupported
+      ansible.builtin.fail:
+        msg: "Unsupported ansible_network_os '{{ ansible_network_os }}' for host {{ inventory_hostname }}"
+      when: running_config_text is not defined
+
+    - name: Save running config to local file
+      ansible.builtin.copy:
+        content: "{{ running_config_text | regex_replace('\\r', '') }}\n"
+        dest: "{{ playbook_dir }}/../backups/hw_running_configs/{{ hostvars['localhost'].hw_backup_timestamp }}/{{ inventory_hostname }}_running.cfg"
+        mode: "0644"
+      delegate_to: localhost

@@ -1,0 +1,11 @@
+---
+- name: Configure VLANs
+  cisco.ios.ios_vlans:
+    config:
+      - vlan_id: "{{ item.id }}"
+        name: "{{ item.name }}"
+        state: active
+    state: merged
+  loop: "{{ vlans }}"
+  notify: save config
+  tags: vlans

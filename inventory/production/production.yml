@@ -1,0 +1,44 @@
+---
+all:
+  vars:
+    env_name: production
+  children:
+    production:
+      children:
+        site1:
+          children:
+            iosxe:
+              hosts:
+                s1-c9k-sw1:
+                  ansible_host: 10.82.9.129
+                  ansible_network_os: ios
+            iosxr:
+              hosts:
+                s1-ncs540-rtr1:
+                  ansible_host: 10.82.9.130
+                  ansible_network_os: iosxr
+        site2:
+          children:
+            iosxe:
+              hosts:
+                s2-c8k-rtr1:
+                  ansible_host: 10.82.9.131
+                  ansible_network_os: ios
+                s2-c9k-sw1:
+                  ansible_host: 10.82.9.132
+                  ansible_network_os: ios
+        site3:
+          children:
+            iosxe:
+              hosts:
+                s3-c8k-rtr1:
+                  ansible_host: 10.82.9.133
+                  ansible_network_os: ios
+            nxos:
+              hosts:
+                s3-n9k-sw1:
+                  ansible_host: 10.82.9.134
+                  ansible_network_os: nxos
+                s3-n9k-sw2:
+                  ansible_host: 10.82.9.135
+                  ansible_network_os: nxos

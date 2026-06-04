@@ -1,0 +1,43 @@
+Issue while building the feature
+
+Traceback (most recent call last):
+  File "src/unicon/statemachine/statemachine.py", line 738, in unicon.statemachine.statemachine.StateMachine.go_to
+  File "src/unicon/statemachine/statetransition.py", line 480, in unicon.statemachine.statetransition.AnyStateTransition.do_transitions
+  File "src/unicon/eal/dialogs.py", line 479, in unicon.eal.dialogs.Dialog.process
+  File "src/unicon/eal/dialog_processor.py", line 353, in unicon.eal.dialog_processor.SimpleDialogProcessor.process
+  File "src/unicon/eal/dialog_processor.py", line 254, in unicon.eal.dialog_processor.SimpleDialogProcessor.expect_eval_statements
+  File "/home/cisco/venv/lib/python3.12/site-packages/unicon/plugins/iosxe/statements.py", line 247, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cisco/venv/lib/python3.12/site-packages/unicon/plugins/generic/statements.py", line 56, in connection_refused_handler
+    raise Exception('Connection refused to device %s' % (str(spawn)))
+Exception: Connection refused to device spawn: ssh -l netadmin 10.83.32.112, id: 133832876964992
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "src/unicon/bases/connection.py", line 839, in unicon.bases.connection.Connection.connect
+  File "src/unicon/bases/routers/connection_provider.py", line 300, in unicon.bases.routers.connection_provider.BaseSingleRpConnectionProvider.connect
+  File "src/unicon/bases/routers/connection_provider.py", line 331, in unicon.bases.routers.connection_provider.BaseSingleRpConnectionProvider.establish_connection
+  File "src/unicon/statemachine/statemachine.py", line 742, in unicon.statemachine.statemachine.StateMachine.go_to
+unicon.core.errors.StateMachineError: Failed while bringing device to "any" state
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "src/genie/cli/commands/learn.py", line 365, in genie.cli.commands.learn.LearnCommand._retrieve_ops
+  File "/home/cisco/venv/lib/python3.12/site-packages/genie/libs/ops/routing/iosxe/routing.py", line 143, in learn
+    self.make(final_call=True)
+  File "/home/cisco/venv/lib/python3.12/site-packages/genie/ops/base/base.py", line 111, in make
+    self.maker.make(*args, **kwargs)
+  File "src/genie/ops/base/maker.py", line 326, in genie.ops.base.maker.Maker.make
+  File "src/genie/ops/base/maker.py", line 440, in genie.ops.base.maker.Maker._call_parser
+  File "src/genie/metaparser/_metaparser.py", line 308, in genie.metaparser._metaparser.MetaParser.parse
+  File "/home/cisco/venv/lib/python3.12/site-packages/genie/libs/parser/iosxe/show_routing.py", line 44, in cli
+    out = self.device.execute(cmd, timeout=timeout)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "src/unicon/bases/routers/services.py", line 258, in unicon.bases.routers.services.BaseService.__call__
+  File "src/unicon/bases/routers/services.py", line 165, in unicon.bases.routers.services.BaseService.pre_service
+  File "src/unicon/bases/connection.py", line 850, in unicon.bases.connection.Connection.connect
+unicon.core.errors.ConnectionError: failed to connect to s2-c9k-sw1
+Failed while bringing device to "any" state

@@ -1,0 +1,35 @@
+---
+# Platform identity abstraction
+ansible_network_os: cisco.ios.ios
+platform_type: iosxe
+config_save_command: write memory
+
+# IOS-XE specific feature flags
+features:
+  spanning_tree: true
+  vtp: true
+  lldp: true
+  archive: true
+
+# IOS-XE spanning-tree defaults
+spanning_tree:
+  mode: rapid-pvst
+  extend_system_id: true
+  vlan_priority: 4096
+
+# IOS-XE SSH
+ssh_bulk_mode: 131072
+
+# HTTP management
+http_server:
+  enabled: true
+  secure: true
+  auth: local
+
+# Line config
+console:
+  stopbits: 1
+vty:
+  lines: "0 4"
+  login: local
+  transport_input: ssh

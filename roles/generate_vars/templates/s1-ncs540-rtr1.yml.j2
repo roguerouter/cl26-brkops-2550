@@ -1,0 +1,92 @@
+---
+hostname: s1-ncs540-rtr1
+platform_role: core_router
+site: site1
+platform_type: iosxr
+
+# Management
+mgmt_interface: MgmtEth0/RP0/CPU0/0
+mgmt_description: OoB_Mgmt
+mgmt_vrf: management
+mgmt_ip: {{ {'cml': '10.83.32.110/25', 'production': '10.82.9.130/28'}[env_name] }}
+mgmt_gw: {{ {'cml': '10.83.32.126', 'production': '10.82.9.142'}[env_name] }}
+
+# Loopback / Router-ID
+loopbacks:
+  - name: Loopback0
+    description: ROUTER-ID
+    ip: 172.17.0.1/32
+    prefix: 255.255.255.255
+    ospf_passive: true
+  - name: Loopback10
+    description: IPv6 Site 1
+    ipv6: 2001:db8:cafe:100::1/128
+    ospfv3_passive: true
+
+# NTP - this device is the NTP source for the domain
+ntp_servers:
+  - 10.82.9.129
+
+# Bundle Ethernet to access switch
+bundle_interfaces:
+  - name: Bundle-Ether1
+    description: LAG_TO_S1-C9K-SW1
+    members:
+      - interface: {{ {'cml': 'GigabitEthernet0/0/0/26', 'production': 'TenGigE0/0/0/26'}[env_name] }}
+        description: TO_S1-C9K-SW1_Gi1/1/3
+        bundle_id: 1
+        mode: active
+      - interface: {{ {'cml': 'GigabitEthernet0/0/0/27', 'production': 'TenGigE0/0/0/27'}[env_name] }}
+        description: TO_S1-C9K-SW1_Gi1/1/4
+        bundle_id: 1
+        mode: active
+    subinterfaces:
+      - name: Bundle-Ether1.10
+        description: VLAN10_DATA_GATEWAY
+        vlan: 10
+        ip: 192.168.10.254/24
+        prefix: 255.255.255.0
+        ospf_passive: false
+      - name: Bundle-Ether1.20
+        description: VLAN20_VOICE_GATEWAY
+        vlan: 20
+        ip: 192.168.20.254/24
+        prefix: 255.255.255.0
+        ospf_passive: false
+      - name: Bundle-Ether1.100
+        description: VLAN100_MANAGEMENT_GATEWAY
+        vlan: 100
+        ip: 192.168.100.254/24
+        prefix: 255.255.255.0
+        ospf_passive: true
+
+# Point-to-point uplinks
+p2p_interfaces:
+  - name: {{ {'cml': 'GigabitEthernet0/0/0/14', 'production': 'TenGigE0/0/0/14'}[env_name] }}
+    description: TO_S2-C8K-RTR1_Te0/2/0
+    ip: 172.16.12.1/30
+    ipv6: 2001:db8:16:12::1/126
+    ospf_area: 0
+    ospfv3_area: 0
+    ospf_network: point-to-point
+  - name: {{ {'cml': 'GigabitEthernet0/0/0/15', 'production': 'TenGigE0/0/0/15'}[env_name] }}
+    description: TO_S3-C8K-RTR1_Te0/2/0
+    ip: 172.20.13.1/30
+    ipv6: 2001:db8:20:13::1/126
+    ospf_area: 0
+    ospfv3_area: 0
+    ospf_network: point-to-point
+
+# OSPFv2 (IPv4)
+ospf:
+  process_id: 1
+  reference_bandwidth: 100000
+  router_id: 172.17.0.1
+  area: 0
+
+# OSPFv3 (IPv6)
+ospfv3:
+  process_id: 1
+  reference_bandwidth: 100000
+  router_id: 172.17.0.1
+  area: 0

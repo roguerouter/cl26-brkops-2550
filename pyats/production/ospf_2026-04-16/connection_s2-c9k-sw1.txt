@@ -1,0 +1,1359 @@
+
+2026-04-16 21:42:15,843: %UNICON-INFO: +++ s2-c9k-sw1 logfile ospf_2026-04-16/connection_s2-c9k-sw1.txt +++
+
+2026-04-16 21:42:15,843: %UNICON-INFO: +++ Unicon plugin iosxe (unicon.plugins.iosxe) +++
+(mleuschn@10.82.9.132) Password: 
+
+2026-04-16 21:42:16,476: %UNICON-INFO: +++ connection to spawn: ssh -l mleuschn 10.82.9.132, id: 134456707966176 +++
+
+2026-04-16 21:42:16,476: %UNICON-INFO: connection to s2-c9k-sw1
+
+
+
+
+s2-c9k-sw1#
+
+2026-04-16 21:42:16,777: %UNICON-INFO: Storing credentials from default as current_credentials
+
+s2-c9k-sw1#
+
+2026-04-16 21:42:16,966: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'show version | include operating mode' +++
+show version | include operating mode
+s2-c9k-sw1#
+
+2026-04-16 21:42:17,231: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 21:42:17,355: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'term length 0' +++
+term length 0
+s2-c9k-sw1#
+
+2026-04-16 21:42:17,664: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'term width 0' +++
+term width 0
+s2-c9k-sw1#
+
+2026-04-16 21:42:17,978: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'show version' +++
+show version
+Cisco IOS XE Software, Version 17.12.06
+Cisco IOS Software [Dublin], Catalyst L3 Switch Software (CAT9K_LITE_IOSXE), Version 17.12.6, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2025 by Cisco Systems, Inc.
+Compiled Sun 31-Aug-25 06:15 by mcpre
+
+
+Cisco IOS-XE software, Copyright (c) 2005-2025 by cisco Systems, Inc.
+All rights reserved.  Certain components of Cisco IOS-XE software are
+licensed under the GNU General Public License ("GPL") Version 2.0.  The
+software code licensed under GPL Version 2.0 is free software that comes
+with ABSOLUTELY NO WARRANTY.  You can redistribute and/or modify such
+GPL code under the terms of GPL Version 2.0.  For more details, see the
+documentation or "License Notice" file accompanying the IOS-XE software,
+or the applicable URL provided on the flyer accompanying the IOS-XE
+software.
+
+
+ROM: IOS-XE ROMMON
+BOOTLDR: System Bootstrap, Version 17.12.1r [FC3], RELEASE SOFTWARE (P) 
+
+s2-c9k-sw1 uptime is 3 days, 5 hours, 23 minutes
+Uptime for this control processor is 3 days, 5 hours, 24 minutes
+System returned to ROM by Power Failure or Unknown
+System image file is "flash:packages.conf"
+Last reload reason: Power Failure or Unknown
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+
+Technology Package License Information: 
+
+------------------------------------------------------------------------------
+Technology-package                                     Technology-package
+Current                        Type                       Next reboot  
+------------------------------------------------------------------------------
+network-essentials  	Smart License                 	 network-essentials  
+dna-essentials      	Subscription Smart License    	 dna-essentials                
+
+
+Smart Licensing Status: Smart Licensing Using Policy
+
+cisco C9200L-24T-4G (ARM64) processor with 502720K/3071K bytes of memory.
+Processor board ID JAE230703Q3
+4 Virtual Ethernet interfaces
+28 Gigabit Ethernet interfaces
+2048K bytes of non-volatile configuration memory.
+1973256K bytes of physical memory.
+819200K bytes of Crash Files at crashinfo:.
+1941504K bytes of Flash at flash:.
+
+Base Ethernet MAC Address          : 6c:8b:d3:65:b8:80
+Motherboard Assembly Number        : 73-18700-05
+Motherboard Serial Number          : JAE230703Q3
+Model Revision Number              : A0
+Motherboard Revision Number        : A0
+Model Number                       : C9200L-24T-4G
+System Serial Number               : JAE230703Q3
+CLEI Code Number                   : INM6G00ARA
+
+
+Switch Ports Model              SW Version        SW Image              Mode   
+------ ----- -----              ----------        ----------            ----   
+*    1 28    C9200L-24T-4G      17.12.06          CAT9K_LITE_IOSXE      INSTALL
+
+
+Configuration register is 0x102
+
+s2-c9k-sw1#
+
+2026-04-16 21:42:18,317: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'show install summary' +++
+show install summary
+[ Switch 1 ] Installed Package(s) Information:
+State (St): I - Inactive, U - Activated & Uncommitted,
+            C - Activated & Committed, D - Deactivated & Uncommitted
+--------------------------------------------------------------------------------
+Type  St   Filename/Version
+--------------------------------------------------------------------------------
+IMG   C    17.12.06.0.7364
+
+--------------------------------------------------------------------------------
+Auto abort timer: inactive
+--------------------------------------------------------------------------------
+
+
+s2-c9k-sw1#
+
+2026-04-16 21:48:50,835: %UNICON-INFO: +++ s2-c9k-sw1 logfile ospf_2026-04-16/connection_s2-c9k-sw1.txt +++
+
+2026-04-16 21:48:50,835: %UNICON-INFO: +++ Unicon plugin iosxe (unicon.plugins.iosxe) +++
+(mleuschn@10.82.9.132) Password: 
+
+2026-04-16 21:48:51,494: %UNICON-INFO: +++ connection to spawn: ssh -l mleuschn 10.82.9.132, id: 134234676194544 +++
+
+2026-04-16 21:48:51,495: %UNICON-INFO: connection to s2-c9k-sw1
+
+
+
+
+s2-c9k-sw1#
+
+2026-04-16 21:48:51,802: %UNICON-INFO: Storing credentials from default as current_credentials
+
+s2-c9k-sw1#
+
+2026-04-16 21:48:51,991: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'show version | include operating mode' +++
+show version | include operating mode
+s2-c9k-sw1#
+
+2026-04-16 21:48:52,259: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 21:48:52,383: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'term length 0' +++
+term length 0
+s2-c9k-sw1#
+
+2026-04-16 21:48:52,696: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'term width 0' +++
+term width 0
+s2-c9k-sw1#
+
+2026-04-16 21:48:53,023: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'show version' +++
+show version
+Cisco IOS XE Software, Version 17.12.06
+Cisco IOS Software [Dublin], Catalyst L3 Switch Software (CAT9K_LITE_IOSXE), Version 17.12.6, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2025 by Cisco Systems, Inc.
+Compiled Sun 31-Aug-25 06:15 by mcpre
+
+
+Cisco IOS-XE software, Copyright (c) 2005-2025 by cisco Systems, Inc.
+All rights reserved.  Certain components of Cisco IOS-XE software are
+licensed under the GNU General Public License ("GPL") Version 2.0.  The
+software code licensed under GPL Version 2.0 is free software that comes
+with ABSOLUTELY NO WARRANTY.  You can redistribute and/or modify such
+GPL code under the terms of GPL Version 2.0.  For more details, see the
+documentation or "License Notice" file accompanying the IOS-XE software,
+or the applicable URL provided on the flyer accompanying the IOS-XE
+software.
+
+
+ROM: IOS-XE ROMMON
+BOOTLDR: System Bootstrap, Version 17.12.1r [FC3], RELEASE SOFTWARE (P) 
+
+s2-c9k-sw1 uptime is 3 days, 5 hours, 29 minutes
+Uptime for this control processor is 3 days, 5 hours, 31 minutes
+System returned to ROM by Power Failure or Unknown
+System image file is "flash:packages.conf"
+Last reload reason: Power Failure or Unknown
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+
+Technology Package License Information: 
+
+------------------------------------------------------------------------------
+Technology-package                                     Technology-package
+Current                        Type                       Next reboot  
+------------------------------------------------------------------------------
+network-essentials  	Smart License                 	 network-essentials  
+dna-essentials      	Subscription Smart License    	 dna-essentials                
+
+
+Smart Licensing Status: Smart Licensing Using Policy
+
+cisco C9200L-24T-4G (ARM64) processor with 502720K/3071K bytes of memory.
+Processor board ID JAE230703Q3
+4 Virtual Ethernet interfaces
+28 Gigabit Ethernet interfaces
+2048K bytes of non-volatile configuration memory.
+1973256K bytes of physical memory.
+819200K bytes of Crash Files at crashinfo:.
+1941504K bytes of Flash at flash:.
+
+Base Ethernet MAC Address          : 6c:8b:d3:65:b8:80
+Motherboard Assembly Number        : 73-18700-05
+Motherboard Serial Number          : JAE230703Q3
+Model Revision Number              : A0
+Motherboard Revision Number        : A0
+Model Number                       : C9200L-24T-4G
+System Serial Number               : JAE230703Q3
+CLEI Code Number                   : INM6G00ARA
+
+
+Switch Ports Model              SW Version        SW Image              Mode   
+------ ----- -----              ----------        ----------            ----   
+*    1 28    C9200L-24T-4G      17.12.06          CAT9K_LITE_IOSXE      INSTALL
+
+
+Configuration register is 0x102
+
+s2-c9k-sw1#
+
+2026-04-16 21:48:53,356: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'show install summary' +++
+show install summary
+[ Switch 1 ] Installed Package(s) Information:
+State (St): I - Inactive, U - Activated & Uncommitted,
+            C - Activated & Committed, D - Deactivated & Uncommitted
+--------------------------------------------------------------------------------
+Type  St   Filename/Version
+--------------------------------------------------------------------------------
+IMG   C    17.12.06.0.7364
+
+--------------------------------------------------------------------------------
+Auto abort timer: inactive
+--------------------------------------------------------------------------------
+
+
+s2-c9k-sw1#
+
+2026-04-16 22:17:03,444: %UNICON-INFO: +++ s2-c9k-sw1 logfile ospf_2026-04-16/connection_s2-c9k-sw1.txt +++
+
+2026-04-16 22:17:03,444: %UNICON-INFO: +++ Unicon plugin iosxe (unicon.plugins.iosxe) +++
+(mleuschn@10.82.9.132) Password: 
+
+2026-04-16 22:17:04,138: %UNICON-INFO: +++ connection to spawn: ssh -l mleuschn 10.82.9.132, id: 131130016705392 +++
+
+2026-04-16 22:17:04,138: %UNICON-INFO: connection to s2-c9k-sw1
+
+
+
+
+s2-c9k-sw1#
+
+2026-04-16 22:17:04,436: %UNICON-INFO: Storing credentials from default as current_credentials
+
+s2-c9k-sw1#
+
+2026-04-16 22:17:04,626: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'show version | include operating mode' +++
+show version | include operating mode
+s2-c9k-sw1#
+
+2026-04-16 22:17:04,905: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 22:17:05,030: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'term length 0' +++
+term length 0
+s2-c9k-sw1#
+
+2026-04-16 22:17:05,349: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'term width 0' +++
+term width 0
+s2-c9k-sw1#
+
+2026-04-16 22:17:05,659: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'show version' +++
+show version
+Cisco IOS XE Software, Version 17.12.06
+Cisco IOS Software [Dublin], Catalyst L3 Switch Software (CAT9K_LITE_IOSXE), Version 17.12.6, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2025 by Cisco Systems, Inc.
+Compiled Sun 31-Aug-25 06:15 by mcpre
+
+
+Cisco IOS-XE software, Copyright (c) 2005-2025 by cisco Systems, Inc.
+All rights reserved.  Certain components of Cisco IOS-XE software are
+licensed under the GNU General Public License ("GPL") Version 2.0.  The
+software code licensed under GPL Version 2.0 is free software that comes
+with ABSOLUTELY NO WARRANTY.  You can redistribute and/or modify such
+GPL code under the terms of GPL Version 2.0.  For more details, see the
+documentation or "License Notice" file accompanying the IOS-XE software,
+or the applicable URL provided on the flyer accompanying the IOS-XE
+software.
+
+
+ROM: IOS-XE ROMMON
+BOOTLDR: System Bootstrap, Version 17.12.1r [FC3], RELEASE SOFTWARE (P) 
+
+s2-c9k-sw1 uptime is 3 days, 5 hours, 57 minutes
+Uptime for this control processor is 3 days, 5 hours, 59 minutes
+System returned to ROM by Power Failure or Unknown
+System image file is "flash:packages.conf"
+Last reload reason: Power Failure or Unknown
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+
+Technology Package License Information: 
+
+------------------------------------------------------------------------------
+Technology-package                                     Technology-package
+Current                        Type                       Next reboot  
+------------------------------------------------------------------------------
+network-essentials  	Smart License                 	 network-essentials  
+dna-essentials      	Subscription Smart License    	 dna-essentials                
+
+
+Smart Licensing Status: Smart Licensing Using Policy
+
+cisco C9200L-24T-4G (ARM64) processor with 502720K/3071K bytes of memory.
+Processor board ID JAE230703Q3
+4 Virtual Ethernet interfaces
+28 Gigabit Ethernet interfaces
+2048K bytes of non-volatile configuration memory.
+1973256K bytes of physical memory.
+819200K bytes of Crash Files at crashinfo:.
+1941504K bytes of Flash at flash:.
+
+Base Ethernet MAC Address          : 6c:8b:d3:65:b8:80
+Motherboard Assembly Number        : 73-18700-05
+Motherboard Serial Number          : JAE230703Q3
+Model Revision Number              : A0
+Motherboard Revision Number        : A0
+Model Number                       : C9200L-24T-4G
+System Serial Number               : JAE230703Q3
+CLEI Code Number                   : INM6G00ARA
+
+
+Switch Ports Model              SW Version        SW Image              Mode   
+------ ----- -----              ----------        ----------            ----   
+*    1 28    C9200L-24T-4G      17.12.06          CAT9K_LITE_IOSXE      INSTALL
+
+
+Configuration register is 0x102
+
+s2-c9k-sw1#
+
+2026-04-16 22:17:06,012: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'show install summary' +++
+show install summary
+[ Switch 1 ] Installed Package(s) Information:
+State (St): I - Inactive, U - Activated & Uncommitted,
+            C - Activated & Committed, D - Deactivated & Uncommitted
+--------------------------------------------------------------------------------
+Type  St   Filename/Version
+--------------------------------------------------------------------------------
+IMG   C    17.12.06.0.7364
+
+--------------------------------------------------------------------------------
+Auto abort timer: inactive
+--------------------------------------------------------------------------------
+
+
+s2-c9k-sw1#
+
+2026-04-16 22:27:24,648: %UNICON-INFO: +++ s2-c9k-sw1 logfile ospf_2026-04-16/connection_s2-c9k-sw1.txt +++
+
+2026-04-16 22:27:24,648: %UNICON-INFO: +++ Unicon plugin iosxe (unicon.plugins.iosxe) +++
+(mleuschn@10.82.9.132) Password: 
+
+2026-04-16 22:27:25,315: %UNICON-INFO: +++ connection to spawn: ssh -l mleuschn 10.82.9.132, id: 139808734227504 +++
+
+2026-04-16 22:27:25,315: %UNICON-INFO: connection to s2-c9k-sw1
+
+
+
+
+s2-c9k-sw1#
+
+2026-04-16 22:27:25,625: %UNICON-INFO: Storing credentials from default as current_credentials
+
+s2-c9k-sw1#
+
+2026-04-16 22:27:25,818: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'show version | include operating mode' +++
+show version | include operating mode
+s2-c9k-sw1#
+
+2026-04-16 22:27:26,095: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 22:27:26,219: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'term length 0' +++
+term length 0
+s2-c9k-sw1#
+
+2026-04-16 22:27:26,527: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'term width 0' +++
+term width 0
+s2-c9k-sw1#
+
+2026-04-16 22:27:26,854: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'show version' +++
+show version
+Cisco IOS XE Software, Version 17.12.06
+Cisco IOS Software [Dublin], Catalyst L3 Switch Software (CAT9K_LITE_IOSXE), Version 17.12.6, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2025 by Cisco Systems, Inc.
+Compiled Sun 31-Aug-25 06:15 by mcpre
+
+
+Cisco IOS-XE software, Copyright (c) 2005-2025 by cisco Systems, Inc.
+All rights reserved.  Certain components of Cisco IOS-XE software are
+licensed under the GNU General Public License ("GPL") Version 2.0.  The
+software code licensed under GPL Version 2.0 is free software that comes
+with ABSOLUTELY NO WARRANTY.  You can redistribute and/or modify such
+GPL code under the terms of GPL Version 2.0.  For more details, see the
+documentation or "License Notice" file accompanying the IOS-XE software,
+or the applicable URL provided on the flyer accompanying the IOS-XE
+software.
+
+
+ROM: IOS-XE ROMMON
+BOOTLDR: System Bootstrap, Version 17.12.1r [FC3], RELEASE SOFTWARE (P) 
+
+s2-c9k-sw1 uptime is 3 days, 6 hours, 8 minutes
+Uptime for this control processor is 3 days, 6 hours, 10 minutes
+System returned to ROM by Power Failure or Unknown
+System image file is "flash:packages.conf"
+Last reload reason: Power Failure or Unknown
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+
+Technology Package License Information: 
+
+------------------------------------------------------------------------------
+Technology-package                                     Technology-package
+Current                        Type                       Next reboot  
+------------------------------------------------------------------------------
+network-essentials  	Smart License                 	 network-essentials  
+dna-essentials      	Subscription Smart License    	 dna-essentials                
+
+
+Smart Licensing Status: Smart Licensing Using Policy
+
+cisco C9200L-24T-4G (ARM64) processor with 502720K/3071K bytes of memory.
+Processor board ID JAE230703Q3
+4 Virtual Ethernet interfaces
+28 Gigabit Ethernet interfaces
+2048K bytes of non-volatile configuration memory.
+1973256K bytes of physical memory.
+819200K bytes of Crash Files at crashinfo:.
+1941504K bytes of Flash at flash:.
+
+Base Ethernet MAC Address          : 6c:8b:d3:65:b8:80
+Motherboard Assembly Number        : 73-18700-05
+Motherboard Serial Number          : JAE230703Q3
+Model Revision Number              : A0
+Motherboard Revision Number        : A0
+Model Number                       : C9200L-24T-4G
+System Serial Number               : JAE230703Q3
+CLEI Code Number                   : INM6G00ARA
+
+
+Switch Ports Model              SW Version        SW Image              Mode   
+------ ----- -----              ----------        ----------            ----   
+*    1 28    C9200L-24T-4G      17.12.06          CAT9K_LITE_IOSXE      INSTALL
+
+
+Configuration register is 0x102
+
+s2-c9k-sw1#
+
+2026-04-16 22:27:27,203: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'show install summary' +++
+show install summary
+[ Switch 1 ] Installed Package(s) Information:
+State (St): I - Inactive, U - Activated & Uncommitted,
+            C - Activated & Committed, D - Deactivated & Uncommitted
+--------------------------------------------------------------------------------
+Type  St   Filename/Version
+--------------------------------------------------------------------------------
+IMG   C    17.12.06.0.7364
+
+--------------------------------------------------------------------------------
+Auto abort timer: inactive
+--------------------------------------------------------------------------------
+
+
+s2-c9k-sw1#
+
+2026-04-16 22:32:45,759: %UNICON-INFO: +++ s2-c9k-sw1 logfile ospf_2026-04-16/connection_s2-c9k-sw1.txt +++
+
+2026-04-16 22:32:45,759: %UNICON-INFO: +++ Unicon plugin iosxe (unicon.plugins.iosxe) +++
+(mleuschn@10.82.9.132) Password: 
+
+2026-04-16 22:32:46,436: %UNICON-INFO: +++ connection to spawn: ssh -l mleuschn 10.82.9.132, id: 137602935090752 +++
+
+2026-04-16 22:32:46,436: %UNICON-INFO: connection to s2-c9k-sw1
+
+
+
+
+s2-c9k-sw1#
+
+2026-04-16 22:32:46,746: %UNICON-INFO: Storing credentials from default as current_credentials
+
+s2-c9k-sw1#
+
+2026-04-16 22:32:46,935: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'show version | include operating mode' +++
+show version | include operating mode
+s2-c9k-sw1#
+
+2026-04-16 22:32:47,198: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 22:32:47,322: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'term length 0' +++
+term length 0
+s2-c9k-sw1#
+
+2026-04-16 22:32:47,632: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'term width 0' +++
+term width 0
+s2-c9k-sw1#
+
+2026-04-16 22:32:47,943: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'show version' +++
+show version
+Cisco IOS XE Software, Version 17.12.06
+Cisco IOS Software [Dublin], Catalyst L3 Switch Software (CAT9K_LITE_IOSXE), Version 17.12.6, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2025 by Cisco Systems, Inc.
+Compiled Sun 31-Aug-25 06:15 by mcpre
+
+
+Cisco IOS-XE software, Copyright (c) 2005-2025 by cisco Systems, Inc.
+All rights reserved.  Certain components of Cisco IOS-XE software are
+licensed under the GNU General Public License ("GPL") Version 2.0.  The
+software code licensed under GPL Version 2.0 is free software that comes
+with ABSOLUTELY NO WARRANTY.  You can redistribute and/or modify such
+GPL code under the terms of GPL Version 2.0.  For more details, see the
+documentation or "License Notice" file accompanying the IOS-XE software,
+or the applicable URL provided on the flyer accompanying the IOS-XE
+software.
+
+
+ROM: IOS-XE ROMMON
+BOOTLDR: System Bootstrap, Version 17.12.1r [FC3], RELEASE SOFTWARE (P) 
+
+s2-c9k-sw1 uptime is 3 days, 6 hours, 13 minutes
+Uptime for this control processor is 3 days, 6 hours, 15 minutes
+System returned to ROM by Power Failure or Unknown
+System image file is "flash:packages.conf"
+Last reload reason: Power Failure or Unknown
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+
+Technology Package License Information: 
+
+------------------------------------------------------------------------------
+Technology-package                                     Technology-package
+Current                        Type                       Next reboot  
+------------------------------------------------------------------------------
+network-essentials  	Smart License                 	 network-essentials  
+dna-essentials      	Subscription Smart License    	 dna-essentials                
+
+
+Smart Licensing Status: Smart Licensing Using Policy
+
+cisco C9200L-24T-4G (ARM64) processor with 502720K/3071K bytes of memory.
+Processor board ID JAE230703Q3
+4 Virtual Ethernet interfaces
+28 Gigabit Ethernet interfaces
+2048K bytes of non-volatile configuration memory.
+1973256K bytes of physical memory.
+819200K bytes of Crash Files at crashinfo:.
+1941504K bytes of Flash at flash:.
+
+Base Ethernet MAC Address          : 6c:8b:d3:65:b8:80
+Motherboard Assembly Number        : 73-18700-05
+Motherboard Serial Number          : JAE230703Q3
+Model Revision Number              : A0
+Motherboard Revision Number        : A0
+Model Number                       : C9200L-24T-4G
+System Serial Number               : JAE230703Q3
+CLEI Code Number                   : INM6G00ARA
+
+
+Switch Ports Model              SW Version        SW Image              Mode   
+------ ----- -----              ----------        ----------            ----   
+*    1 28    C9200L-24T-4G      17.12.06          CAT9K_LITE_IOSXE      INSTALL
+
+
+Configuration register is 0x102
+
+s2-c9k-sw1#
+
+2026-04-16 22:32:48,281: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'show install summary' +++
+show install summary
+[ Switch 1 ] Installed Package(s) Information:
+State (St): I - Inactive, U - Activated & Uncommitted,
+            C - Activated & Committed, D - Deactivated & Uncommitted
+--------------------------------------------------------------------------------
+Type  St   Filename/Version
+--------------------------------------------------------------------------------
+IMG   C    17.12.06.0.7364
+
+--------------------------------------------------------------------------------
+Auto abort timer: inactive
+--------------------------------------------------------------------------------
+
+
+s2-c9k-sw1#
+
+2026-04-16 23:02:11,105: %UNICON-INFO: +++ s2-c9k-sw1 logfile ospf_2026-04-16/connection_s2-c9k-sw1.txt +++
+
+2026-04-16 23:02:11,106: %UNICON-INFO: +++ Unicon plugin iosxe (unicon.plugins.iosxe) +++
+(mleuschn@10.82.9.132) Password: 
+
+2026-04-16 23:02:11,724: %UNICON-INFO: +++ connection to spawn: ssh -l mleuschn 10.82.9.132, id: 139125264018384 +++
+
+2026-04-16 23:02:11,725: %UNICON-INFO: connection to s2-c9k-sw1
+
+
+
+
+s2-c9k-sw1#
+
+2026-04-16 23:02:12,014: %UNICON-INFO: Storing credentials from default as current_credentials
+
+s2-c9k-sw1#
+
+2026-04-16 23:02:12,202: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'show version | include operating mode' +++
+show version | include operating mode
+s2-c9k-sw1#
+
+2026-04-16 23:02:12,475: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 23:02:12,603: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'term length 0' +++
+term length 0
+s2-c9k-sw1#
+
+2026-04-16 23:02:12,918: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'term width 0' +++
+term width 0
+s2-c9k-sw1#
+
+2026-04-16 23:02:13,223: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'show version' +++
+show version
+Cisco IOS XE Software, Version 17.12.06
+Cisco IOS Software [Dublin], Catalyst L3 Switch Software (CAT9K_LITE_IOSXE), Version 17.12.6, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2025 by Cisco Systems, Inc.
+Compiled Sun 31-Aug-25 06:15 by mcpre
+
+
+Cisco IOS-XE software, Copyright (c) 2005-2025 by cisco Systems, Inc.
+All rights reserved.  Certain components of Cisco IOS-XE software are
+licensed under the GNU General Public License ("GPL") Version 2.0.  The
+software code licensed under GPL Version 2.0 is free software that comes
+with ABSOLUTELY NO WARRANTY.  You can redistribute and/or modify such
+GPL code under the terms of GPL Version 2.0.  For more details, see the
+documentation or "License Notice" file accompanying the IOS-XE software,
+or the applicable URL provided on the flyer accompanying the IOS-XE
+software.
+
+
+ROM: IOS-XE ROMMON
+BOOTLDR: System Bootstrap, Version 17.12.1r [FC3], RELEASE SOFTWARE (P) 
+
+s2-c9k-sw1 uptime is 3 days, 6 hours, 43 minutes
+Uptime for this control processor is 3 days, 6 hours, 44 minutes
+System returned to ROM by Power Failure or Unknown
+System image file is "flash:packages.conf"
+Last reload reason: Power Failure or Unknown
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+
+Technology Package License Information: 
+
+------------------------------------------------------------------------------
+Technology-package                                     Technology-package
+Current                        Type                       Next reboot  
+------------------------------------------------------------------------------
+network-essentials  	Smart License                 	 network-essentials  
+dna-essentials      	Subscription Smart License    	 dna-essentials                
+
+
+Smart Licensing Status: Smart Licensing Using Policy
+
+cisco C9200L-24T-4G (ARM64) processor with 502720K/3071K bytes of memory.
+Processor board ID JAE230703Q3
+4 Virtual Ethernet interfaces
+28 Gigabit Ethernet interfaces
+2048K bytes of non-volatile configuration memory.
+1973256K bytes of physical memory.
+819200K bytes of Crash Files at crashinfo:.
+1941504K bytes of Flash at flash:.
+
+Base Ethernet MAC Address          : 6c:8b:d3:65:b8:80
+Motherboard Assembly Number        : 73-18700-05
+Motherboard Serial Number          : JAE230703Q3
+Model Revision Number              : A0
+Motherboard Revision Number        : A0
+Model Number                       : C9200L-24T-4G
+System Serial Number               : JAE230703Q3
+CLEI Code Number                   : INM6G00ARA
+
+
+Switch Ports Model              SW Version        SW Image              Mode   
+------ ----- -----              ----------        ----------            ----   
+*    1 28    C9200L-24T-4G      17.12.06          CAT9K_LITE_IOSXE      INSTALL
+
+
+Configuration register is 0x102
+
+s2-c9k-sw1#
+
+2026-04-16 23:02:13,559: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'show install summary' +++
+show install summary
+[ Switch 1 ] Installed Package(s) Information:
+State (St): I - Inactive, U - Activated & Uncommitted,
+            C - Activated & Committed, D - Deactivated & Uncommitted
+--------------------------------------------------------------------------------
+Type  St   Filename/Version
+--------------------------------------------------------------------------------
+IMG   C    17.12.06.0.7364
+
+--------------------------------------------------------------------------------
+Auto abort timer: inactive
+--------------------------------------------------------------------------------
+
+
+s2-c9k-sw1#
+
+2026-04-16 23:07:55,507: %UNICON-INFO: +++ s2-c9k-sw1 logfile ospf_2026-04-16/connection_s2-c9k-sw1.txt +++
+
+2026-04-16 23:07:55,507: %UNICON-INFO: +++ Unicon plugin iosxe (unicon.plugins.iosxe) +++
+(mleuschn@10.82.9.132) Password: 
+
+2026-04-16 23:07:56,120: %UNICON-INFO: +++ connection to spawn: ssh -l mleuschn 10.82.9.132, id: 137783833308496 +++
+
+2026-04-16 23:07:56,120: %UNICON-INFO: connection to s2-c9k-sw1
+
+
+
+
+s2-c9k-sw1#
+
+2026-04-16 23:07:56,410: %UNICON-INFO: Storing credentials from default as current_credentials
+
+s2-c9k-sw1#
+
+2026-04-16 23:07:56,596: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'show version | include operating mode' +++
+show version | include operating mode
+s2-c9k-sw1#
+
+2026-04-16 23:07:56,867: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 23:07:56,992: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'term length 0' +++
+term length 0
+s2-c9k-sw1#
+
+2026-04-16 23:07:57,308: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'term width 0' +++
+term width 0
+s2-c9k-sw1#
+
+2026-04-16 23:07:57,615: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'show version' +++
+show version
+Cisco IOS XE Software, Version 17.12.06
+Cisco IOS Software [Dublin], Catalyst L3 Switch Software (CAT9K_LITE_IOSXE), Version 17.12.6, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2025 by Cisco Systems, Inc.
+Compiled Sun 31-Aug-25 06:15 by mcpre
+
+
+Cisco IOS-XE software, Copyright (c) 2005-2025 by cisco Systems, Inc.
+All rights reserved.  Certain components of Cisco IOS-XE software are
+licensed under the GNU General Public License ("GPL") Version 2.0.  The
+software code licensed under GPL Version 2.0 is free software that comes
+with ABSOLUTELY NO WARRANTY.  You can redistribute and/or modify such
+GPL code under the terms of GPL Version 2.0.  For more details, see the
+documentation or "License Notice" file accompanying the IOS-XE software,
+or the applicable URL provided on the flyer accompanying the IOS-XE
+software.
+
+
+ROM: IOS-XE ROMMON
+BOOTLDR: System Bootstrap, Version 17.12.1r [FC3], RELEASE SOFTWARE (P) 
+
+s2-c9k-sw1 uptime is 3 days, 6 hours, 48 minutes
+Uptime for this control processor is 3 days, 6 hours, 50 minutes
+System returned to ROM by Power Failure or Unknown
+System image file is "flash:packages.conf"
+Last reload reason: Power Failure or Unknown
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+
+Technology Package License Information: 
+
+------------------------------------------------------------------------------
+Technology-package                                     Technology-package
+Current                        Type                       Next reboot  
+------------------------------------------------------------------------------
+network-essentials  	Smart License                 	 network-essentials  
+dna-essentials      	Subscription Smart License    	 dna-essentials                
+
+
+Smart Licensing Status: Smart Licensing Using Policy
+
+cisco C9200L-24T-4G (ARM64) processor with 502720K/3071K bytes of memory.
+Processor board ID JAE230703Q3
+4 Virtual Ethernet interfaces
+28 Gigabit Ethernet interfaces
+2048K bytes of non-volatile configuration memory.
+1973256K bytes of physical memory.
+819200K bytes of Crash Files at crashinfo:.
+1941504K bytes of Flash at flash:.
+
+Base Ethernet MAC Address          : 6c:8b:d3:65:b8:80
+Motherboard Assembly Number        : 73-18700-05
+Motherboard Serial Number          : JAE230703Q3
+Model Revision Number              : A0
+Motherboard Revision Number        : A0
+Model Number                       : C9200L-24T-4G
+System Serial Number               : JAE230703Q3
+CLEI Code Number                   : INM6G00ARA
+
+
+Switch Ports Model              SW Version        SW Image              Mode   
+------ ----- -----              ----------        ----------            ----   
+*    1 28    C9200L-24T-4G      17.12.06          CAT9K_LITE_IOSXE      INSTALL
+
+
+Configuration register is 0x102
+
+s2-c9k-sw1#
+
+2026-04-16 23:07:57,944: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'show install summary' +++
+show install summary
+[ Switch 1 ] Installed Package(s) Information:
+State (St): I - Inactive, U - Activated & Uncommitted,
+            C - Activated & Committed, D - Deactivated & Uncommitted
+--------------------------------------------------------------------------------
+Type  St   Filename/Version
+--------------------------------------------------------------------------------
+IMG   C    17.12.06.0.7364
+
+--------------------------------------------------------------------------------
+Auto abort timer: inactive
+--------------------------------------------------------------------------------
+
+
+s2-c9k-sw1#
+
+2026-04-16 23:11:16,235: %UNICON-INFO: +++ s2-c9k-sw1 logfile ospf_2026-04-16/connection_s2-c9k-sw1.txt +++
+
+2026-04-16 23:11:16,235: %UNICON-INFO: +++ Unicon plugin iosxe (unicon.plugins.iosxe) +++
+(mleuschn@10.82.9.132) Password: 
+
+2026-04-16 23:11:16,836: %UNICON-INFO: +++ connection to spawn: ssh -l mleuschn 10.82.9.132, id: 127535892877424 +++
+
+2026-04-16 23:11:16,837: %UNICON-INFO: connection to s2-c9k-sw1
+
+
+
+s2-c9k-sw1#
+
+2026-04-16 23:11:17,135: %UNICON-INFO: Storing credentials from default as current_credentials
+
+s2-c9k-sw1#
+
+2026-04-16 23:11:17,324: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'show version | include operating mode' +++
+show version | include operating mode
+s2-c9k-sw1#
+
+2026-04-16 23:11:17,598: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 23:11:17,722: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'term length 0' +++
+term length 0
+s2-c9k-sw1#
+
+2026-04-16 23:11:18,051: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'term width 0' +++
+term width 0
+s2-c9k-sw1#
+
+2026-04-16 23:11:18,374: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'show version' +++
+show version
+Cisco IOS XE Software, Version 17.12.06
+Cisco IOS Software [Dublin], Catalyst L3 Switch Software (CAT9K_LITE_IOSXE), Version 17.12.6, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2025 by Cisco Systems, Inc.
+Compiled Sun 31-Aug-25 06:15 by mcpre
+
+
+Cisco IOS-XE software, Copyright (c) 2005-2025 by cisco Systems, Inc.
+All rights reserved.  Certain components of Cisco IOS-XE software are
+licensed under the GNU General Public License ("GPL") Version 2.0.  The
+software code licensed under GPL Version 2.0 is free software that comes
+with ABSOLUTELY NO WARRANTY.  You can redistribute and/or modify such
+GPL code under the terms of GPL Version 2.0.  For more details, see the
+documentation or "License Notice" file accompanying the IOS-XE software,
+or the applicable URL provided on the flyer accompanying the IOS-XE
+software.
+
+
+ROM: IOS-XE ROMMON
+BOOTLDR: System Bootstrap, Version 17.12.1r [FC3], RELEASE SOFTWARE (P) 
+
+s2-c9k-sw1 uptime is 3 days, 6 hours, 52 minutes
+Uptime for this control processor is 3 days, 6 hours, 53 minutes
+System returned to ROM by Power Failure or Unknown
+System image file is "flash:packages.conf"
+Last reload reason: Power Failure or Unknown
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+
+Technology Package License Information: 
+
+------------------------------------------------------------------------------
+Technology-package                                     Technology-package
+Current                        Type                       Next reboot  
+------------------------------------------------------------------------------
+network-essentials  	Smart License                 	 network-essentials  
+dna-essentials      	Subscription Smart License    	 dna-essentials                
+
+
+Smart Licensing Status: Smart Licensing Using Policy
+
+cisco C9200L-24T-4G (ARM64) processor with 502720K/3071K bytes of memory.
+Processor board ID JAE230703Q3
+4 Virtual Ethernet interfaces
+28 Gigabit Ethernet interfaces
+2048K bytes of non-volatile configuration memory.
+1973256K bytes of physical memory.
+819200K bytes of Crash Files at crashinfo:.
+1941504K bytes of Flash at flash:.
+
+Base Ethernet MAC Address          : 6c:8b:d3:65:b8:80
+Motherboard Assembly Number        : 73-18700-05
+Motherboard Serial Number          : JAE230703Q3
+Model Revision Number              : A0
+Motherboard Revision Number        : A0
+Model Number                       : C9200L-24T-4G
+System Serial Number               : JAE230703Q3
+CLEI Code Number                   : INM6G00ARA
+
+
+Switch Ports Model              SW Version        SW Image              Mode   
+------ ----- -----              ----------        ----------            ----   
+*    1 28    C9200L-24T-4G      17.12.06          CAT9K_LITE_IOSXE      INSTALL
+
+
+Configuration register is 0x102
+
+s2-c9k-sw1#
+
+2026-04-16 23:11:18,725: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'show install summary' +++
+show install summary
+[ Switch 1 ] Installed Package(s) Information:
+State (St): I - Inactive, U - Activated & Uncommitted,
+            C - Activated & Committed, D - Deactivated & Uncommitted
+--------------------------------------------------------------------------------
+Type  St   Filename/Version
+--------------------------------------------------------------------------------
+IMG   C    17.12.06.0.7364
+
+--------------------------------------------------------------------------------
+Auto abort timer: inactive
+--------------------------------------------------------------------------------
+
+
+s2-c9k-sw1#
+
+2026-04-16 23:11:57,841: %UNICON-INFO: +++ s2-c9k-sw1 logfile ospf_2026-04-16/connection_s2-c9k-sw1.txt +++
+
+2026-04-16 23:11:57,842: %UNICON-INFO: +++ Unicon plugin iosxe (unicon.plugins.iosxe) +++
+(mleuschn@10.82.9.132) Password: 
+
+2026-04-16 23:11:58,458: %UNICON-INFO: +++ connection to spawn: ssh -l mleuschn 10.82.9.132, id: 130316504196992 +++
+
+2026-04-16 23:11:58,458: %UNICON-INFO: connection to s2-c9k-sw1
+
+
+
+
+s2-c9k-sw1#
+
+2026-04-16 23:11:58,747: %UNICON-INFO: Storing credentials from default as current_credentials
+
+s2-c9k-sw1#
+
+2026-04-16 23:11:58,935: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'show version | include operating mode' +++
+show version | include operating mode
+s2-c9k-sw1#
+
+2026-04-16 23:11:59,200: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 23:11:59,324: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'term length 0' +++
+term length 0
+s2-c9k-sw1#
+
+2026-04-16 23:11:59,642: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'term width 0' +++
+term width 0
+s2-c9k-sw1#
+
+2026-04-16 23:11:59,959: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'show version' +++
+show version
+Cisco IOS XE Software, Version 17.12.06
+Cisco IOS Software [Dublin], Catalyst L3 Switch Software (CAT9K_LITE_IOSXE), Version 17.12.6, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2025 by Cisco Systems, Inc.
+Compiled Sun 31-Aug-25 06:15 by mcpre
+
+
+Cisco IOS-XE software, Copyright (c) 2005-2025 by cisco Systems, Inc.
+All rights reserved.  Certain components of Cisco IOS-XE software are
+licensed under the GNU General Public License ("GPL") Version 2.0.  The
+software code licensed under GPL Version 2.0 is free software that comes
+with ABSOLUTELY NO WARRANTY.  You can redistribute and/or modify such
+GPL code under the terms of GPL Version 2.0.  For more details, see the
+documentation or "License Notice" file accompanying the IOS-XE software,
+or the applicable URL provided on the flyer accompanying the IOS-XE
+software.
+
+
+ROM: IOS-XE ROMMON
+BOOTLDR: System Bootstrap, Version 17.12.1r [FC3], RELEASE SOFTWARE (P) 
+
+s2-c9k-sw1 uptime is 3 days, 6 hours, 52 minutes
+Uptime for this control processor is 3 days, 6 hours, 54 minutes
+System returned to ROM by Power Failure or Unknown
+System image file is "flash:packages.conf"
+Last reload reason: Power Failure or Unknown
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+
+Technology Package License Information: 
+
+------------------------------------------------------------------------------
+Technology-package                                     Technology-package
+Current                        Type                       Next reboot  
+------------------------------------------------------------------------------
+network-essentials  	Smart License                 	 network-essentials  
+dna-essentials      	Subscription Smart License    	 dna-essentials                
+
+
+Smart Licensing Status: Smart Licensing Using Policy
+
+cisco C9200L-24T-4G (ARM64) processor with 502720K/3071K bytes of memory.
+Processor board ID JAE230703Q3
+4 Virtual Ethernet interfaces
+28 Gigabit Ethernet interfaces
+2048K bytes of non-volatile configuration memory.
+1973256K bytes of physical memory.
+819200K bytes of Crash Files at crashinfo:.
+1941504K bytes of Flash at flash:.
+
+Base Ethernet MAC Address          : 6c:8b:d3:65:b8:80
+Motherboard Assembly Number        : 73-18700-05
+Motherboard Serial Number          : JAE230703Q3
+Model Revision Number              : A0
+Motherboard Revision Number        : A0
+Model Number                       : C9200L-24T-4G
+System Serial Number               : JAE230703Q3
+CLEI Code Number                   : INM6G00ARA
+
+
+Switch Ports Model              SW Version        SW Image              Mode   
+------ ----- -----              ----------        ----------            ----   
+*    1 28    C9200L-24T-4G      17.12.06          CAT9K_LITE_IOSXE      INSTALL
+
+
+Configuration register is 0x102
+
+s2-c9k-sw1#
+
+2026-04-16 23:12:00,290: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'show install summary' +++
+show install summary
+[ Switch 1 ] Installed Package(s) Information:
+State (St): I - Inactive, U - Activated & Uncommitted,
+            C - Activated & Committed, D - Deactivated & Uncommitted
+--------------------------------------------------------------------------------
+Type  St   Filename/Version
+--------------------------------------------------------------------------------
+IMG   C    17.12.06.0.7364
+
+--------------------------------------------------------------------------------
+Auto abort timer: inactive
+--------------------------------------------------------------------------------
+
+
+s2-c9k-sw1#
+
+2026-04-16 23:19:10,725: %UNICON-INFO: +++ s2-c9k-sw1 logfile ospf_2026-04-16/connection_s2-c9k-sw1.txt +++
+
+2026-04-16 23:19:10,725: %UNICON-INFO: +++ Unicon plugin iosxe (unicon.plugins.iosxe) +++
+(mleuschn@10.82.9.132) Password: 
+
+2026-04-16 23:19:11,385: %UNICON-INFO: +++ connection to spawn: ssh -l mleuschn 10.82.9.132, id: 137750469716272 +++
+
+2026-04-16 23:19:11,385: %UNICON-INFO: connection to s2-c9k-sw1
+
+
+
+
+s2-c9k-sw1#
+
+2026-04-16 23:19:11,684: %UNICON-INFO: Storing credentials from default as current_credentials
+
+s2-c9k-sw1#
+
+2026-04-16 23:19:11,876: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'show version | include operating mode' +++
+show version | include operating mode
+s2-c9k-sw1#
+
+2026-04-16 23:19:12,154: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 23:19:12,279: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'term length 0' +++
+term length 0
+s2-c9k-sw1#
+
+2026-04-16 23:19:12,592: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'term width 0' +++
+term width 0
+s2-c9k-sw1#
+
+2026-04-16 23:19:12,904: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'show version' +++
+show version
+Cisco IOS XE Software, Version 17.12.06
+Cisco IOS Software [Dublin], Catalyst L3 Switch Software (CAT9K_LITE_IOSXE), Version 17.12.6, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2025 by Cisco Systems, Inc.
+Compiled Sun 31-Aug-25 06:15 by mcpre
+
+
+Cisco IOS-XE software, Copyright (c) 2005-2025 by cisco Systems, Inc.
+All rights reserved.  Certain components of Cisco IOS-XE software are
+licensed under the GNU General Public License ("GPL") Version 2.0.  The
+software code licensed under GPL Version 2.0 is free software that comes
+with ABSOLUTELY NO WARRANTY.  You can redistribute and/or modify such
+GPL code under the terms of GPL Version 2.0.  For more details, see the
+documentation or "License Notice" file accompanying the IOS-XE software,
+or the applicable URL provided on the flyer accompanying the IOS-XE
+software.
+
+
+ROM: IOS-XE ROMMON
+BOOTLDR: System Bootstrap, Version 17.12.1r [FC3], RELEASE SOFTWARE (P) 
+
+s2-c9k-sw1 uptime is 3 days, 7 hours, 0 minutes
+Uptime for this control processor is 3 days, 7 hours, 1 minute
+System returned to ROM by Power Failure or Unknown
+System image file is "flash:packages.conf"
+Last reload reason: Power Failure or Unknown
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+
+Technology Package License Information: 
+
+------------------------------------------------------------------------------
+Technology-package                                     Technology-package
+Current                        Type                       Next reboot  
+------------------------------------------------------------------------------
+network-essentials  	Smart License                 	 network-essentials  
+dna-essentials      	Subscription Smart License    	 dna-essentials                
+
+
+Smart Licensing Status: Smart Licensing Using Policy
+
+cisco C9200L-24T-4G (ARM64) processor with 502720K/3071K bytes of memory.
+Processor board ID JAE230703Q3
+4 Virtual Ethernet interfaces
+28 Gigabit Ethernet interfaces
+2048K bytes of non-volatile configuration memory.
+1973256K bytes of physical memory.
+819200K bytes of Crash Files at crashinfo:.
+1941504K bytes of Flash at flash:.
+
+Base Ethernet MAC Address          : 6c:8b:d3:65:b8:80
+Motherboard Assembly Number        : 73-18700-05
+Motherboard Serial Number          : JAE230703Q3
+Model Revision Number              : A0
+Motherboard Revision Number        : A0
+Model Number                       : C9200L-24T-4G
+System Serial Number               : JAE230703Q3
+CLEI Code Number                   : INM6G00ARA
+
+
+Switch Ports Model              SW Version        SW Image              Mode   
+------ ----- -----              ----------        ----------            ----   
+*    1 28    C9200L-24T-4G      17.12.06          CAT9K_LITE_IOSXE      INSTALL
+
+
+Configuration register is 0x102
+
+s2-c9k-sw1#
+
+2026-04-16 23:19:13,254: %UNICON-INFO: +++ s2-c9k-sw1 with via 'cli': executing command 'show install summary' +++
+show install summary
+[ Switch 1 ] Installed Package(s) Information:
+State (St): I - Inactive, U - Activated & Uncommitted,
+            C - Activated & Committed, D - Deactivated & Uncommitted
+--------------------------------------------------------------------------------
+Type  St   Filename/Version
+--------------------------------------------------------------------------------
+IMG   C    17.12.06.0.7364
+
+--------------------------------------------------------------------------------
+Auto abort timer: inactive
+--------------------------------------------------------------------------------
+
+
+s2-c9k-sw1#

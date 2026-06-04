@@ -1,0 +1,33 @@
+hostname {{ inventory_hostname }}
+!
+domain name {{ domain_name }}
+!
+username {{ user }}
+ group root-lr
+ secret {{ password }}
+!
+vrf {{ mgmt_vrf }}
+ address-family ipv4 unicast
+!
+line default
+ exec-timeout 30 0
+ transport input ssh
+!
+crypto key generate rsa general-keys 4096
+!
+interface {{ mgmt_interface }}
+  vrf {{ mgmt_vrf }}
+  description {{ mgmt_description }}
+  ipv4 address {{ mgmt_ip | ipaddr('address') }} {{ mgmt_ip | ipaddr('netmask') }}
+  no shutdown
+!
+router static
+ vrf {{ mgmt_vrf }}
+  address-family ipv4 unicast
+   0.0.0.0/0 {{ mgmt_gw }}
+!
+ssh server v2
+ssh server vrf default
+ssh server vrf management
+!
+end

@@ -1,0 +1,187 @@
+---
+# -----------------------------------------------
+# Management Interface
+# -----------------------------------------------
+- name: Configure management interface
+  cisco.ios.ios_l3_interfaces:
+    config:
+      - name: "{{ mgmt_interface }}"
+        ipv4:
+          - address: "{{ mgmt_ip }}"
+  notify: save config
+  tags: interfaces
+
+# -----------------------------------------------
+# Loopback Interfaces
+# -----------------------------------------------
+- name: Configure loopback interfaces
+  cisco.ios.ios_interfaces:
+    config:
+      - name: "{{ item.name }}"
+        description: "{{ item.description | default(omit) }}"
+        enabled: true
+    state: merged
+  loop: "{{ loopbacks | default([]) }}"
+  when: loopbacks is defined
+  notify: save config
+  tags: interfaces
+
+- name: Configure loopback IPv4 addresses
+  cisco.ios.ios_l3_interfaces:
+    config:
+      - name: "{{ item.name }}"
+        ipv4:
+          - address: "{{ item.ip }}"
+  loop: "{{ loopbacks | default([]) }}"
+  when:
+    - loopbacks is defined
+    - item.ip is defined
+  notify: save config
+  tags: [interfaces, ip]
+
+- name: Configure loopback IPv6 addresses
+  cisco.ios.ios_l3_interfaces:
+    config:
+      - name: "{{ item.name }}"
+        ipv6:
+          - address: "{{ item.ipv6 }}"
+  loop: "{{ loopbacks | default([]) }}"
+  when:
+    - loopbacks is defined
+    - item.ipv6 is defined
+  notify: save config
+  tags: [interfaces, ipv6]
+
+# -----------------------------------------------
+# P2P Interfaces
+# -----------------------------------------------
+- name: Configure switchport interfaces for IPv4/IPv6 P2P links
+  cisco.ios.ios_interfaces:
+    config:
+      - name: "{{ item.name }}"
+        mode: layer3
+        enabled: true
+    state: merged
+  loop: "{{ p2p_interfaces | default([]) }}"
+  when:
+    - item.ip is defined
+    - platform_role == "access_switch"
+  notify: save config
+  tags: interfaces
+
+- name: Configure IPv4 P2P interfaces
+  cisco.ios.ios_l3_interfaces:
+    config:
+      - name: "{{ item.name }}"
+        ipv4:
+          - address: "{{ item.ip }}"
+  loop: "{{ p2p_interfaces | default([]) }}"
+  notify: save config
+  when: item.ip is defined
+  tags: [interfaces, ip]
+
+- name: Configure IPv6 P2P interfaces
+  cisco.ios.ios_l3_interfaces:
+    config:
+      - name: "{{ item.name }}"
+        ipv6:
+          - address: "{{ item.ipv6 }}"
+  loop: "{{ p2p_interfaces | default([]) }}"
+  notify: save config
+  when: item.ipv6 is defined
+  tags: [interfaces, ipv6]
+
+- name: Configure P2P interface descriptions
+  cisco.ios.ios_interfaces:
+    config:
+      - name: "{{ item.name }}"
+        description: "{{ item.description }}"
+        enabled: true
+    state: merged
+  loop: "{{ p2p_interfaces | default([]) }}"
+  notify: save config
+  tags: interfaces
+
+# -----------------------------------------------
+# Port-Channel / L2 Uplinks
+# Only runs when uplinks is defined
+# -----------------------------------------------
+- name: Configure port-channel interfaces
+  cisco.ios.ios_interfaces:
+    config:
+      - name: "{{ item.name }}"
+        description: "{{ item.description | default(omit) }}"
+        enabled: true
+    state: merged
+  loop: "{{ uplinks | default([]) }}"
+  when: uplinks is defined
+  notify: save config
+  tags: interfaces
+
+- name: Configure port-channel L2 trunk
+  cisco.ios.ios_l2_interfaces:
+    config:
+      - name: "{{ item.name }}"
+        mode: trunk
+        trunk:
+          native_vlan: "{{ item.native_vlan | default(omit) }}"
+          allowed_vlans: "{{ item.allowed_vlans | join(',') }}"
+    state: merged
+  loop: "{{ uplinks | default([]) }}"
+  when:
+    - uplinks is defined
+    - item.mode == 'trunk'
+  notify: save config
+  tags: interfaces
+
+- name: Configure port-channel member interface descriptions
+  cisco.ios.ios_interfaces:
+    config:
+      - name: "{{ item.1.interface }}"
+        description: "{{ item.1.description | default(omit) }}"
+        enabled: true
+    state: merged
+  loop: "{{ uplinks | default([]) | subelements('members') }}"
+  when: uplinks is defined
+  notify: save config
+  tags: interfaces
+
+- name: Configure port-channel member LAG assignment
+  cisco.ios.ios_config:
+    lines:
+      - channel-group {{ item.1.channel_group }} mode {{ item.1.channel_mode }}
+    parents:
+      - interface {{ item.1.interface }}
+  loop: "{{ uplinks | default([]) | subelements('members') }}"
+  when: uplinks is defined
+  notify: save config
+  tags: interfaces
+
+# -----------------------------------------------
+# SVI Interfaces
+# Only runs when svi_interfaces is defined
+# -----------------------------------------------
+
+- name: Enable SVI interfaces
+  cisco.ios.ios_interfaces:
+    config:
+      - name: "Vlan{{ item.vlan }}"
+        description: "{{ item.description | default(omit) }}"
+        enabled: true
+    state: merged
+  loop: "{{ svi_interfaces | default([]) }}"
+  when: svi_interfaces is defined
+  tags: interfaces
+
+- name: Configure SVI L3 interfaces
+  cisco.ios.ios_l3_interfaces:
+    config:
+      - name: "Vlan{{ item.vlan }}"
+        autostate: false
+        ipv4:
+          - address: "{{ item.ip }}"
+    state: merged
+  loop: "{{ svi_interfaces | default([]) }}"
+  when: svi_interfaces is defined
+  notify: save config
+  tags: interfaces

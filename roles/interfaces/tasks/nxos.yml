@@ -1,0 +1,63 @@
+---
+# -----------------------------------------------
+# P2P Interfaces
+# -----------------------------------------------
+- name: Enable P2P interfaces
+  cisco.nxos.nxos_interfaces:
+    config:
+      - name: "{{ item.name }}"
+        enabled: true
+        mode: layer3
+    state: merged
+  loop: "{{ p2p_interfaces | default([]) }}"
+  tags: interfaces
+
+- name: Configure P2P L3 interfaces
+  cisco.nxos.nxos_l3_interfaces:
+    config:
+      - name: "{{ item.name }}"
+        ipv4:
+          - address: "{{ item.ip }}/{{ item.prefix }}"
+    state: merged
+  loop: "{{ p2p_interfaces | default([]) }}"
+  notify: save config
+  tags: interfaces
+
+# -----------------------------------------------
+# SVI Interfaces
+# -----------------------------------------------
+- name: Enable SVI interfaces
+  cisco.nxos.nxos_interfaces:
+    config:
+      - name: "Vlan{{ item.vlan }}"
+        enabled: true
+  loop: "{{ svi_interfaces | default([]) }}"
+  tags: interfaces
+
+- name: Configure SVI L3 interfaces
+  cisco.nxos.nxos_l3_interfaces:
+    config:
+      - name: "Vlan{{ item.vlan }}"
+        ipv4:
+          - address: "{{ item.ip }}/{{ item.prefix }}"
+    state: merged
+  loop: "{{ svi_interfaces | default([]) }}"
+  notify: save config
+  tags: interfaces
+
+# -----------------------------------------------
+# HSRP
+# Only runs on SVIs where hsrp is defined
+# -----------------------------------------------
+- name: Configure HSRP on SVI interfaces
+  cisco.nxos.nxos_hsrp:
+    group: "{{ item.hsrp.group }}"
+    vip: "{{ item.hsrp.vip }}"
+    priority: "{{ item.hsrp.priority }}"
+    preempt: "{{ 'enabled' if item.hsrp.preempt else 'disabled' }}"
+    interface: "Vlan{{ item.vlan }}"
+    state: present
+  loop: "{{ svi_interfaces | default([]) }}"
+  when: item.hsrp is defined
+  notify: save config
+  tags: interfaces

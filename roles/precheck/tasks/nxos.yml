@@ -1,0 +1,24 @@
+---
+- name: Set checkpoint name
+  ansible.builtin.set_fact:
+    precheck_checkpoint_name: "pre-ansible-{{ now().strftime('%Y%m%d_%H%M%S') }}"
+  tags: pre_flight
+
+- name: Create pre-change checkpoint
+  cisco.nxos.nxos_command:
+    commands:
+      - "checkpoint {{ precheck_checkpoint_name }}"
+  tags: pre_flight
+
+- name: Save revert point to file
+  ansible.builtin.copy:
+    content: "revert_point: \"{{ precheck_checkpoint_name }}\"\n"
+    dest: "{{ playbook_dir }}/../revert_points/{{ inventory_hostname }}.yml"
+    mode: "0644"
+  delegate_to: localhost
+  tags: pre_flight
+
+- name: Display revert point
+  ansible.builtin.debug:
+    msg: "Revert point saved: {{ precheck_checkpoint_name }} — revert with: rollback running-config checkpoint {{ precheck_checkpoint_name }}"
+  tags: pre_flight

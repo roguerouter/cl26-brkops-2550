@@ -1,0 +1,27 @@
+---
+- name: Generate CML bootstrap configurations
+  hosts: all
+  gather_facts: false
+  connection: local
+
+  pre_tasks:
+    - name: Ensure output directory exists
+      ansible.builtin.file:
+        path: "{{ playbook_dir }}/../bootstrap"
+        state: directory
+        mode: "0755"
+      run_once: true # noqa: run-once[task]
+      delegate_to: localhost
+
+  tasks:
+    - name: Bootstrap CML nodes
+      ansible.builtin.import_role:
+        name: cml_bootstrap
+
+  post_tasks:
+    - name: Summary
+      ansible.builtin.debug:
+        msg: >
+          Bootstrap bootstrap generated in {{ playbook_dir }}/bootstrap/.
+          Load each .cfg file as the startup config for the matching CML node.
+      run_once: true # noqa: run-once[task]

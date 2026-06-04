@@ -1,0 +1,23 @@
+---
+- name: Set hostname
+  cisco.nxos.nxos_hostname:
+    config:
+      hostname: "{{ hostname | lower }}"
+  notify: save config
+  tags: [common, hostname]
+
+- name: Enable NX-OS features
+  cisco.nxos.nxos_feature:
+    feature: "{{ item }}"
+    state: enabled
+  loop: "{{ nxos_features }}"
+  tags: common
+
+- name: Configure NTP servers
+  cisco.nxos.nxos_ntp_global:
+    config:
+      servers:
+        - server: "{{ item }}"
+  loop: "{{ ntp_servers }}"
+  notify: save config
+  tags: [common, ntp]

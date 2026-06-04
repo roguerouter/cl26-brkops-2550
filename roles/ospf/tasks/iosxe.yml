@@ -1,0 +1,185 @@
+---
+# ==============================================
+# IPv6 Prerequisites
+# ==============================================
+
+- name: Enable IPv6 unicast routing
+  cisco.ios.ios_config:
+    lines:
+      - ipv6 unicast-routing
+  when: ospfv3 is defined
+  notify: save config
+  tags:
+    - ipv6
+    - ospf
+    - ospfv3
+
+# ==============================================
+# OSPFv2 (IPv4) Configuration
+# ==============================================
+
+- name: Configure OSPFv2 process
+  cisco.ios.ios_config:
+    lines:
+      - router-id {{ ospf.router_id }}
+      - auto-cost reference-bandwidth {{ ospf.reference_bandwidth }}
+      - passive-interface default
+    parents:
+      - router ospf {{ ospf.process_id }}
+  when: ospf is defined
+  notify: save config
+  tags:
+    - ospf
+    - ospfv2
+
+- name: Configure OSPFv2 on P2P interfaces
+  cisco.ios.ios_config:
+    lines:
+      - ip ospf {{ ospf.process_id }} area {{ item.ospf_area }}
+      - ip ospf network point-to-point
+    parents:
+      - interface {{ item.name }}
+  loop: "{{ p2p_interfaces | default([]) }}"
+  when:
+    - ospf is defined
+    - item.ospf_area is defined
+  notify: save config
+  tags:
+    - ospf
+    - ospfv2
+
+- name: Configure OSPFv2 on SVI interfaces
+  cisco.ios.ios_config:
+    lines:
+      - ip ospf {{ ospf.process_id }} area {{ item.ospf_area }}
+    parents:
+      - interface Vlan{{ item.vlan }}
+  loop: "{{ svi_interfaces | default([]) }}"
+  when:
+    - svi_interfaces is defined
+    - ospf is defined
+    - item.ospf_area is defined
+  notify: save config
+  tags:
+    - ospf
+    - ospfv2
+
+- name: Configure OSPFv2 on loopbacks
+  cisco.ios.ios_config:
+    lines:
+      - ip ospf {{ ospf.process_id }} area {{ item.ospf_area | default(ospf.area) }}
+    parents:
+      - interface {{ item.name }}
+  loop: "{{ loopbacks | default([]) }}"
+  when:
+    - ospf is defined
+    - item.ip is defined
+    - item.ospf_passive | default(false) | bool
+  notify: save config
+  tags:
+    - ospf
+    - ospfv2
+
+- name: Configure OSPFv2 no passive on P2P interfaces
+  cisco.ios.ios_config:
+    lines:
+      - no passive-interface {{ item.name }}
+    parents:
+      - router ospf {{ ospf.process_id }}
+  loop: "{{ p2p_interfaces | default([]) }}"
+  when:
+    - ospf is defined
+    - item.ospf_area is defined
+  notify: save config
+  tags:
+    - ospf
+    - ospfv2
+
+# ==============================================
+# OSPFv3 (IPv6) Configuration
+# ==============================================
+# IOS-XE uses "ipv6 router ospf <id>" but router-id and
+# reference-bandwidth are not valid under this context.
+# OSPFv3 inherits router-id from OSPFv2 or highest loopback.
+# For explicit router-id, use "router ospfv3" (newer syntax).
+
+- name: Configure OSPFv3 process
+  cisco.ios.ios_config:
+    lines:
+      - router-id {{ ospfv3.router_id }}
+      - auto-cost reference-bandwidth {{ ospfv3.reference_bandwidth }}
+    parents:
+      - router ospfv3 {{ ospfv3.process_id }}
+      - address-family ipv6 unicast
+  when: ospfv3 is defined
+  notify: save config
+  tags:
+    - ospf
+    - ospfv3
+
+- name: Configure OSPFv3 on P2P interfaces
+  cisco.ios.ios_config:
+    lines:
+      - ipv6 ospf {{ ospfv3.process_id }} area {{ item.ospfv3_area | default(ospfv3.area) }}
+      - ipv6 ospf network point-to-point
+    parents:
+      - interface {{ item.name }}
+  loop: "{{ p2p_interfaces | default([]) }}"
+  when:
+    - ospfv3 is defined
+    - item.ipv6 is defined
+    - item.ospfv3_area is defined or ospfv3.area is defined
+  notify: save config
+  tags:
+    - ospf
+    - ospfv3
+
+- name: Configure OSPFv3 on loopbacks
+  cisco.ios.ios_config:
+    lines:
+      - ipv6 ospf {{ ospfv3.process_id }} area {{ item.ospfv3_area | default(ospfv3.area) }}
+    parents:
+      - interface {{ item.name }}
+  loop: "{{ loopbacks | default([]) }}"
+  when:
+    - ospfv3 is defined
+    - item.ipv6 is defined
+    - item.ospfv3_passive | default(false) | bool
+  notify: save config
+  tags:
+    - ospf
+    - ospfv3
+
+# Optional: passive-interface default mode
+# Set ospfv3.passive_default: true in host_vars to enable
+- name: Configure OSPFv3 passive-interface default
+  cisco.ios.ios_config:
+    lines:
+      - passive-interface default
+    parents:
+      - router ospfv3 {{ ospfv3.process_id }}
+      - address-family ipv6 unicast
+  when:
+    - ospfv3 is defined
+    - ospfv3.passive_default | default(false) | bool
+  notify: save config
+  tags:
+    - ospf
+    - ospfv3
+
+- name: Configure OSPFv3 no passive on P2P interfaces
+  cisco.ios.ios_config:
+    lines:
+      - no passive-interface {{ item.name }}
+    parents:
+      - router ospfv3 {{ ospfv3.process_id }}
+      - address-family ipv6 unicast
+  loop: "{{ p2p_interfaces | default([]) }}"
+  when:
+    - ospfv3 is defined
+    - ospfv3.passive_default | default(false) | bool
+    - item.ipv6 is defined
+  notify: save config
+  tags:
+    - ospf
+    - ospfv3

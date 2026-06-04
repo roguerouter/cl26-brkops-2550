@@ -1,0 +1,26 @@
+--- cml/ospf_ipv6/routing_iosxe_s2-c8k-rtr1_ops.txt
++++ production/ospf_ipv6/routing_iosxe_s2-c8k-rtr1_ops.txt
+ info:
+  vrf:
+   default:
+    address_family:
+     ipv6:
+      routes:
+       2001:DB8:20:13::/126:
+        next_hop:
+         next_hop_list:
+          1:
+-          next_hop: FE80::5054:FF:FE67:4B12
++          next_hop: FE80::6AE5:9EFF:FE55:8A12
+       2001:DB8:CAFE:100::1/128:
+        next_hop:
+         next_hop_list:
+          1:
+-          next_hop: FE80::5054:FF:FE67:4B12
++          next_hop: FE80::6AE5:9EFF:FE55:8A12
+       2001:DB8:CAFE:300::1/128:
+        next_hop:
+         next_hop_list:
+          1:
+-          next_hop: FE80::5054:FF:FE67:4B12
++          next_hop: FE80::6AE5:9EFF:FE55:8A12

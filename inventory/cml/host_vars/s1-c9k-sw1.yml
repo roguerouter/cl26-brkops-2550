@@ -1,0 +1,45 @@
+---
+hostname: s1-c9k-sw1
+platform_role: access_switch
+site: site1
+platform_type: iosxe
+
+archive_path: bootflash:archive
+
+# Management
+mgmt_interface: GigabitEthernet0/0
+mgmt_description: OoB_Mgmt
+mgmt_vrf: Mgmt-vrf
+mgmt_ip: 10.83.32.109/25
+mgmt_gw: 10.83.32.126
+
+# VTP
+vtp_mode: transparent
+
+spanning_tree:
+  vlan_priority: 4096
+
+# License
+license_level: network-advantage
+license_addon: dna-advantage
+
+# Uplinks - abstracted as logical links
+uplinks:
+  - name: Port-channel1
+    description: LAG_TO_S1-NCS540
+    type: port_channel
+    mode: trunk
+    native_vlan: 99
+    allowed_vlans: [10, 20, 100]
+    members:
+      - interface: GigabitEthernet1/0/23
+        description: TRUNK_TO_S1-NCS540_Te0/0/0/26
+        channel_group: 1
+        channel_mode: active
+      - interface: GigabitEthernet1/0/24
+        description: TRUNK_TO_S1-NCS540_Te0/0/0/27
+        channel_group: 1
+        channel_mode: active
+
+# No L3 SVIs on this switch - routing is on NCS540
+svi_interfaces: []

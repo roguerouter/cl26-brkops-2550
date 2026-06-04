@@ -1,0 +1,11 @@
+---
+- name: Revert to pre-change archive
+  cisco.ios.ios_command:
+    commands:
+      - "configure replace {{ revert_point }} force"
+  tags: rollback
+
+- name: Display rollback status
+  ansible.builtin.debug:
+    msg: "{{ inventory_hostname }} reverted to {{ revert_point }}"
+  tags: rollback

@@ -1,0 +1,18 @@
+---
+- name: Save config iosxe
+  cisco.ios.ios_command:
+    commands: write memory
+  listen: save config
+  when: platform_type == 'iosxe'
+
+- name: Save config iosxr
+  cisco.iosxr.iosxr_command:
+    commands: commit
+  listen: save config
+  when: platform_type == 'iosxr'
+
+- name: Save config nxos
+  cisco.nxos.nxos_command:
+    commands: copy running-config startup-config
+  listen: save config
+  when: platform_type == 'nxos'

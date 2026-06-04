@@ -1,0 +1,324 @@
+
+2026-04-16 21:42:17,933: %UNICON-INFO: +++ s1-ncs540-rtr1 logfile ospf_2026-04-16/connection_s1-ncs540-rtr1.txt +++
+
+2026-04-16 21:42:17,933: %UNICON-INFO: +++ Unicon plugin iosxr (unicon.plugins.iosxr) +++
+(netadmin@10.83.32.110) Password: 
+
+2026-04-16 21:42:18,167: %UNICON-INFO: +++ connection to spawn: ssh -l netadmin 10.83.32.110, id: 127598052948736 +++
+
+2026-04-16 21:42:18,167: %UNICON-INFO: connection to s1-ncs540-rtr1
+
+
+
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-04-16 21:42:18,380: %UNICON-INFO: Storing credentials from default as current_credentials
+
+2026-04-16 21:42:18,381: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 21:42:18,504: %UNICON-INFO: +++ s1-ncs540-rtr1 with via 'cli': executing command 'terminal length 0' +++
+terminal length 0
+Thu Apr 16 21:42:17.101 UTC
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-04-16 21:42:18,791: %UNICON-INFO: +++ s1-ncs540-rtr1 with via 'cli': executing command 'terminal width 0' +++
+terminal width 0
+Thu Apr 16 21:42:17.392 UTC
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-04-16 21:48:56,847: %UNICON-INFO: +++ s1-ncs540-rtr1 logfile ospf_2026-04-16/connection_s1-ncs540-rtr1.txt +++
+
+2026-04-16 21:48:56,847: %UNICON-INFO: +++ Unicon plugin iosxr (unicon.plugins.iosxr) +++
+(netadmin@10.83.32.110) Password: 
+
+2026-04-16 21:48:57,138: %UNICON-INFO: +++ connection to spawn: ssh -l netadmin 10.83.32.110, id: 140310812195488 +++
+
+2026-04-16 21:48:57,138: %UNICON-INFO: connection to s1-ncs540-rtr1
+
+
+
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-04-16 21:48:57,347: %UNICON-INFO: Storing credentials from default as current_credentials
+
+2026-04-16 21:48:57,347: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 21:48:57,471: %UNICON-INFO: +++ s1-ncs540-rtr1 with via 'cli': executing command 'terminal length 0' +++
+terminal length 0
+Thu Apr 16 21:48:56.069 UTC
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-04-16 21:48:57,763: %UNICON-INFO: +++ s1-ncs540-rtr1 with via 'cli': executing command 'terminal width 0' +++
+terminal width 0
+Thu Apr 16 21:48:56.364 UTC
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-04-16 22:17:03,798: %UNICON-INFO: +++ s1-ncs540-rtr1 logfile ospf_2026-04-16/connection_s1-ncs540-rtr1.txt +++
+
+2026-04-16 22:17:03,798: %UNICON-INFO: +++ Unicon plugin iosxr (unicon.plugins.iosxr) +++
+(netadmin@10.83.32.110) Password: 
+
+2026-04-16 22:17:04,047: %UNICON-INFO: +++ connection to spawn: ssh -l netadmin 10.83.32.110, id: 128784155956752 +++
+
+2026-04-16 22:17:04,048: %UNICON-INFO: connection to s1-ncs540-rtr1
+
+
+
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-04-16 22:17:04,278: %UNICON-INFO: Storing credentials from default as current_credentials
+
+2026-04-16 22:17:04,279: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 22:17:04,402: %UNICON-INFO: +++ s1-ncs540-rtr1 with via 'cli': executing command 'terminal length 0' +++
+terminal length 0
+Thu Apr 16 22:17:03.004 UTC
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-04-16 22:17:04,694: %UNICON-INFO: +++ s1-ncs540-rtr1 with via 'cli': executing command 'terminal width 0' +++
+terminal width 0
+Thu Apr 16 22:17:03.310 UTC
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-04-16 22:27:24,369: %UNICON-INFO: +++ s1-ncs540-rtr1 logfile ospf_2026-04-16/connection_s1-ncs540-rtr1.txt +++
+
+2026-04-16 22:27:24,369: %UNICON-INFO: +++ Unicon plugin iosxr (unicon.plugins.iosxr) +++
+(netadmin@10.83.32.110) Password: 
+
+2026-04-16 22:27:24,681: %UNICON-INFO: +++ connection to spawn: ssh -l netadmin 10.83.32.110, id: 129680478747632 +++
+
+2026-04-16 22:27:24,681: %UNICON-INFO: connection to s1-ncs540-rtr1
+
+
+
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-04-16 22:27:24,915: %UNICON-INFO: Storing credentials from default as current_credentials
+
+2026-04-16 22:27:24,915: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 22:27:25,039: %UNICON-INFO: +++ s1-ncs540-rtr1 with via 'cli': executing command 'terminal length 0' +++
+terminal length 0
+Thu Apr 16 22:27:23.638 UTC
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-04-16 22:27:25,348: %UNICON-INFO: +++ s1-ncs540-rtr1 with via 'cli': executing command 'terminal width 0' +++
+terminal width 0
+Thu Apr 16 22:27:23.960 UTC
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-04-16 22:32:45,074: %UNICON-INFO: +++ s1-ncs540-rtr1 logfile ospf_2026-04-16/connection_s1-ncs540-rtr1.txt +++
+
+2026-04-16 22:32:45,074: %UNICON-INFO: +++ Unicon plugin iosxr (unicon.plugins.iosxr) +++
+(netadmin@10.83.32.110) Password: 
+
+2026-04-16 22:32:45,311: %UNICON-INFO: +++ connection to spawn: ssh -l netadmin 10.83.32.110, id: 124835642326336 +++
+
+2026-04-16 22:32:45,312: %UNICON-INFO: connection to s1-ncs540-rtr1
+
+
+
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-04-16 22:32:45,549: %UNICON-INFO: Storing credentials from default as current_credentials
+
+2026-04-16 22:32:45,550: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 22:32:45,672: %UNICON-INFO: +++ s1-ncs540-rtr1 with via 'cli': executing command 'terminal length 0' +++
+terminal length 0
+Thu Apr 16 22:32:44.272 UTC
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-04-16 22:32:45,970: %UNICON-INFO: +++ s1-ncs540-rtr1 with via 'cli': executing command 'terminal width 0' +++
+terminal width 0
+Thu Apr 16 22:32:44.574 UTC
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-04-16 23:02:10,732: %UNICON-INFO: +++ s1-ncs540-rtr1 logfile ospf_2026-04-16/connection_s1-ncs540-rtr1.txt +++
+
+2026-04-16 23:02:10,732: %UNICON-INFO: +++ Unicon plugin iosxr (unicon.plugins.iosxr) +++
+(netadmin@10.83.32.110) Password: 
+
+2026-04-16 23:02:10,981: %UNICON-INFO: +++ connection to spawn: ssh -l netadmin 10.83.32.110, id: 134472466857376 +++
+
+2026-04-16 23:02:10,981: %UNICON-INFO: connection to s1-ncs540-rtr1
+
+
+
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-04-16 23:02:11,189: %UNICON-INFO: Storing credentials from default as current_credentials
+
+2026-04-16 23:02:11,190: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 23:02:11,313: %UNICON-INFO: +++ s1-ncs540-rtr1 with via 'cli': executing command 'terminal length 0' +++
+terminal length 0
+Thu Apr 16 23:02:09.911 UTC
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-04-16 23:02:11,601: %UNICON-INFO: +++ s1-ncs540-rtr1 with via 'cli': executing command 'terminal width 0' +++
+terminal width 0
+Thu Apr 16 23:02:10.206 UTC
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-04-16 23:07:54,820: %UNICON-INFO: +++ s1-ncs540-rtr1 logfile ospf_2026-04-16/connection_s1-ncs540-rtr1.txt +++
+
+2026-04-16 23:07:54,820: %UNICON-INFO: +++ Unicon plugin iosxr (unicon.plugins.iosxr) +++
+(netadmin@10.83.32.110) Password: 
+
+2026-04-16 23:07:55,068: %UNICON-INFO: +++ connection to spawn: ssh -l netadmin 10.83.32.110, id: 133832994880448 +++
+
+2026-04-16 23:07:55,069: %UNICON-INFO: connection to s1-ncs540-rtr1
+
+
+
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-04-16 23:07:55,297: %UNICON-INFO: Storing credentials from default as current_credentials
+
+2026-04-16 23:07:55,298: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 23:07:55,420: %UNICON-INFO: +++ s1-ncs540-rtr1 with via 'cli': executing command 'terminal length 0' +++
+terminal length 0
+Thu Apr 16 23:07:54.024 UTC
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-04-16 23:07:55,720: %UNICON-INFO: +++ s1-ncs540-rtr1 with via 'cli': executing command 'terminal width 0' +++
+terminal width 0
+Thu Apr 16 23:07:54.322 UTC
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-04-16 23:11:09,824: %UNICON-INFO: +++ s1-ncs540-rtr1 logfile ospf_2026-04-16/connection_s1-ncs540-rtr1.txt +++
+
+2026-04-16 23:11:09,824: %UNICON-INFO: +++ Unicon plugin iosxr (unicon.plugins.iosxr) +++
+(netadmin@10.83.32.110) Password: 
+
+2026-04-16 23:11:10,073: %UNICON-INFO: +++ connection to spawn: ssh -l netadmin 10.83.32.110, id: 125471387729312 +++
+
+2026-04-16 23:11:10,074: %UNICON-INFO: connection to s1-ncs540-rtr1
+
+
+
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-04-16 23:11:10,308: %UNICON-INFO: Storing credentials from default as current_credentials
+
+2026-04-16 23:11:10,308: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 23:11:10,432: %UNICON-INFO: +++ s1-ncs540-rtr1 with via 'cli': executing command 'terminal length 0' +++
+terminal length 0
+Thu Apr 16 23:11:09.029 UTC
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-04-16 23:11:10,724: %UNICON-INFO: +++ s1-ncs540-rtr1 with via 'cli': executing command 'terminal width 0' +++
+terminal width 0
+Thu Apr 16 23:11:09.318 UTC
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-04-16 23:11:48,611: %UNICON-INFO: +++ s1-ncs540-rtr1 logfile ospf_2026-04-16/connection_s1-ncs540-rtr1.txt +++
+
+2026-04-16 23:11:48,612: %UNICON-INFO: +++ Unicon plugin iosxr (unicon.plugins.iosxr) +++
+(netadmin@10.83.32.110) Password: 
+
+2026-04-16 23:11:48,862: %UNICON-INFO: +++ connection to spawn: ssh -l netadmin 10.83.32.110, id: 139490160901536 +++
+
+2026-04-16 23:11:48,863: %UNICON-INFO: connection to s1-ncs540-rtr1
+
+
+
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-04-16 23:11:49,095: %UNICON-INFO: Storing credentials from default as current_credentials
+
+2026-04-16 23:11:49,095: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 23:11:49,219: %UNICON-INFO: +++ s1-ncs540-rtr1 with via 'cli': executing command 'terminal length 0' +++
+terminal length 0
+Thu Apr 16 23:11:47.818 UTC
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-04-16 23:11:49,512: %UNICON-INFO: +++ s1-ncs540-rtr1 with via 'cli': executing command 'terminal width 0' +++
+terminal width 0
+Thu Apr 16 23:11:48.109 UTC
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-04-16 23:13:32,293: %UNICON-INFO: +++ s1-ncs540-rtr1 logfile ospf_2026-04-16/connection_s1-ncs540-rtr1.txt +++
+
+2026-04-16 23:13:32,294: %UNICON-INFO: +++ Unicon plugin iosxr (unicon.plugins.iosxr) +++
+(netadmin@10.83.32.110) Password: 
+
+2026-04-16 23:13:32,548: %UNICON-INFO: +++ connection to spawn: ssh -l netadmin 10.83.32.110, id: 133698410151088 +++
+
+2026-04-16 23:13:32,548: %UNICON-INFO: connection to s1-ncs540-rtr1
+
+
+
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-04-16 23:13:32,782: %UNICON-INFO: Storing credentials from default as current_credentials
+
+2026-04-16 23:13:32,782: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 23:13:32,906: %UNICON-INFO: +++ s1-ncs540-rtr1 with via 'cli': executing command 'terminal length 0' +++
+terminal length 0
+Thu Apr 16 23:13:31.504 UTC
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-04-16 23:13:33,202: %UNICON-INFO: +++ s1-ncs540-rtr1 with via 'cli': executing command 'terminal width 0' +++
+terminal width 0
+Thu Apr 16 23:13:31.815 UTC
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-04-16 23:14:42,514: %UNICON-INFO: +++ s1-ncs540-rtr1 logfile ospf_2026-04-16/connection_s1-ncs540-rtr1.txt +++
+
+2026-04-16 23:14:42,514: %UNICON-INFO: +++ Unicon plugin iosxr (unicon.plugins.iosxr) +++
+(netadmin@10.83.32.110) Password: 
+
+2026-04-16 23:14:42,764: %UNICON-INFO: +++ connection to spawn: ssh -l netadmin 10.83.32.110, id: 123212517964928 +++
+
+2026-04-16 23:14:42,764: %UNICON-INFO: connection to s1-ncs540-rtr1
+
+
+
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-04-16 23:14:42,983: %UNICON-INFO: Storing credentials from default as current_credentials
+
+2026-04-16 23:14:42,983: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 23:14:43,107: %UNICON-INFO: +++ s1-ncs540-rtr1 with via 'cli': executing command 'terminal length 0' +++
+terminal length 0
+Thu Apr 16 23:14:41.705 UTC
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-04-16 23:14:43,402: %UNICON-INFO: +++ s1-ncs540-rtr1 with via 'cli': executing command 'terminal width 0' +++
+terminal width 0
+Thu Apr 16 23:14:42.010 UTC
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-04-16 23:19:09,819: %UNICON-INFO: +++ s1-ncs540-rtr1 logfile ospf_2026-04-16/connection_s1-ncs540-rtr1.txt +++
+
+2026-04-16 23:19:09,819: %UNICON-INFO: +++ Unicon plugin iosxr (unicon.plugins.iosxr) +++
+(netadmin@10.83.32.110) Password: 
+
+2026-04-16 23:19:10,091: %UNICON-INFO: +++ connection to spawn: ssh -l netadmin 10.83.32.110, id: 138120590687456 +++
+
+2026-04-16 23:19:10,091: %UNICON-INFO: connection to s1-ncs540-rtr1
+
+
+
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-04-16 23:19:10,323: %UNICON-INFO: Storing credentials from default as current_credentials
+
+2026-04-16 23:19:10,323: %UNICON-INFO: +++ initializing handle +++
+
+2026-04-16 23:19:10,447: %UNICON-INFO: +++ s1-ncs540-rtr1 with via 'cli': executing command 'terminal length 0' +++
+terminal length 0
+Thu Apr 16 23:19:09.045 UTC
+RP/0/RP0/CPU0:s1-ncs540-rtr1#
+
+2026-04-16 23:19:10,742: %UNICON-INFO: +++ s1-ncs540-rtr1 with via 'cli': executing command 'terminal width 0' +++
+terminal width 0
+Thu Apr 16 23:19:09.340 UTC
+RP/0/RP0/CPU0:s1-ncs540-rtr1#

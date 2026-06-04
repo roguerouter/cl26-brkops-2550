@@ -1,0 +1,54 @@
+---
+hostname: s2-c9k-sw1
+platform_role: access_switch
+site: site2
+platform_type: iosxe
+
+archive_path: bootflash:archive
+
+# Management
+mgmt_interface: GigabitEthernet0/0
+mgmt_description: OoB_Mgmt
+mgmt_vrf: Mgmt-vrf
+mgmt_ip: 10.83.32.112/25
+mgmt_gw: 10.83.32.126
+
+# VTP
+vtp_mode: transparent
+
+ntp_servers:
+  - 172.17.0.1
+
+spanning_tree:
+  vlan_priority: 4096
+
+# License
+license_level: network-advantage
+license_addon: dna-advantage
+
+p2p_interfaces:
+  - name: GigabitEthernet1/0/1
+    description: TO_S2-C8K-RTR1_Gi0/0/0
+    ip: 172.24.22.2/30
+    ospf_area: 0
+    ospf_network: point-to-point
+
+svi_interfaces:
+  - vlan: 10
+    description: DATA_VLAN_SVI
+    ip: 192.168.30.1/24
+    ospf_area: 0
+  - vlan: 20
+    description: VOICE_VLAN_SVI
+    ip: 192.168.31.1/24
+    ospf_area: 0
+  - vlan: 100
+    description: MANAGEMENT_VLAN_SVI
+    ip: 192.168.32.1/24
+    ospf_area: 0
+
+ospf:
+  process_id: 1
+  router_id: 192.168.30.1
+  reference_bandwidth: 100000
+  area: 0

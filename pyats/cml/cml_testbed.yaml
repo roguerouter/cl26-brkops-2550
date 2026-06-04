@@ -1,0 +1,93 @@
+---
+devices:
+  s1-c9k-sw1:
+    connections:
+      cli:
+        ip: 10.83.32.109
+        protocol: ssh
+    credentials:
+      default:
+        password: s3cr3tpw1
+        username: netadmin
+    os: iosxe
+    type: iosxe
+    custom:
+      env: cml
+  s1-ncs540-rtr1:
+    connections:
+      cli:
+        ip: 10.83.32.110
+        protocol: ssh
+    credentials:
+      default:
+        password: s3cr3tpw1
+        username: netadmin
+    os: iosxr
+    type: iosxr
+    custom:
+      env: cml
+  s2-c8k-rtr1:
+    connections:
+      cli:
+        ip: 10.83.32.111
+        protocol: ssh
+    credentials:
+      default:
+        password: s3cr3tpw1
+        username: netadmin
+    os: iosxe
+    type: iosxe
+    custom:
+      env: cml
+  s2-c9k-sw1:
+    connections:
+      cli:
+        ip: 10.83.32.112
+        protocol: ssh
+    credentials:
+      default:
+        password: s3cr3tpw1
+        username: netadmin
+    os: iosxe
+    type: iosxe
+    custom:
+      env: cml
+  s3-c8k-rtr1:
+    connections:
+      cli:
+        ip: 10.83.32.113
+        protocol: ssh
+    credentials:
+      default:
+        password: s3cr3tpw1
+        username: netadmin
+    os: iosxe
+    type: iosxe
+    custom:
+      env: cml
+  s3-n9k-sw1:
+    connections:
+      cli:
+        ip: 10.83.32.114
+        protocol: ssh
+    credentials:
+      default:
+        password: s3cr3tpw1
+        username: netadmin
+    os: nxos
+    type: nxos
+    custom:
+      env: cml
+  s3-n9k-sw2:
+    connections:
+      cli:
+        ip: 10.83.32.115
+        protocol: ssh
+    credentials:
+      default:
+        password: s3cr3tpw1
+        username: netadmin
+    os: nxos
+    type: nxos
+    custom:
+      env: cml

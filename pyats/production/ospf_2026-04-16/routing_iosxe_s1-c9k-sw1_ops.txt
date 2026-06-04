@@ -1,0 +1,91 @@
+{
+  "_exclude": [
+    "updated"
+  ],
+  "attributes": null,
+  "commands": null,
+  "connections": null,
+  "context_manager": {},
+  "info": {
+    "vrf": {
+      "Mgmt-vrf": {
+        "address_family": {
+          "ipv4": {
+            "routes": {
+              "0.0.0.0/0": {
+                "active": true,
+                "metric": 0,
+                "next_hop": {
+                  "next_hop_list": {
+                    "1": {
+                      "index": 1,
+                      "next_hop": "10.82.9.142"
+                    }
+                  }
+                },
+                "route": "0.0.0.0/0",
+                "route_preference": 1,
+                "source_protocol": "static",
+                "source_protocol_codes": "S*"
+              },
+              "10.82.9.128/28": {
+                "active": true,
+                "next_hop": {
+                  "outgoing_interface": {
+                    "GigabitEthernet0/0": {
+                      "outgoing_interface": "GigabitEthernet0/0"
+                    }
+                  }
+                },
+                "route": "10.82.9.128/28",
+                "source_protocol": "connected",
+                "source_protocol_codes": "C"
+              },
+              "10.82.9.129/32": {
+                "active": true,
+                "next_hop": {
+                  "outgoing_interface": {
+                    "GigabitEthernet0/0": {
+                      "outgoing_interface": "GigabitEthernet0/0"
+                    }
+                  }
+                },
+                "route": "10.82.9.129/32",
+                "source_protocol": "local",
+                "source_protocol_codes": "L"
+              }
+            }
+          }
+        }
+      },
+      "default": {
+        "address_family": {
+          "ipv6": {
+            "routes": {
+              "FF00::/8": {
+                "active": true,
+                "metric": 0,
+                "next_hop": {
+                  "outgoing_interface": {
+                    "Null0": {
+                      "outgoing_interface": "Null0"
+                    }
+                  }
+                },
+                "route": "FF00::/8",
+                "route_preference": 0,
+                "source_protocol": "local",
+                "source_protocol_codes": "L"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "list_of_vrfs": [
+    "Mgmt-vrf",
+    ""
+  ],
+  "raw_data": false
+}

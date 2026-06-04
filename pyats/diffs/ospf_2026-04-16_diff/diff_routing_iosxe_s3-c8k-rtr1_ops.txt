@@ -1,0 +1,142 @@
+--- cml/ospf_2026-04-16/routing_iosxe_s3-c8k-rtr1_ops.txt
++++ production/ospf_2026-04-16/routing_iosxe_s3-c8k-rtr1_ops.txt
+ info:
+  vrf:
+   default:
+    address_family:
+     ipv4:
+      routes:
+       172.20.13.0/30:
+        next_hop:
+         outgoing_interface:
+-         GigabitEthernet8:
+-          outgoing_interface: GigabitEthernet8
++         TenGigabitEthernet0/2/0:
++          outgoing_interface: TenGigabitEthernet0/2/0
+       172.20.13.2/32:
+        next_hop:
+         outgoing_interface:
+-         GigabitEthernet8:
+-          outgoing_interface: GigabitEthernet8
++         TenGigabitEthernet0/2/0:
++          outgoing_interface: TenGigabitEthernet0/2/0
+       172.28.31.0/30:
+        next_hop:
+         outgoing_interface:
+-         GigabitEthernet4:
+-          outgoing_interface: GigabitEthernet4
++         TenGigabitEthernet0/0/4:
++          outgoing_interface: TenGigabitEthernet0/0/4
+       172.28.31.1/32:
+        next_hop:
+         outgoing_interface:
+-         GigabitEthernet4:
+-          outgoing_interface: GigabitEthernet4
++         TenGigabitEthernet0/0/4:
++          outgoing_interface: TenGigabitEthernet0/0/4
+       172.28.31.4/30:
+        next_hop:
+         outgoing_interface:
+-         GigabitEthernet5:
+-          outgoing_interface: GigabitEthernet5
++         TenGigabitEthernet0/0/5:
++          outgoing_interface: TenGigabitEthernet0/0/5
+       172.28.31.5/32:
+        next_hop:
+         outgoing_interface:
+-         GigabitEthernet5:
+-          outgoing_interface: GigabitEthernet5
++         TenGigabitEthernet0/0/5:
++          outgoing_interface: TenGigabitEthernet0/0/5
+       192.168.40.0/24:
+-       metric: 200
++       metric: 110
+        next_hop:
+         next_hop_list:
+          1:
+-          outgoing_interface: GigabitEthernet5
++          outgoing_interface: TenGigabitEthernet0/0/5
+          2:
+-          outgoing_interface: GigabitEthernet4
++          outgoing_interface: TenGigabitEthernet0/0/4
+       192.168.41.0/24:
+-       metric: 200
++       metric: 110
+        next_hop:
+         next_hop_list:
+          1:
+-          outgoing_interface: GigabitEthernet5
++          outgoing_interface: TenGigabitEthernet0/0/5
+          2:
+-          outgoing_interface: GigabitEthernet4
++          outgoing_interface: TenGigabitEthernet0/0/4
+       192.168.42.0/24:
+-       metric: 200
++       metric: 110
+        next_hop:
+         next_hop_list:
+          1:
+-          outgoing_interface: GigabitEthernet5
++          outgoing_interface: TenGigabitEthernet0/0/5
+          2:
+-          outgoing_interface: GigabitEthernet4
++          outgoing_interface: TenGigabitEthernet0/0/4
++    ipv6:
++     routes:
++      FF00::/8:
++       active: True
++       metric: 0
++       next_hop:
++        outgoing_interface:
++         Null0:
++          outgoing_interface: Null0
++       route: FF00::/8
++       route_preference: 0
++       source_protocol: local
++       source_protocol_codes: L
+   management:
+    address_family:
+     ipv4:
+      routes:
+       0.0.0.0/0:
+        next_hop:
+         next_hop_list:
+          1:
+-          next_hop: 10.83.32.126
++          next_hop: 10.82.9.142
++      10.82.9.128/28:
++       active: True
++       next_hop:
++        outgoing_interface:
++         GigabitEthernet0/0/3:
++          outgoing_interface: GigabitEthernet0/0/3
++       route: 10.82.9.128/28
++       source_protocol: connected
++       source_protocol_codes: C
++      10.82.9.133/32:
++       active: True
++       next_hop:
++        outgoing_interface:
++         GigabitEthernet0/0/3:
++          outgoing_interface: GigabitEthernet0/0/3
++       route: 10.82.9.133/32
++       source_protocol: local
++       source_protocol_codes: L
+-      10.83.32.0/25:
+-       active: True
+-       next_hop:
+-        outgoing_interface:
+-         GigabitEthernet3:
+-          outgoing_interface: GigabitEthernet3
+-       route: 10.83.32.0/25
+-       source_protocol: connected
+-       source_protocol_codes: C
+-      10.83.32.113/32:
+-       active: True
+-       next_hop:
+-        outgoing_interface:
+-         GigabitEthernet3:
+-          outgoing_interface: GigabitEthernet3
+-       route: 10.83.32.113/32
+-       source_protocol: local
+-       source_protocol_codes: L

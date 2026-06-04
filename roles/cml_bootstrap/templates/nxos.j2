@@ -1,0 +1,18 @@
+hostname {{ inventory_hostname }}
+!
+vrf context {{ mgmt_vrf }}
+  ip route 0.0.0.0/0 {{ mgmt_gw }}
+!
+ip domain-name {{ domain_name }}
+!
+no password strength-check
+username admin role network-admin
+username admin {{ password }} role network-admin
+username {{ user }} role network-admin
+username {{ user }} password {{ password }} role network-admin
+!
+int mgmt0
+  vrf member {{ mgmt_vrf }}
+  ip address {{ mgmt_ip }}
+!
+end

@@ -1,0 +1,35 @@
+---
+- name: Generate host_vars configurations
+  hosts: all
+  gather_facts: false
+  connection: local
+
+  pre_tasks:
+    - name: Ensure group_vars directory exists
+      ansible.builtin.file:
+        path: "{{ playbook_dir }}/../inventory/{{ env_name }}/group_vars"
+        state: directory
+        mode: "0755"
+      run_once: true # noqa: run-once[task]
+      delegate_to: localhost
+
+    - name: Ensure hosts_vars directory exists
+      ansible.builtin.file:
+        path: "{{ playbook_dir }}/../inventory/{{ env_name }}/host_vars"
+        state: directory
+        mode: "0755"
+      run_once: true # noqa: run-once[task]
+      delegate_to: localhost
+
+  tasks:
+    - name: Generate group and host_vars
+      ansible.builtin.import_role:
+        name: generate_vars
+
+  post_tasks:
+    - name: Summary
+      ansible.builtin.debug:
+        msg: >
+          Group variable files generated in {{ playbook_dir }}/../inventory/{{ env_name }}/group_vars.
+          Host variable files generated in {{ playbook_dir }}/../inventory/{{ env_name }}/host_vars.
+      run_once: true # noqa: run-once[task]

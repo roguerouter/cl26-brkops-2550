@@ -1,0 +1,44 @@
+---
+all:
+  vars:
+    env_name: cml
+  children:
+    cml:
+      children:
+        site1:
+          children:
+            iosxe:
+              hosts:
+                s1-c9k-sw1:
+                  ansible_host: 10.83.32.109
+                  ansible_network_os: ios
+            iosxr:
+              hosts:
+                s1-ncs540-rtr1:
+                  ansible_host: 10.83.32.110
+                  ansible_network_os: iosxr
+        site2:
+          children:
+            iosxe:
+              hosts:
+                s2-c8k-rtr1:
+                  ansible_host: 10.83.32.111
+                  ansible_network_os: ios
+                s2-c9k-sw1:
+                  ansible_host: 10.83.32.112
+                  ansible_network_os: ios
+        site3:
+          children:
+            iosxe:
+              hosts:
+                s3-c8k-rtr1:
+                  ansible_host: 10.83.32.113
+                  ansible_network_os: ios
+            nxos:
+              hosts:
+                s3-n9k-sw1:
+                  ansible_host: 10.83.32.114
+                  ansible_network_os: nxos
+                s3-n9k-sw2:
+                  ansible_host: 10.83.32.115
+                  ansible_network_os: nxos

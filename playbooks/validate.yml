@@ -1,0 +1,12 @@
+---
+# Validate config without pushing - uses check mode
+# Usage: ansible-playbook playbooks/validate.yml --check --diff
+
+- name: Validate all device configurations
+  hosts: all
+  gather_facts: false
+  roles:
+    - common
+    - interfaces
+    - vlans
+    - ospf

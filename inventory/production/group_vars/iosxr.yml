@@ -1,0 +1,30 @@
+---
+ansible_network_os: cisco.iosxr.iosxr
+platform_type: iosxr
+config_save_command: commit
+
+# IOS-XR specific
+features:
+  lldp: true
+  bundle_ethernet: true
+  vrf_management: true
+
+# IOS-XR exec timeout
+exec_timeout:
+  minutes: 30
+  seconds: 0
+
+# SSH settings
+ssh:
+  timeout: 60
+  version: 2
+  vrfs:
+    - default
+    - management
+
+# Line config
+line_console:
+  exec_timeout: "30 0"
+line_default:
+  exec_timeout: "30 0"
+  transport_input: ssh

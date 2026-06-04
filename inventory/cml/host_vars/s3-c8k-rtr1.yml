@@ -1,0 +1,67 @@
+---
+hostname: s3-c8k-rtr1
+platform_role: distribution_router
+site: site3
+platform_type: iosxe
+
+archive_path: bootflash:archive
+
+# Management
+mgmt_interface: GigabitEthernet3
+mgmt_description: OoB_Mgmt
+mgmt_vrf: management
+mgmt_ip: 10.83.32.113/25
+mgmt_gw: 10.83.32.126
+
+# Loopbacks
+loopbacks:
+  - name: Loopback0
+    description: ROUTER-ID
+    ip: 172.29.0.3/32
+    ospf_area: 0
+    ospf_passive: true
+  - name: Loopback100
+    ip: 172.31.1.1/32
+    ospf_passive: false
+  - name: Loopback30
+    description: Site3 IPv6
+    ipv6: 2001:db8:cafe:300::1/128
+    ospfv3_passive: true
+
+# NTP - syncs from NCS540
+ntp_servers:
+  - 172.17.0.1
+
+# P2P interfaces
+p2p_interfaces:
+  - name: GigabitEthernet8
+    description: TO_S1-NCS540_Te0/0/0/15
+    ip: 172.20.13.2/30
+    ipv6: 2001:db8:20:13::2/126
+    ospf_area: 0
+    ospfv3_area: 0
+    ospf_network: point-to-point
+  - name: GigabitEthernet4
+    description: TO_S3-N9K-SW1_Eth1/1
+    ip: 172.28.31.1/30
+    ospf_area: 0
+    ospf_network: point-to-point
+  - name: GigabitEthernet5
+    description: TO_S3-N9K-SW2_Eth1/1
+    ip: 172.28.31.5/30
+    ospf_area: 0
+    ospf_network: point-to-point
+
+# OSPFv2 (IPv4)
+ospf:
+  process_id: 1
+  reference_bandwidth: 100000
+  router_id: 172.29.0.3
+  area: 0
+
+# OSPFv3 (IPv6)
+ospfv3:
+  process_id: 1
+  reference_bandwidth: 100000
+  router_id: 172.29.0.3
+  area: 0

@@ -1,0 +1,5 @@
+---
+- name: Include platform OSPF tasks
+  ansible.builtin.include_tasks: "{{ platform_type }}.yml"
+  when: ospf is defined
+  tags: ospf

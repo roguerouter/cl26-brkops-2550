@@ -1,0 +1,53 @@
+---
+- name: Set hostname
+  cisco.ios.ios_hostname:
+    config:
+      hostname: "{{ hostname | lower }}"
+  notify: save config
+  tags: [common, hostname]
+
+- name: Configure domain name
+  cisco.ios.ios_system:
+    domain_name: "{{ domain_name }}"
+  notify: save config
+  tags: common
+
+- name: Configure logging
+  cisco.ios.ios_logging_global:
+    config:
+      buffered:
+        size: "{{ logging_buffered_size }}"
+        severity: "{{ logging_level }}"
+      console:
+        severity: "{{ logging_level }}"
+  notify: save config
+  tags: [common, logging]
+
+- name: Configure NTP servers
+  cisco.ios.ios_ntp_global:
+    config:
+      servers:
+        - server: "{{ item }}"
+  loop: "{{ ntp_servers }}"
+  notify: save config
+  tags: [common, ntp]
+
+- name: Configure archive
+  cisco.ios.ios_config:
+    lines:
+      - path {{ archive_path }}
+      - maximum 5
+    parents:
+      - archive
+  notify: save config
+  tags: [common, archive]
+
+- name: Enable IP routing
+  cisco.ios.ios_config:
+    lines:
+      - ip routing
+  notify: save config
+  when:
+    - ospf is defined
+    - platform_role == "access_switch"
+  tags: [common]

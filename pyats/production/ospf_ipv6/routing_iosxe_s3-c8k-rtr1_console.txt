@@ -1,0 +1,146 @@
++++ s3-c8k-rtr1 with via 'cli': executing command 'show vrf detail' +++
+show vrf detail
+VRF management (VRF Id = 2); default RD <not set>; default VPNID <not set>
+  New CLI format, supports multiple address-families
+  Flags: 0x1808
+  Interfaces:
+    Gi0/0/3                 
+Address family ipv4 unicast (Table ID = 0x2):
+  Flags: 0x0
+  No Export VPN route-target communities
+  No Import VPN route-target communities
+  No import route-map
+  No global export route-map
+  No export route-map
+  VRF label distribution protocol: not configured
+  VRF label allocation mode: per-prefix
+Address family ipv6 unicast not active
+Address family ipv4 multicast not active
+Address family ipv6 multicast not active
+
+s3-c8k-rtr1#
++++ s3-c8k-rtr1 with via 'cli': executing command 'show ip route vrf management' +++
+show ip route vrf management
+
+Routing Table: management
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2, m - OMP
+       n - NAT, Ni - NAT inside, No - NAT outside, Nd - NAT DIA
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       H - NHRP, G - NHRP registered, g - NHRP registration summary
+       o - ODR, P - periodic downloaded static route, l - LISP
+       a - application route
+       + - replicated route, % - next hop override, p - overrides from PfR
+       & - replicated local route overrides by connected
+
+Gateway of last resort is 10.82.9.142 to network 0.0.0.0
+
+S*    0.0.0.0/0 [1/0] via 10.82.9.142
+      10.0.0.0/8 is variably subnetted, 2 subnets, 2 masks
+C        10.82.9.128/28 is directly connected, GigabitEthernet0/0/3
+L        10.82.9.133/32 is directly connected, GigabitEthernet0/0/3
+s3-c8k-rtr1#
++++ s3-c8k-rtr1 with via 'cli': executing command 'show ip route' +++
+show ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2, m - OMP
+       n - NAT, Ni - NAT inside, No - NAT outside, Nd - NAT DIA
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       H - NHRP, G - NHRP registered, g - NHRP registration summary
+       o - ODR, P - periodic downloaded static route, l - LISP
+       a - application route
+       + - replicated route, % - next hop override, p - overrides from PfR
+       & - replicated local route overrides by connected
+
+Gateway of last resort is not set
+
+      172.16.0.0/30 is subnetted, 1 subnets
+O        172.16.12.0 
+           [110/20] via 172.20.13.1, 06:36:34, TenGigabitEthernet0/2/0
+      172.17.0.0/32 is subnetted, 1 subnets
+O        172.17.0.1 
+           [110/11] via 172.20.13.1, 06:36:34, TenGigabitEthernet0/2/0
+      172.20.0.0/16 is variably subnetted, 2 subnets, 2 masks
+C        172.20.13.0/30 is directly connected, TenGigabitEthernet0/2/0
+L        172.20.13.2/32 is directly connected, TenGigabitEthernet0/2/0
+      172.22.0.0/32 is subnetted, 1 subnets
+O        172.22.0.2 
+           [110/21] via 172.20.13.1, 06:36:29, TenGigabitEthernet0/2/0
+      172.24.0.0/30 is subnetted, 1 subnets
+O        172.24.22.0 
+           [110/120] via 172.20.13.1, 06:36:29, TenGigabitEthernet0/2/0
+      172.28.0.0/16 is variably subnetted, 4 subnets, 2 masks
+C        172.28.31.0/30 is directly connected, TenGigabitEthernet0/0/4
+L        172.28.31.1/32 is directly connected, TenGigabitEthernet0/0/4
+C        172.28.31.4/30 is directly connected, TenGigabitEthernet0/0/5
+L        172.28.31.5/32 is directly connected, TenGigabitEthernet0/0/5
+      172.29.0.0/32 is subnetted, 1 subnets
+C        172.29.0.3 is directly connected, Loopback0
+      172.31.0.0/32 is subnetted, 1 subnets
+C        172.31.1.1 is directly connected, Loopback100
+O     192.168.10.0/24 
+           [110/60] via 172.20.13.1, 06:36:34, TenGigabitEthernet0/2/0
+O     192.168.20.0/24 
+           [110/60] via 172.20.13.1, 06:36:34, TenGigabitEthernet0/2/0
+O     192.168.30.0/24 
+           [110/220] via 172.20.13.1, 06:36:29, TenGigabitEthernet0/2/0
+O     192.168.31.0/24 
+           [110/220] via 172.20.13.1, 06:36:29, TenGigabitEthernet0/2/0
+O     192.168.32.0/24 
+           [110/220] via 172.20.13.1, 06:36:29, TenGigabitEthernet0/2/0
+O     192.168.40.0/24 
+           [110/110] via 172.28.31.6, 2d13h, TenGigabitEthernet0/0/5
+           [110/110] via 172.28.31.2, 2d13h, TenGigabitEthernet0/0/4
+O     192.168.41.0/24 
+           [110/110] via 172.28.31.6, 2d13h, TenGigabitEthernet0/0/5
+           [110/110] via 172.28.31.2, 2d13h, TenGigabitEthernet0/0/4
+O     192.168.42.0/24 
+           [110/110] via 172.28.31.6, 2d13h, TenGigabitEthernet0/0/5
+           [110/110] via 172.28.31.2, 2d13h, TenGigabitEthernet0/0/4
+O     192.168.100.0/24 
+           [110/60] via 172.20.13.1, 06:36:34, TenGigabitEthernet0/2/0
+s3-c8k-rtr1#
++++ s3-c8k-rtr1 with via 'cli': executing command 'show ipv6 route' +++
+show ipv6 route
+IPv6 Routing Table - default - 7 entries
+Codes: C - Connected, L - Local, S - Static, U - Per-user Static route
+       B - BGP, R - RIP, H - NHRP, I1 - ISIS L1
+       I2 - ISIS L2, IA - ISIS interarea, IS - ISIS summary, D - EIGRP
+       EX - EIGRP external, ND - ND Default, NDp - ND Prefix, DCE - Destination
+       NDr - Redirect, RL - RPL, O - OSPF Intra, OI - OSPF Inter
+       OE1 - OSPF ext 1, OE2 - OSPF ext 2, ON1 - OSPF NSSA ext 1
+       ON2 - OSPF NSSA ext 2, la - LISP alt, lr - LISP site-registrations
+       ld - LISP dyn-eid, lA - LISP away, le - LISP extranet-policy
+       lp - LISP publications, ls - LISP destinations-summary, a - Application
+       m - OMP
+O   2001:DB8:16:12::/126 [110/20]
+     via FE80::6AE5:9EFF:FE55:8A13, TenGigabitEthernet0/2/0
+C   2001:DB8:20:13::/126 [0/0]
+     via TenGigabitEthernet0/2/0, directly connected
+L   2001:DB8:20:13::2/128 [0/0]
+     via TenGigabitEthernet0/2/0, receive
+O   2001:DB8:CAFE:100::1/128 [110/10]
+     via FE80::6AE5:9EFF:FE55:8A13, TenGigabitEthernet0/2/0
+O   2001:DB8:CAFE:200::1/128 [110/20]
+     via FE80::6AE5:9EFF:FE55:8A13, TenGigabitEthernet0/2/0
+LC  2001:DB8:CAFE:300::1/128 [0/0]
+     via Loopback30, receive
+L   FF00::/8 [0/0]
+     via Null0, receive
+s3-c8k-rtr1#
++====================================================================================================================================================+
+| Commands for learning feature 'Routing'                                                                                                            |
++====================================================================================================================================================+
+| - Parsed commands                                                                                                                                  |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.iosxe.show_vrf.ShowVrfDetail'>                                                                                    |
+|   cmd: <class 'genie.libs.parser.iosxe.show_routing.ShowIpRouteDistributor'>, arguments: {'vrf':'management'}                                      |
+|   cmd: <class 'genie.libs.parser.iosxe.show_routing.ShowIpRouteDistributor'>, arguments: {'vrf':''}                                                |
+|   cmd: <class 'genie.libs.parser.iosxe.show_routing.ShowIpv6RouteDistributor'>, arguments: {'vrf':''}                                              |
+|====================================================================================================================================================|

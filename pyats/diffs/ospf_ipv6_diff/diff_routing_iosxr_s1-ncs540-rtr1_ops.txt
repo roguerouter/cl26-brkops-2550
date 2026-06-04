@@ -1,0 +1,20 @@
+--- cml/ospf_ipv6/routing_iosxr_s1-ncs540-rtr1_ops.txt
++++ production/ospf_ipv6/routing_iosxr_s1-ncs540-rtr1_ops.txt
+ info:
+  vrf:
+   default:
+    address_family:
+     ipv6:
+      routes:
+       2001:db8:cafe:200::1/128:
+        next_hop:
+         next_hop_list:
+          1:
+-          next_hop: fe80::5054:ff:fe9b:a472
++          next_hop: fe80::3673:2dff:fee4:ad00
+       2001:db8:cafe:300::1/128:
+        next_hop:
+         next_hop_list:
+          1:
+-          next_hop: fe80::5054:ff:fe9d:8cbd
++          next_hop: fe80::f24a:2ff:fe21:fb10

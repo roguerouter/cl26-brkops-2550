@@ -1,0 +1,99 @@
+---
+hostname: s3-n9k-sw1
+platform_role: access_switch
+site: site3
+platform_type: nxos
+
+# Management
+mgmt_interface: mgmt0
+mgmt_description: OoB_Mgmt
+mgmt_vrf: management
+mgmt_ip: {{ {'cml': '10.83.32.114/25', 'production': '10.82.9.134/28'}[env_name] }}
+
+mgmt_gw: {{ {'cml': '10.83.32.126', 'production': '10.82.9.142'}[env_name] }}
+
+# NTP
+ntp_servers:
+  - 172.17.0.1
+
+# Boot
+boot_image: nxos64-cs.10.5.1.F.bin
+boot_path: bootflash
+
+# VPC
+vpc:
+  domain: 1
+  role_priority: 10
+  peer_switch: true
+  peer_gateway: true
+  keepalive:
+    destination: {{ {'cml': '10.83.32.115', 'production': '10.82.9.135'}[env_name] }}
+    source: {{ {'cml': '10.83.32.114', 'production': '10.82.9.134'}[env_name] }}
+  peer_link:
+    port_channel: 10
+    members:
+      - Ethernet1/53
+      - Ethernet1/54
+
+# P2P uplink to distribution router
+p2p_interfaces:
+  - name: Ethernet1/1
+    description: TO_S3-C8K-RTR1_Te0/0/4
+    ip: 172.28.31.2
+    prefix: 30
+    ospf_area: "0.0.0.0"
+    ospf_network: point-to-point
+
+# SVIs with HSRP
+svi_interfaces:
+  - vlan: 10
+    description: DATA_VLAN_SVI
+    ip: 192.168.40.2
+    prefix: 24
+    ospf_passive: true
+    ospf_area: "0.0.0.0"
+    hsrp:
+      group: 10
+      vip: 192.168.40.1
+      priority: 110
+      preempt: true
+  - vlan: 20
+    description: VOICE_VLAN_SVI
+    ip: 192.168.41.2
+    prefix: 24
+    ospf_passive: true
+    ospf_area: "0.0.0.0"
+    hsrp:
+      group: 20
+      vip: 192.168.41.1
+      priority: 110
+      preempt: true
+  - vlan: 100
+    description: MANAGEMENT_VLAN_SVI
+    ip: 192.168.42.2
+    prefix: 24
+    ospf_passive: true
+    ospf_area: "0.0.0.0"
+    hsrp:
+      group: 100
+      vip: 192.168.42.1
+      priority: 110
+      preempt: true
+
+# Server VPC port-channel
+vpc_port_channels:
+  - id: 100
+    description: SERVER_VPC
+    mode: trunk
+    allowed_vlans: [10, 20, 100]
+    vpc_id: 100
+    members:
+      - Ethernet1/10
+
+# OSPF
+ospf:
+  process_id: 1
+  reference_bandwidth: 100000
+  reference_bandwidth_unit: Mbps
+  router_id: 192.168.40.2
+  area: 0

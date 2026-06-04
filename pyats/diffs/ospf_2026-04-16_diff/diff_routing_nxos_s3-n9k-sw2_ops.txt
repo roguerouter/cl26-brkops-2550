@@ -1,0 +1,79 @@
+--- cml/ospf_2026-04-16/routing_nxos_s3-n9k-sw2_ops.txt
++++ production/ospf_2026-04-16/routing_nxos_s3-n9k-sw2_ops.txt
+ info:
+  vrf:
+   default:
+    address_family:
+     ipv4:
+      routes:
+       172.20.13.0/30:
+-       metric: 200
++       metric: 20
+       172.28.31.0/30:
+-       metric: 200
++       metric: 20
+       172.29.0.3/32:
+-       metric: 101
++       metric: 11
+   management:
+    address_family:
+     ipv4:
+      routes:
+       0.0.0.0/0:
+        next_hop:
+         next_hop_list:
+          1:
+-          next_hop: 10.83.32.126
++          next_hop: 10.82.9.142
++      10.82.9.128/28:
++       active: True
++       metric: 0
++       next_hop:
++        next_hop_list:
++         1:
++          index: 1
++          next_hop: 10.82.9.135
++          outgoing_interface: mgmt0
++          updated: 4d02h
++       route: 10.82.9.128/28
++       route_preference: 0
++       source_protocol: direct
++      10.82.9.135/32:
++       active: True
++       metric: 0
++       next_hop:
++        next_hop_list:
++         1:
++          index: 1
++          next_hop: 10.82.9.135
++          outgoing_interface: mgmt0
++          updated: 4d02h
++       route: 10.82.9.135/32
++       route_preference: 0
++       source_protocol: local
+-      10.83.32.0/25:
+-       active: True
+-       metric: 0
+-       next_hop:
+-        next_hop_list:
+-         1:
+-          index: 1
+-          next_hop: 10.83.32.115
+-          outgoing_interface: mgmt0
+-          updated: 1d03h
+-       route: 10.83.32.0/25
+-       route_preference: 0
+-       source_protocol: direct
+-      10.83.32.115/32:
+-       active: True
+-       metric: 0
+-       next_hop:
+-        next_hop_list:
+-         1:
+-          index: 1
+-          next_hop: 10.83.32.115
+-          outgoing_interface: mgmt0
+-          updated: 1d03h
+-       route: 10.83.32.115/32
+-       route_preference: 0
+-       source_protocol: local

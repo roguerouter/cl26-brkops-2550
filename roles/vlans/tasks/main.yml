@@ -1,0 +1,6 @@
+---
+# VLANs only relevant on switching platforms
+- name: Include platform VLAN tasks
+  ansible.builtin.include_tasks: "{{ platform_type }}.yml"
+  when: platform_role in ['access_switch']
+  tags: vlans

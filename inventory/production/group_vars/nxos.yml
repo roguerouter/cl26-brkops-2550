@@ -1,0 +1,8 @@
+---
+nxos_features:
+  - ospf
+  - interface-vlan
+  - hsrp
+  - lacp
+  - vpc
+  - lldp

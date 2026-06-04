@@ -1,0 +1,101 @@
++++ s3-n9k-sw1 with via 'cli': executing command 'show ip route vrf all' +++
+show ip route vrf all
+IP Route Table for VRF "default"
+'*' denotes best ucast next-hop
+'**' denotes best mcast next-hop
+'[x/y]' denotes [preference/metric]
+'%<string>' in via output denotes VRF <string>
+
+172.16.12.0/30, ubest/mbest: 1/0
+    *via 172.28.31.1, Eth1/1, [110/300], 11:47:51, ospf-1, intra
+172.17.0.1/32, ubest/mbest: 1/0
+    *via 172.28.31.1, Eth1/1, [110/201], 11:47:51, ospf-1, intra
+172.20.13.0/30, ubest/mbest: 1/0
+    *via 172.28.31.1, Eth1/1, [110/200], 11:47:51, ospf-1, intra
+172.22.0.2/32, ubest/mbest: 1/0
+    *via 172.28.31.1, Eth1/1, [110/301], 11:47:51, ospf-1, intra
+172.24.22.0/30, ubest/mbest: 1/0
+    *via 172.28.31.1, Eth1/1, [110/400], 11:47:51, ospf-1, intra
+172.28.31.0/30, ubest/mbest: 1/0, attached
+    *via 172.28.31.2, Eth1/1, [0/0], 11:50:39, direct
+172.28.31.2/32, ubest/mbest: 1/0, attached
+    *via 172.28.31.2, Eth1/1, [0/0], 11:50:39, local
+172.28.31.4/30, ubest/mbest: 1/0
+    *via 172.28.31.1, Eth1/1, [110/200], 11:47:51, ospf-1, intra
+172.29.0.3/32, ubest/mbest: 1/0
+    *via 172.28.31.1, Eth1/1, [110/101], 11:47:51, ospf-1, intra
+192.168.10.0/24, ubest/mbest: 1/0
+    *via 172.28.31.1, Eth1/1, [110/250], 11:38:52, ospf-1, intra
+192.168.20.0/24, ubest/mbest: 1/0
+    *via 172.28.31.1, Eth1/1, [110/250], 11:38:52, ospf-1, intra
+192.168.30.0/24, ubest/mbest: 1/0
+    *via 172.28.31.1, Eth1/1, [110/500], 11:47:51, ospf-1, intra
+192.168.31.0/24, ubest/mbest: 1/0
+    *via 172.28.31.1, Eth1/1, [110/500], 11:47:51, ospf-1, intra
+192.168.32.0/24, ubest/mbest: 1/0
+    *via 172.28.31.1, Eth1/1, [110/500], 11:47:51, ospf-1, intra
+192.168.40.0/24, ubest/mbest: 1/0, attached
+    *via 192.168.40.2, Vlan10, [0/0], 11:49:19, direct
+192.168.40.1/32, ubest/mbest: 1/0, attached
+    *via 192.168.40.1, Vlan10, [0/0], 11:48:57, hsrp
+192.168.40.2/32, ubest/mbest: 1/0, attached
+    *via 192.168.40.2, Vlan10, [0/0], 11:49:19, local
+192.168.41.0/24, ubest/mbest: 1/0, attached
+    *via 192.168.41.2, Vlan20, [0/0], 11:49:19, direct
+192.168.41.1/32, ubest/mbest: 1/0, attached
+    *via 192.168.41.1, Vlan20, [0/0], 11:48:57, hsrp
+192.168.41.2/32, ubest/mbest: 1/0, attached
+    *via 192.168.41.2, Vlan20, [0/0], 11:49:19, local
+192.168.42.0/24, ubest/mbest: 1/0, attached
+    *via 192.168.42.2, Vlan100, [0/0], 11:49:19, direct
+192.168.42.1/32, ubest/mbest: 1/0, attached
+    *via 192.168.42.1, Vlan100, [0/0], 11:48:57, hsrp
+192.168.42.2/32, ubest/mbest: 1/0, attached
+    *via 192.168.42.2, Vlan100, [0/0], 11:49:19, local
+192.168.100.0/24, ubest/mbest: 1/0
+    *via 172.28.31.1, Eth1/1, [110/250], 11:38:52, ospf-1, intra
+
+IP Route Table for VRF "management"
+'*' denotes best ucast next-hop
+'**' denotes best mcast next-hop
+'[x/y]' denotes [preference/metric]
+'%<string>' in via output denotes VRF <string>
+
+0.0.0.0/0, ubest/mbest: 1/0
+    *via 10.83.32.126, [1/0], 13:06:35, static
+10.83.32.0/25, ubest/mbest: 1/0, attached
+    *via 10.83.32.114, mgmt0, [0/0], 13:06:35, direct
+10.83.32.114/32, ubest/mbest: 1/0, attached
+    *via 10.83.32.114, mgmt0, [0/0], 13:06:35, local
+
+IP Route Table for VRF "egress-loadbalance-resolution-"
+'*' denotes best ucast next-hop
+'**' denotes best mcast next-hop
+'[x/y]' denotes [preference/metric]
+'%<string>' in via output denotes VRF <string>
+
+
+s3-n9k-sw1# 
++++ s3-n9k-sw1 with via 'cli': executing command 'show ipv6 route vrf all' +++
+show ipv6 route vrf all
+IPv6 Routing Table for VRF "default"
+'*' denotes best ucast next-hop
+'**' denotes best mcast next-hop
+'[x/y]' denotes [preference/metric]
+
+
+IPv6 Routing Table for VRF "egress-loadbalance-resolution-"
+'*' denotes best ucast next-hop
+'**' denotes best mcast next-hop
+'[x/y]' denotes [preference/metric]
+
+
+s3-n9k-sw1# 
++====================================================================================================================================================+
+| Commands for learning feature 'Routing'                                                                                                            |
++====================================================================================================================================================+
+| - Parsed commands                                                                                                                                  |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.nxos.show_routing.ShowIpRoute'>, arguments: {'vrf':'all'}                                                         |
+|   cmd: <class 'genie.libs.parser.nxos.show_routing.ShowIpv6Route'>, arguments: {'vrf':'all'}                                                       |
+|====================================================================================================================================================|

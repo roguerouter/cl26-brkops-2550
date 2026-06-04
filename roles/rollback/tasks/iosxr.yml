@@ -1,0 +1,11 @@
+---
+- name: Rollback to pre-change commit
+  cisco.iosxr.iosxr_command:
+    commands:
+      - "rollback configuration to {{ revert_point }}"
+  tags: rollback
+
+- name: Display rollback status
+  ansible.builtin.debug:
+    msg: "{{ inventory_hostname }} rolled back to commit {{ revert_point }}"
+  tags: rollback

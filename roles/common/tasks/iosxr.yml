@@ -1,0 +1,20 @@
+---
+- name: Set hostname
+  cisco.iosxr.iosxr_hostname:
+    config:
+      hostname: "{{ hostname | lower }}"
+  tags: [common, hostname]
+
+- name: Configure domain name
+  cisco.iosxr.iosxr_system:
+    domain_name: "{{ domain_name }}"
+  tags: [common, domain]
+
+- name: Configure NTP servers
+  cisco.iosxr.iosxr_ntp_global:
+    config:
+      servers:
+        - server: "{{ item }}"
+          vrf: management
+  loop: "{{ ntp_servers }}"
+  tags: [common, ntp]

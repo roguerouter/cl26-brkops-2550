@@ -1,0 +1,7 @@
+---
+- name: Rollback to pre-change state
+  hosts: all
+  gather_facts: false
+  roles:
+    - role: rollback
+      tags: rollback
