@@ -96,10 +96,10 @@ Verify each file has your assigned mgmt_ip, mgmt_gw, and the CML interface selec
 Now that you have your **vars** files created, we can proceed with configuring the CML lab.  Execute the following command:
 
 ```
-ansible-playbook playbooks/bootstrap.yml --extra-vars "user=<username> password=<yourpassword>
+ansible-playbook playbooks/bootstrap.yml --extra-vars "user=<username> password=<yourpassword>"
 ```
 > [!WARNING]
-> --extra-vars "user=<username> password=<yourpassword> will leave the password in cleartext inside your history.  The preferred way to manage > the password would be with an ansible-vault, and adding the password to the all.yml as a variable.
+> --extra-vars "user=<username> password=<yourpassword>" will leave the password in cleartext inside your history.  The preferred way to manage the password would be with an ansible-vault, and adding the vault encrypted password to the all.yml as a variable called "password:".
 
 This will create the bootstrap directory in the root of the repo.  It will contain 7 files named after the ansible inventory_hostname.cfg.  Running the bootstrap.py command below will prompt you for your CML server (https://<yourcmlserver>), username, and password.  Alternatively, you can enter those details into the .env file in the bootstrap directory.
 
