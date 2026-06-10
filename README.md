@@ -45,6 +45,22 @@ After unzipping or clone the repo locally.  Browse into the newly created ./cl26
 > [!NOTE]
 > ansible.cfg defaults to the CML inventory.  You do not need to set inventory in any of the commands when working with CML hosts.  To move to production, use '-i inventory/production/production.yml'.
 
+Preferrably, you'll use a Python virtual environment to manage your packages for this lab.  To do this, run
+
+```
+python3 -m venv ~/.venv && source ~/.venv/bin/activate
+```
+
+This will create a virtual environment in your home directory, and then activate the environment.  You should see a (.venv) at the start of your terminal.
+
+Next, you need to install the requirements:
+
+```
+pip3 install -r ./cl26-brkops-2550/bootstrap/requirements.txt
+```
+
+This will install pyats[full], ansible 2.18, virl2_client[pyats], and python_dotenv packages.
+
 ## Update inventory
 
 We need to update the inventory for CML with your desired IP addresses.  Browse to ./inventory/cml/ and open cml.yml:
