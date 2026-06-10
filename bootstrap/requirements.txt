@@ -1,4 +1,4 @@
 virl2_client[pyats]
-pyats['full']
+pyats[full]
 ansible-core==2.18
 python-dotenv
